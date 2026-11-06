@@ -1,0 +1,39 @@
+import os
+from PIL import Image
+
+def crop_and_save(src_path, dest_path, target_w, target_h, quality=88):
+    im = Image.open(src_path).convert('RGB')
+    orig_w, orig_h = im.size
+    target_ratio = target_w / target_h
+    orig_ratio = orig_w / orig_h
+    
+    if orig_ratio > target_ratio:
+        # source is wider -> crop width
+        new_w = int(orig_h * target_ratio)
+        left = (orig_w - new_w) // 2
+        im_cropped = im.crop((left, 0, left + new_w, orig_h))
+    else:
+        # source is taller -> crop height
+        new_h = int(orig_w / target_ratio)
+        top = (orig_h - new_h) // 2
+        im_cropped = im.crop((0, top, orig_w, top + new_h))
+        
+    im_resized = im_cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+    im_resized.save(dest_path, 'WEBP', quality=quality, method=6)
+    print(f"Saved {dest_path}: {target_w}x{target_h} ({os.path.getsize(dest_path)} bytes)")
+
+brain_dir = r"C:\Users\Sam John\.gemini\antigravity\brain\aa3393d8-6479-4912-9a44-277395bd13ea"
+
+# 1. faq-hero.webp
+hero_src = os.path.join(brain_dir, "luxury_timber_deck_pergola_1793869927493.jpg")
+crop_and_save(hero_src, "assets/images/faq/faq-hero.webp", 1600, 1000, quality=88)
+
+# 2. faq-support.webp
+support_src = "scratch/test_architect_drawing_deck.jpg"
+crop_and_save(support_src, "assets/images/faq/faq-support.webp", 800, 600, quality=88)
+
+# 3. faq-final-cta.webp
+cta_src = os.path.join(brain_dir, "luxury_deck_outdoor_living_twilight_1793869978542.jpg")
+crop_and_save(cta_src, "assets/images/faq/faq-final-cta.webp", 1600, 800, quality=88)
+
+print("\nAll 3 FAQ images successfully updated!")

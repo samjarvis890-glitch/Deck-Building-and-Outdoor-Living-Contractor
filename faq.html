@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | Evergreen Outdoor Living</title>
+  <meta name="description" content="Find answers to common questions about outdoor decks, pergolas, covered living spaces, materials, project planning and consultations with Evergreen Outdoor Living.">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:title" content="Frequently Asked Questions | Evergreen Outdoor Living">
+  <meta property="og:description" content="Find answers to common questions about outdoor decks, pergolas, covered living spaces, materials, project planning and consultations with Evergreen Outdoor Living.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/faq/faq-hero.webp">
+
+  <!-- Favicon (Consistent with Home 1) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Local Vendor Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/tailwind/tailwind.css">
+
+  <!-- Core Theme & Layout Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- FAQ Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/faq.css">
+
+  <!-- Immediate Theme & Direction Initializer to prevent FOIT -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('eol_theme_preference');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        var savedDir = localStorage.getItem('eol_direction_preference') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL STICKY NAVBAR (Exact Shared Navbar from index.html)
+       ====================================================================== -->
+  <header class="site-header is-transparent" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-dark">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-white">
+      </a>
+
+      <!-- Desktop Navigation Menu (1281px+) -->
+      <nav class="navbar-desktop-nav" aria-label="Main Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-item-wrapper">
+          <a href="index.html" class="nav-link-item" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="dropdown-caret"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="index.html" class="dropdown-link-item"><i data-lucide="home"></i> Home 1 (Main)</a></li>
+            <li><a href="home-2.html" class="dropdown-link-item"><i data-lucide="layers"></i> Home 2 (Architectural)</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="nav-item-wrapper">
+          <a href="about.html" class="nav-link-item">About</a>
+        </div>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <div class="nav-item-wrapper">
+          <a href="services.html" class="nav-link-item">Services</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="nav-item-wrapper">
+          <a href="gallery.html" class="nav-link-item">Gallery</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="nav-item-wrapper">
+          <a href="projects.html" class="nav-link-item">Projects</a>
+        </div>
+
+        <!-- Blog -->
+        <div class="nav-item-wrapper">
+          <a href="blog.html" class="nav-link-item">Blog</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="nav-item-wrapper">
+          <a href="faq.html" class="nav-link-item active" aria-current="page">FAQ</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-item-wrapper">
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Navbar Action Controls (Right) -->
+      <div class="navbar-actions">
+        <!-- 1. LTR / RTL Direction Toggle Icon -->
+        <button type="button" class="nav-icon-btn dir-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="dir-badge-text font-bold text-xs" style="font-size: 0.75rem; font-weight: 700;">LTR</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Icon -->
+        <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+        </button>
+
+        <!-- 3. Desktop BOOK A CONSULTATION CTA Button -->
+        <a href="contact.html#consultation" class="nav-cta-btn nav-cta-desktop">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button (Visible below 1281px on Mobile & Tablet) -->
+        <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET SLIDING DRAWER MENU (<RULE[user_global]>)
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-dark" style="height: 34px;">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-white" style="height: 34px;">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (All Navigation Items Accessible) -->
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Accordion -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" data-target="drawerSubHome" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <ul class="drawer-submenu" id="drawerSubHome">
+            <li><a href="index.html" class="drawer-sublink">Home 1 (Main Homepage)</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 (Architectural Showcase)</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+
+
+        <!-- Gallery -->
+        <li class="drawer-nav-item">
+          <a href="gallery.html" class="drawer-link">Gallery</a>
+        </li>
+
+        <!-- Projects -->
+        <li class="drawer-nav-item">
+          <a href="projects.html" class="drawer-link">Projects</a>
+        </li>
+
+        <!-- Blog -->
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-link">Blog</a>
+        </li>
+
+        <!-- FAQ -->
+        <li class="drawer-nav-item">
+          <a href="faq.html" class="drawer-link active" aria-current="page">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer (Controls & Consultation Button) -->
+    <div class="drawer-footer">
+      <div class="drawer-quick-controls">
+        <!-- Dark Mode Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <!-- Direction Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill dir-toggle-btn" aria-label="Toggle LTR / RTL Direction">
+          <i data-lucide="languages"></i>
+          <span class="dir-label-text">RTL Mode</span>
+        </button>
+      </div>
+
+      <!-- Client Login & Consultation CTA Inside Mobile Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <a href="contact.html#consultation" class="drawer-cta-btn">
+          <span>Book a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html#login" class="drawer-control-pill" style="padding: 0.75rem; justify-content: center; font-weight: 600;">
+          <i data-lucide="lock"></i>
+          <span>Client Login</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 9 SECTIONS
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ====================================================================
+         SECTION 1 – FAQ HERO
+         Unique Help Centre / Question Hub Style
+         ==================================================================== -->
+    <section class="faq-hero" id="faqHero" aria-label="Frequently Asked Questions Overview">
+      <div class="container faq-hero-container">
+        <div class="faq-hero-grid">
+
+          <!-- Left Text Content -->
+          <div class="faq-hero-content">
+            <div class="faq-hero-badge">
+              <i data-lucide="help-circle"></i>
+              <span>HERE TO HELP</span>
+            </div>
+
+            <h1 class="faq-hero-h1">
+              GOOD QUESTIONS. CLEAR ANSWERS.
+            </h1>
+
+            <p class="faq-hero-lead">
+              Planning an outdoor space often starts with a few questions. Find helpful information about decks, pergolas, outdoor living projects, materials, planning, and what to expect when getting started.
+            </p>
+
+            <div class="faq-hero-cta-group">
+              <a href="#faqSearch" class="faq-btn-primary">
+                <span>BROWSE COMMON QUESTIONS</span>
+                <i data-lucide="arrow-down"></i>
+              </a>
+              <a href="contact.html#consultation" class="faq-btn-secondary">
+                <span>ASK US A QUESTION</span>
+                <i data-lucide="message-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Framed Visual Composition -->
+          <div class="faq-hero-visual-frame">
+            <div class="faq-hero-image-wrap">
+              <img src="assets/images/faq/faq-hero.webp" 
+                   alt="Welcoming outdoor timber deck and thoughtfully arranged armchair seating under pergola" 
+                   class="faq-hero-img"
+                   width="1600"
+                   height="1000"
+                   fetchpriority="high">
+            </div>
+
+            <!-- Question Hub Label Badge -->
+            <div class="faq-hero-hub-badge">
+              <i data-lucide="info" style="width: 22px; height: 22px; flex-shrink: 0;"></i>
+              <div>
+                <div class="faq-hero-badge-title">Help Centre &amp; Planning Hub</div>
+                <div class="faq-hero-badge-sub">23 Detailed Answers for Outdoor Projects</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 – QUICK QUESTION SEARCH
+         Live Keyword Search with Result Counter and Filter Synchronization
+         ==================================================================== -->
+    <section class="faq-section faq-search" id="faqSearch" aria-label="Search Frequently Asked Questions">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="search"></i>
+            <span>INSTANT SEARCH</span>
+          </div>
+          <h2 class="faq-title">WHAT WOULD YOU LIKE TO KNOW?</h2>
+          <p class="faq-desc">
+            Search our frequently asked questions to find helpful information about planning, design, materials, construction, and outdoor living.
+          </p>
+        </div>
+
+        <div class="faq-search-wrapper">
+          <!-- Search Input Box -->
+          <div class="faq-search-box">
+            <i data-lucide="search" class="faq-search-icon"></i>
+            <input type="text" 
+                   id="faqSearchInput" 
+                   class="faq-search-input" 
+                   placeholder="Type your question or keyword..." 
+                   aria-label="Search questions or keyword">
+            <button type="button" 
+                    id="faqSearchClear" 
+                    class="faq-search-clear" 
+                    aria-label="Clear search input">
+              <i data-lucide="x" style="width: 18px; height: 18px;"></i>
+            </button>
+          </div>
+
+          <!-- Suggested Keyword Pills -->
+          <div class="faq-search-suggestions">
+            <span class="faq-search-label">Popular Topics:</span>
+            <button type="button" class="faq-suggest-tag" data-term="Deck">Deck</button>
+            <button type="button" class="faq-suggest-tag" data-term="Pergola">Pergola</button>
+            <button type="button" class="faq-suggest-tag" data-term="Materials">Materials</button>
+            <button type="button" class="faq-suggest-tag" data-term="Planning">Planning</button>
+            <button type="button" class="faq-suggest-tag" data-term="Maintenance">Maintenance</button>
+            <button type="button" class="faq-suggest-tag" data-term="Consultation">Consultation</button>
+          </div>
+
+          <!-- Live Results Count Label -->
+          <div class="faq-results-status" id="faqResultsStatus" role="status" aria-live="polite">
+            Showing all 23 questions
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 – FAQ CATEGORY NAVIGATION
+         7 Interactive Topic Cards with Dynamic Question Counts
+         ==================================================================== -->
+    <section class="faq-section faq-categories" id="faqCategories" aria-label="Explore Questions by Topic">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="layers"></i>
+            <span>QUESTION TOPICS</span>
+          </div>
+          <h2 class="faq-title">EXPLORE QUESTIONS BY TOPIC.</h2>
+          <p class="faq-desc">
+            Choose a topic to find the information most relevant to your outdoor project.
+          </p>
+        </div>
+
+        <div class="faq-categories-grid">
+
+          <!-- Category All: Reset Filter -->
+          <div class="faq-category-card active" data-category="all" role="button" tabindex="0" aria-label="View all categories">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="help-circle"></i>
+            </div>
+            <h3 class="faq-category-title">All Questions</h3>
+            <p class="faq-category-desc">
+              Browse the complete collection of frequently asked questions and planning answers.
+            </p>
+            <span class="faq-category-count-badge">23 Questions</span>
+          </div>
+
+          <!-- Category 01: General Questions -->
+          <div class="faq-category-card" data-category="general" role="button" tabindex="0" aria-label="Browse General Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="info"></i>
+            </div>
+            <h3 class="faq-category-title">General Questions</h3>
+            <p class="faq-category-desc">
+              Learn about Evergreen Outdoor Living, services, and the general enquiry process.
+            </p>
+            <span class="faq-category-count-badge">5 Questions</span>
+          </div>
+
+          <!-- Category 02: Deck Construction -->
+          <div class="faq-category-card" data-category="deck-construction" role="button" tabindex="0" aria-label="Browse Deck Construction Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="layers"></i>
+            </div>
+            <h3 class="faq-category-title">Deck Construction</h3>
+            <p class="faq-category-desc">
+              Find answers about deck layouts, planning, construction, and design considerations.
+            </p>
+            <span class="faq-category-count-badge">3 Questions</span>
+          </div>
+
+          <!-- Category 03: Pergolas & Covered Spaces -->
+          <div class="faq-category-card" data-category="pergolas-covered" role="button" tabindex="0" aria-label="Browse Pergolas and Covered Spaces Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="trees"></i>
+            </div>
+            <h3 class="faq-category-title">Pergolas &amp; Covered Spaces</h3>
+            <p class="faq-category-desc">
+              Explore common questions about pergolas, shade structures, and covered outdoor areas.
+            </p>
+            <span class="faq-category-count-badge">3 Questions</span>
+          </div>
+
+          <!-- Category 04: Materials & Finishes -->
+          <div class="faq-category-card" data-category="materials-finishes" role="button" tabindex="0" aria-label="Browse Materials and Finishes Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="hammer"></i>
+            </div>
+            <h3 class="faq-category-title">Materials &amp; Finishes</h3>
+            <p class="faq-category-desc">
+              Understand timber, composite decking, natural stone, and finish considerations.
+            </p>
+            <span class="faq-category-count-badge">4 Questions</span>
+          </div>
+
+          <!-- Category 05: Project Planning -->
+          <div class="faq-category-card" data-category="project-planning" role="button" tabindex="0" aria-label="Browse Project Planning Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+            <h3 class="faq-category-title">Project Planning</h3>
+            <p class="faq-category-desc">
+              Learn about preparation, site considerations, design discussions, and project planning.
+            </p>
+            <span class="faq-category-count-badge">4 Questions</span>
+          </div>
+
+          <!-- Category 06: Maintenance & Care -->
+          <div class="faq-category-card" data-category="maintenance-care" role="button" tabindex="0" aria-label="Browse Maintenance and Care Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="wrench"></i>
+            </div>
+            <h3 class="faq-category-title">Maintenance &amp; Care</h3>
+            <p class="faq-category-desc">
+              Find general guidance about maintaining and caring for outdoor spaces.
+            </p>
+            <span class="faq-category-count-badge">2 Questions</span>
+          </div>
+
+          <!-- Category 07: Consultations & Enquiries -->
+          <div class="faq-category-card" data-category="consultations-enquiries" role="button" tabindex="0" aria-label="Browse Consultations and Enquiries Questions">
+            <div class="faq-category-icon-wrap">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <h3 class="faq-category-title">Consultations &amp; Enquiries</h3>
+            <p class="faq-category-desc">
+              Learn how to prepare for a conversation about your outdoor project.
+            </p>
+            <span class="faq-category-count-badge">2 Questions</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 – GENERAL QUESTIONS (ACCORDION GROUP 1)
+         ==================================================================== -->
+    <section class="faq-section faq-group faq-section-bg-surface" id="sectionGeneral" aria-label="Getting to Know Us">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="info"></i>
+            <span>GENERAL OVERVIEW</span>
+          </div>
+          <h2 class="faq-title">GETTING TO KNOW US.</h2>
+          <p class="faq-desc">
+            Essential information regarding our approach, services, and how we collaborate with homeowners.
+          </p>
+        </div>
+
+        <div class="faq-group-wrapper">
+          <div class="faq-group-accordion">
+
+            <!-- Question 1 -->
+            <div class="faq-item" id="q-gen-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-gen-1">
+                <span class="faq-question-text">What does Evergreen Outdoor Living focus on?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-gen-1">
+                <div class="faq-answer-inner">
+                  Evergreen Outdoor Living focuses on deck building and outdoor living spaces, including custom deck concepts, pergolas, covered outdoor areas, patio spaces, and outdoor entertainment environments.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item" id="q-gen-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-gen-2">
+                <span class="faq-question-text">What types of outdoor spaces can I enquire about?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-gen-2">
+                <div class="faq-answer-inner">
+                  You can enquire about timber decks, pergolas, covered outdoor living areas, patios, outdoor dining spaces, entertainment areas, and deck renovation ideas.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item" id="q-gen-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-gen-3">
+                <span class="faq-question-text">Can I discuss an idea before deciding on a design?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-gen-3">
+                <div class="faq-answer-inner">
+                  Yes. You can begin with an enquiry describing your ideas, the space you have, and what you would like the outdoor area to achieve. This can help establish the next steps for discussing your project.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item" id="q-gen-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-gen-4">
+                <span class="faq-question-text">Do I need a complete design before making an enquiry?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-gen-4">
+                <div class="faq-answer-inner">
+                  No. You can start with a general idea, photographs of your space, approximate measurements, or a description of what you would like to create.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item" id="q-gen-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-gen-5">
+                <span class="faq-question-text">Can outdoor designs be tailored to my home?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-gen-5">
+                <div class="faq-answer-inner">
+                  Outdoor design considerations can be discussed around the available space, the style of your home, your intended use, and your material preferences.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 – DECKS, PERGOLAS & COVERED SPACES (ACCORDION GROUP 2)
+         ==================================================================== -->
+    <section class="faq-section faq-group faq-section-bg-cream" id="sectionStructures" aria-label="Questions About Outdoor Structures">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="trees"></i>
+            <span>STRUCTURES &amp; SPACES</span>
+          </div>
+          <h2 class="faq-title">QUESTIONS ABOUT OUTDOOR STRUCTURES.</h2>
+          <p class="faq-desc">
+            Learn about deck design, pergola positioning, covered pavilions, and structural renovation considerations.
+          </p>
+        </div>
+
+        <div class="faq-group-wrapper">
+          <div class="faq-group-accordion">
+
+            <!-- Question 1 -->
+            <div class="faq-item" id="q-dec-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-1">
+                <span class="faq-question-text">What should I consider before building a deck?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-1">
+                <div class="faq-answer-inner">
+                  Consider the available area, ground conditions, access from the home, intended use, deck height, material options, drainage, and how the deck will connect with the garden.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item" id="q-dec-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-2">
+                <span class="faq-question-text">What is the difference between a deck and a patio?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-2">
+                <div class="faq-answer-inner">
+                  A deck is generally an outdoor platform that may be raised or positioned at ground level and is commonly constructed using decking materials. A patio is typically a ground-level outdoor surface that may use stone, concrete, pavers, or other suitable finishes.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item" id="q-dec-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-3">
+                <span class="faq-question-text">What should I consider when planning a pergola?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-3">
+                <div class="faq-answer-inner">
+                  Consider its location, dimensions, intended purpose, shade requirements, structural design, materials, and relationship with nearby buildings and landscaping.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item" id="q-dec-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-4">
+                <span class="faq-question-text">Can a pergola be combined with a deck?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-4">
+                <div class="faq-answer-inner">
+                  A pergola and deck can be considered together as part of one outdoor living design. Their positioning, structural requirements, access, and intended use should be planned together.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item" id="q-dec-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-5">
+                <span class="faq-question-text">What is a covered outdoor living area?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-5">
+                <div class="faq-answer-inner">
+                  It is an outdoor space designed with a roof or suitable covering to provide shelter and create a more defined environment for seating, dining, or entertainment.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item" id="q-dec-6">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-dec-6">
+                <span class="faq-question-text">Can an existing deck be updated?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-dec-6">
+                <div class="faq-answer-inner">
+                  An existing deck may be considered for renovation or improvement depending on its condition, structural suitability, materials, and the changes being considered. A proper assessment is important before deciding on renovation work.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 – MATERIALS, FINISHES & MAINTENANCE (ACCORDION GROUP 3)
+         ==================================================================== -->
+    <section class="faq-section faq-group faq-section-bg-surface" id="sectionMaterials" aria-label="Understanding Materials and Long-Term Care">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="hammer"></i>
+            <span>MATERIALS &amp; CARE</span>
+          </div>
+          <h2 class="faq-title">UNDERSTANDING MATERIALS AND LONG-TERM CARE.</h2>
+          <p class="faq-desc">
+            Explore hardwood options, composite decking characteristics, finish durability, and general maintenance.
+          </p>
+        </div>
+
+        <div class="faq-group-wrapper">
+          <div class="faq-group-accordion">
+
+            <!-- Question 1 -->
+            <div class="faq-item" id="q-mat-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-1">
+                <span class="faq-question-text">What materials are commonly considered for decking?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-1">
+                <div class="faq-answer-inner">
+                  Common options include natural timber and composite decking products. The appropriate choice depends on appearance, product specifications, installation requirements, exposure, maintenance preferences, and project suitability.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item" id="q-mat-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-2">
+                <span class="faq-question-text">Is natural timber different from composite decking?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-2">
+                <div class="faq-answer-inner">
+                  Yes. Natural timber has natural grain and material variation, while composite decking is manufactured using a combination of materials. Compare the specific product specifications, appearance, maintenance requirements, and installation guidance before choosing.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item" id="q-mat-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-3">
+                <span class="faq-question-text">Does outdoor timber need maintenance?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-3">
+                <div class="faq-answer-inner">
+                  Outdoor timber may require periodic cleaning, inspection, and suitable maintenance depending on the timber type, finish, exposure, and manufacturer's recommendations.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item" id="q-mat-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-4">
+                <span class="faq-question-text">How should I choose an outdoor finish?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-4">
+                <div class="faq-answer-inner">
+                  Consider the overall design, material compatibility, exposure to weather, cleaning requirements, surface characteristics, and the intended use of the area.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item" id="q-mat-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-5">
+                <span class="faq-question-text">How can I care for an outdoor deck?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-5">
+                <div class="faq-answer-inner">
+                  Follow the product or material manufacturer's guidance. General care may include regular cleaning, removing accumulated debris, checking visible connections and surfaces, and addressing maintenance needs when identified.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item" id="q-mat-6">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-mat-6">
+                <span class="faq-question-text">Which material is best for an outdoor project?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-mat-6">
+                <div class="faq-answer-inner">
+                  There is no single material that is best for every outdoor space. The right option depends on the design, conditions, intended use, product specifications, maintenance preferences, and project requirements.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 – PLANNING, PROCESS & CONSULTATIONS (ACCORDION GROUP 4)
+         ==================================================================== -->
+    <section class="faq-section faq-group faq-section-bg-cream" id="sectionPlanning" aria-label="From First Question to a Clearer Plan">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="clipboard-list"></i>
+            <span>PLANNING &amp; PROCESS</span>
+          </div>
+          <h2 class="faq-title">FROM FIRST QUESTION TO A CLEARER PLAN.</h2>
+          <p class="faq-desc">
+            Understand how to prepare for an enquiry, site factors, permit guidelines, and beginning your project journey.
+          </p>
+        </div>
+
+        <div class="faq-group-wrapper">
+          <div class="faq-group-accordion">
+
+            <!-- Question 1 -->
+            <div class="faq-item" id="q-plan-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-1">
+                <span class="faq-question-text">What information should I prepare before an enquiry?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-1">
+                <div class="faq-answer-inner">
+                  It can be helpful to prepare your location at a general area level, photographs of the space, approximate dimensions, your intended use, preferred materials, and any design ideas you have.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item" id="q-plan-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-2">
+                <span class="faq-question-text">Can I share photographs of my backyard?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-2">
+                <div class="faq-answer-inner">
+                  Yes. Photographs can help communicate the existing space and your ideas. They do not replace an on-site assessment where one is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item" id="q-plan-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-3">
+                <span class="faq-question-text">Do I need exact measurements?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-3">
+                <div class="faq-answer-inner">
+                  Exact measurements are not necessary for an initial enquiry. Approximate measurements can help explain the space, while accurate measurements may be needed during later planning stages.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item" id="q-plan-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-4">
+                <span class="faq-question-text">What can affect the planning of an outdoor project?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-4">
+                <div class="faq-answer-inner">
+                  Factors may include site access, ground conditions, existing structures, levels, drainage, materials, design complexity, and applicable local requirements.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item" id="q-plan-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-5">
+                <span class="faq-question-text">Will building approvals or permits be required?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-5">
+                <div class="faq-answer-inner">
+                  Requirements depend on the proposed structure, its location, dimensions, site conditions, and applicable local regulations. Check with the relevant local authority or a suitably qualified professional before construction.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item" id="q-plan-6">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ans-plan-6">
+                <span class="faq-question-text">How do I get started?</span>
+                <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="faq-answer-panel" id="ans-plan-6">
+                <div class="faq-answer-inner">
+                  Use the Contact page to send an enquiry. Describe the type of outdoor space you are considering and include any useful photographs or initial information.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Empty Search State Container -->
+    <div class="faq-empty-state" id="faqEmptyState" role="status">
+      <i data-lucide="search-x" class="faq-empty-icon"></i>
+      <h3 class="faq-empty-title">NO MATCHING QUESTIONS FOUND.</h3>
+      <p class="faq-empty-desc">
+        Try another keyword or browse the topics to find the information you need.
+      </p>
+      <button type="button" class="faq-btn-primary" id="faqEmptyClearBtn">
+        <span>CLEAR SEARCH</span>
+        <i data-lucide="rotate-ccw"></i>
+      </button>
+    </div>
+
+
+    <!-- ====================================================================
+         SECTION 8 – STILL HAVE A QUESTION?
+         3 Support Panels with Integrated Consultation Photography
+         ==================================================================== -->
+    <section class="faq-section faq-support" id="faqSupport" aria-label="Still Have a Question">
+      <div class="container">
+
+        <div class="faq-header-centered">
+          <div class="faq-eyebrow">
+            <i data-lucide="message-square"></i>
+            <span>PERSONAL ASSISTANCE</span>
+          </div>
+          <h2 class="faq-title">DIDN'T FIND THE ANSWER YOU NEEDED?</h2>
+          <p class="faq-desc">
+            Every outdoor space is different. If your question is not covered here, get in touch and share a little about what you are planning.
+          </p>
+        </div>
+
+        <div class="faq-support-grid">
+          <!-- Left Media Illustration -->
+          <div class="faq-support-media">
+            <img src="assets/images/faq/faq-support.webp" 
+                 alt="Design consultation table with architectural sketches, timber swatches, and stone samples" 
+                 class="faq-support-img"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          </div>
+
+          <!-- Right 3 Information Panels -->
+          <div class="faq-support-cards">
+
+            <!-- Panel 01 -->
+            <div class="faq-support-card">
+              <div class="faq-support-content">
+                <h3>Ask About a Project</h3>
+                <p>Have a question about a deck, pergola, patio, or covered outdoor space?</p>
+              </div>
+              <a href="contact.html#consultation" class="faq-support-btn">
+                <span>SEND A PROJECT ENQUIRY</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Panel 02 -->
+            <div class="faq-support-card">
+              <div class="faq-support-content">
+                <h3>Discuss Your Ideas</h3>
+                <p>Share your early ideas and learn what information may help with your next planning steps.</p>
+              </div>
+              <a href="contact.html#consultation" class="faq-support-btn">
+                <span>BOOK A CONSULTATION</span>
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+
+            <!-- Panel 03 -->
+            <div class="faq-support-card">
+              <div class="faq-support-content">
+                <h3>Explore Our Services</h3>
+                <p>Discover the outdoor living services and design options you can enquire about.</p>
+              </div>
+              <a href="services.html" class="faq-support-btn">
+                <span>VIEW OUR SERVICES</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 9 – FINAL CTA
+         Closing Architectural Banner
+         ==================================================================== -->
+    <section class="faq-final-cta" id="finalCta" aria-label="Start Your Outdoor Living Project">
+      <!-- Background Image & Overlay -->
+      <div class="faq-final-cta-bg">
+        <img src="assets/images/faq/faq-final-cta.webp" 
+             alt="Serene twilight outdoor deck seating with ambient step lights and garden reflections" 
+             class="faq-final-cta-img"
+             loading="lazy"
+             width="1600"
+             height="800">
+      </div>
+      <div class="faq-final-cta-overlay"></div>
+
+      <div class="container">
+        <div class="faq-final-cta-content">
+          <h2 class="faq-final-cta-title">LET'S FIND THE RIGHT WAY FORWARD FOR YOUR OUTDOOR SPACE.</h2>
+          <p class="faq-final-cta-desc">
+            Have more questions or ready to discuss an outdoor idea? Start a conversation about the space you would like to create.
+          </p>
+          <div class="faq-final-cta-btns">
+            <a href="contact.html#consultation" class="faq-final-cta-btn-light">
+              <span>CONTACT OUR TEAM</span>
+              <i data-lucide="message-square"></i>
+            </a>
+            <a href="services.html" class="faq-final-cta-btn-outline">
+              <span>EXPLORE OUR SERVICES</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       SHARED FOOTER (Deep Forest #18382C, 7-Column Layout on Desktop)
+       ====================================================================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+            <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="footer-brand-logo">
+          </a>
+          <div class="footer-brand-tagline">CRAFTED OUTDOOR SPACES. MADE FOR LIVING.</div>
+          <p class="footer-brand-desc">
+            Bespoke outdoor architecture, custom deck construction and refined pergola environments built to harmonize with nature and elevate your lifestyle.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#deck-construction" class="footer-link">Custom Decks</a></li>
+            <li><a href="services.html#pergola-construction" class="footer-link">Pergolas</a></li>
+            <li><a href="services.html#covered-outdoor-living" class="footer-link">Covered Outdoor Living</a></li>
+            <li><a href="services.html#patio-spaces" class="footer-link">Patio Spaces</a></li>
+            <li><a href="services.html#outdoor-entertainment" class="footer-link">Outdoor Entertainment</a></li>
+            <li><a href="services.html#deck-renovation" class="footer-link">Deck Renovation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Explore (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html" class="footer-link">Home 2</a></li>
+            <li><a href="gallery.html#decks" class="footer-link">Deck Design Ideas</a></li>
+            <li><a href="gallery.html#pergolas" class="footer-link">Pergola Inspiration</a></li>
+            <li><a href="gallery.html#living" class="footer-link">Outdoor Living Ideas</a></li>
+            <li><a href="projects.html" class="footer-link">Project Gallery</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Customer Support (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html#consultation" class="footer-link">Book a Consultation</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Project Enquiry</a></li>
+            <li><a href="faq.html#planning" class="footer-link">Planning Your Project</a></li>
+            <li><a href="faq.html" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 6: Newsletter -->
+        <div class="footer-col-newsletter">
+          <div class="footer-newsletter-box">
+            <h4 class="footer-newsletter-title">GET OUTDOOR INSPIRATION.</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to receive seasonal design inspiration, materials guides and craftsmanship insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address for newsletter" required>
+              </div>
+              <button type="submit" class="newsletter-submit-btn">
+                <span>Subscribe</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Column 7: Follow Us -->
+        <div class="footer-col-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="10" x2="12" y2="21"/>
+                  <path d="M8 12.5a4 4 0 1 1 8 0c0 3-1.8 5-4.2 5a3.5 3.5 0 0 1-2.8-1.5"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <polygon points="10 15 15 12 10 9" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Evergreen Outdoor Living. All Rights Reserved.
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-legal-link">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+        </ul>
+
+        <button type="button" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCRIPTS (Local Vendor & Custom Vanilla JS)
+       ====================================================================== -->
+  <!-- Bootstrap Bundle JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="vendor/lucide/lucide.min.js"></script>
+  <!-- Theme & Direction Switcher -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Sticky Navbar & Mobile Drawer Controller -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Entrance Animations & Intersection Observer -->
+  <script src="assets/js/animations.js"></script>
+  <!-- Main Application Orchestrator -->
+  <script src="assets/js/main.js"></script>
+  <!-- FAQ Interactive Controller -->
+  <script src="assets/js/faq.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Rounded Base Background for clean visibility in tab bars -->
+  <rect width="64" height="64" rx="14" fill="#18382C" />
+  
+  <g transform="translate(10, 10)">
+    <!-- Timber Deck Planks -->
+    <rect x="2" y="34" width="40" height="3" rx="1.5" fill="#C59A73" />
+    <rect x="6" y="39" width="32" height="2.5" rx="1.25" fill="#82977B" />
+    
+    <!-- Pergola Posts -->
+    <rect x="6" y="14" width="3.5" height="20" rx="1" fill="#F8F5ED" />
+    <rect x="34.5" y="14" width="3.5" height="20" rx="1" fill="#F8F5ED" />
+    
+    <!-- Pergola Cross Beam -->
+    <rect x="2" y="11" width="40" height="3.5" rx="1.5" fill="#F8F5ED" />
+    <!-- Pergola Rafter Tails -->
+    <rect x="5" y="4" width="3" height="8" rx="1.5" fill="#F8F5ED" />
+    <rect x="14" y="4" width="3" height="8" rx="1.5" fill="#F8F5ED" />
+    <rect x="23" y="4" width="3" height="8" rx="1.5" fill="#F8F5ED" />
+    <rect x="32" y="4" width="3" height="8" rx="1.5" fill="#F8F5ED" />
+
+    <!-- Organic Botanical Leaf Motif -->
+    <path d="M12 32 C12 21, 22 14, 30 14 C30 23, 24 31, 12 32 Z" fill="#82977B" />
+    <path d="M12 32 C17 23, 22 18, 30 14" stroke="#18382C" stroke-width="1.4" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,1329 @@
+/* ==========================================================================
+   EVERGREEN OUTDOOR LIVING - SERVICES PAGE STYLESHEET
+   Scoped exclusively for services.html with .services- and .service- prefixes
+   Supports Dark Mode ([data-theme="dark"]) and RTL ([dir="rtl"])
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. Global Alignment & Base Variables for Services Page
+   -------------------------------------------------------------------------- */
+.services-page-wrapper {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  font-family: var(--font-body);
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Centred Section Header (Global Alignment Rule 15) */
+.services-section-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.services-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-forest);
+  background-color: rgba(37, 75, 59, 0.08);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .services-eyebrow {
+  color: var(--color-sage);
+  background-color: rgba(130, 151, 123, 0.14);
+}
+
+.services-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.services-description {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Centred CTA Groups */
+.services-cta-group-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* Common Section Spacing */
+.services-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.services-section-alt {
+  background-color: var(--bg-surface);
+}
+
+/* --------------------------------------------------------------------------
+   1. UNIQUE ARCHITECTURAL SERVICE SHOWCASE HERO
+   -------------------------------------------------------------------------- */
+.services-hero-section {
+  padding-top: calc(var(--nav-height-desktop, 88px) + clamp(1.75rem, 3vw, 2.75rem));
+  padding-bottom: clamp(3rem, 4.5vw, 4.75rem);
+  background-color: var(--color-warm-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .services-hero-section {
+  background-color: var(--color-deep-forest);
+}
+
+.services-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.services-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-forest);
+  background: rgba(37, 75, 59, 0.09);
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--radius-pill);
+  width: fit-content;
+  margin-bottom: 1.25rem;
+}
+
+[data-theme="dark"] .services-hero-eyebrow {
+  color: var(--color-sage);
+  background: rgba(130, 151, 123, 0.15);
+}
+
+.services-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--color-charcoal);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .services-hero-title {
+  color: #FFFFFF;
+}
+
+.services-hero-desc {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-muted-text);
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .services-hero-desc {
+  color: #D4DCD2;
+}
+
+.services-hero-supporting {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-timber);
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Hero Quick Navigation Index */
+.services-hero-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2.25rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-soft-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="dark"] .services-hero-index {
+  background-color: rgba(36, 50, 41, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.services-index-pill {
+  font-size: 0.78125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-charcoal);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-soft-border);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+[data-theme="dark"] .services-index-pill {
+  color: #E2ECE0;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.services-index-pill:hover {
+  background-color: var(--color-forest);
+  color: #FFFFFF;
+  border-color: var(--color-forest);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .services-index-pill:hover {
+  background-color: var(--color-sage);
+  color: #121814;
+  border-color: var(--color-sage);
+}
+
+.services-hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Primary and Secondary Service CTA Buttons */
+.btn-service-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-forest);
+  color: #FFFFFF !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.95rem 1.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-forest);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+
+[data-theme="dark"] .btn-service-primary {
+  background-color: #91B59A !important;
+  border-color: #91B59A !important;
+  color: #151D18 !important;
+}
+
+[data-theme="dark"] .btn-service-primary:hover {
+  background-color: #a5c6ad !important;
+  border-color: #a5c6ad !important;
+  color: #151D18 !important;
+}
+
+.btn-service-primary:hover {
+  background-color: var(--color-deep-forest);
+  border-color: var(--color-deep-forest);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 75, 59, 0.25);
+}
+
+.btn-service-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: transparent;
+  color: var(--color-charcoal) !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.95rem 1.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-charcoal);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+[data-theme="dark"] .btn-service-secondary {
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-service-secondary:hover {
+  background-color: var(--color-charcoal);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .btn-service-secondary:hover {
+  background-color: #FFFFFF;
+  color: var(--color-charcoal) !important;
+  border-color: #FFFFFF;
+}
+
+/* Hero Visual Showcase */
+.services-hero-visual {
+  position: relative;
+}
+
+.services-hero-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .services-hero-img-wrap {
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.services-hero-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.services-hero-visual:hover .services-hero-img {
+  transform: scale(1.02);
+}
+
+.services-hero-badge {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 1.75rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  max-width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .services-hero-badge {
+  background: rgba(29, 41, 33, 0.92);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.services-hero-badge-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-forest);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+[data-theme="dark"] .services-hero-badge-num {
+  color: var(--color-sage);
+}
+
+.services-hero-badge-text {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .services-hero-badge-text {
+  color: #D6E0D5;
+}
+
+/* --------------------------------------------------------------------------
+   2. SECTION 1 – SERVICE OVERVIEW (3 + 2 Grid Layout)
+   -------------------------------------------------------------------------- */
+.services-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-overview-row-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.service-overview-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.service-overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-sage);
+}
+
+.service-card-media {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-overview-card:hover .service-card-img {
+  transform: scale(1.05);
+}
+
+.service-card-number-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(24, 56, 44, 0.85);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.service-card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.service-card-desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.service-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: gap var(--transition-fast), color var(--transition-fast);
+  margin-top: auto;
+}
+
+[data-theme="dark"] .service-card-cta {
+  color: var(--color-sage);
+}
+
+.service-card-cta:hover {
+  color: var(--color-timber);
+  gap: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   3. SECTION 2 – CUSTOM DECK CONSTRUCTION (Wide Image + Detail Close-Up)
+   -------------------------------------------------------------------------- */
+.service-deck-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.service-deck-visual-stack {
+  position: relative;
+}
+
+.service-deck-main-img-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.service-deck-main-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-deck-detail-floating {
+  position: absolute;
+  bottom: -2.5rem;
+  right: -2rem;
+  width: 250px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
+  border: 4px solid var(--bg-surface);
+  background-color: var(--bg-surface);
+}
+
+.service-deck-detail-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-deck-detail-label {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.service-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.75rem 0 2.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.service-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.service-feature-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background-color: rgba(37, 75, 59, 0.1);
+  color: var(--color-forest);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
+[data-theme="dark"] .service-feature-icon {
+  background-color: rgba(130, 151, 123, 0.2);
+  color: var(--color-sage);
+}
+
+/* Material Spec Strip */
+.service-spec-strip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  margin-bottom: 2rem;
+}
+
+.service-spec-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.service-spec-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-spec-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.service-spec-sub {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION 3 – PERGOLA CONSTRUCTION (Asymmetric Architectural Showcase)
+   -------------------------------------------------------------------------- */
+.service-pergola-showcase {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.service-pergola-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.service-pergola-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(24, 56, 44, 0.94) 0%, rgba(24, 56, 44, 0.75) 55%, rgba(24, 56, 44, 0.3) 100%);
+  z-index: 2;
+}
+
+[dir="rtl"] .service-pergola-overlay {
+  background: linear-gradient(270deg, rgba(24, 56, 44, 0.94) 0%, rgba(24, 56, 44, 0.75) 55%, rgba(24, 56, 44, 0.3) 100%);
+}
+
+.service-pergola-card-content {
+  position: relative;
+  z-index: 3;
+  max-width: 580px;
+  color: #FFFFFF;
+}
+
+.service-pergola-card-content .services-eyebrow {
+  background: rgba(255, 255, 255, 0.16);
+  color: #E9DFC9;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-pergola-card-content .services-title {
+  color: #FFFFFF;
+}
+
+.service-pergola-card-content .service-features-list .service-feature-item {
+  color: #F8F5ED;
+}
+
+.service-pergola-card-content .service-feature-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #E9DFC9;
+}
+
+.service-pergola-card-content .service-card-desc {
+  color: #D4DCD2;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECTION 4 – COVERED OUTDOOR LIVING (Image-Led with Feature Badge Array)
+   -------------------------------------------------------------------------- */
+.service-covered-wrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+.service-covered-img-banner {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+
+.service-covered-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 4 Feature Badge Chips Overlaid on Image Bottom */
+.service-covered-chips-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(0deg, rgba(18, 38, 30, 0.95) 0%, rgba(18, 38, 30, 0.6) 70%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.service-covered-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.service-covered-chip i {
+  color: var(--color-sand-beige);
+}
+
+[data-theme="dark"] .service-covered-chip i {
+  color: #C59A73;
+}
+
+.service-covered-body {
+  padding: 3.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------
+   6. SECTION 5 – PATIO & ENTERTAINMENT SPACES (3-Image Editorial Composition)
+   -------------------------------------------------------------------------- */
+.service-patio-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.service-patio-gallery-stack {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+
+.service-patio-gallery-main {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  height: 480px;
+}
+
+.service-patio-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-patio-gallery-sub {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  height: 232px;
+}
+
+.service-patio-gallery-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-patio-gallery-stack:hover img {
+  transform: scale(1.03);
+}
+
+/* --------------------------------------------------------------------------
+   7. SECTION 6 – DECK RENOVATION (Visual Comparison Concept Cards)
+   -------------------------------------------------------------------------- */
+.service-renovation-comparison-wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.service-comparison-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-comparison-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.service-comparison-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-comparison-media {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.service-comparison-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-comparison-tag {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+}
+
+.service-tag-existing {
+  background-color: rgba(41, 47, 42, 0.85);
+  color: #E9DFC9;
+  backdrop-filter: blur(6px);
+}
+
+.service-tag-refreshed {
+  background-color: rgba(37, 75, 59, 0.9);
+  color: #FFFFFF;
+  backdrop-filter: blur(6px);
+}
+
+.service-comparison-body {
+  padding: 2rem;
+}
+
+.service-comparison-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.service-comparison-desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.service-comparison-notice {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   8. SECTION 7 – FIND THE RIGHT SERVICE FOR YOUR SPACE (Pathways)
+   -------------------------------------------------------------------------- */
+.service-pathways-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.service-pathway-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.service-pathway-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-pathway-card:hover {
+  transform: translateX(6px);
+  border-color: var(--color-forest);
+  box-shadow: var(--shadow-md);
+}
+
+[dir="rtl"] .service-pathway-card:hover {
+  transform: translateX(-6px);
+}
+
+.service-pathway-icon-wrap {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background-color: rgba(37, 75, 59, 0.08);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-forest);
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .service-pathway-icon-wrap {
+  background-color: rgba(130, 151, 123, 0.15);
+  color: var(--color-sage);
+}
+
+.service-pathway-card:hover .service-pathway-icon-wrap {
+  background-color: var(--color-forest);
+  color: #FFFFFF;
+}
+
+.service-pathway-content {
+  flex-grow: 1;
+}
+
+.service-pathway-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.service-pathway-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 0.65rem;
+}
+
+.service-pathway-rec {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-timber);
+  letter-spacing: 0.02em;
+}
+
+.service-pathway-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  height: 520px;
+}
+
+.service-pathway-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   9. SECTION 8 – FINAL SERVICE ENQUIRY CTA
+   -------------------------------------------------------------------------- */
+.services-final-cta-section {
+  position: relative;
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0;
+  background-color: #12281F;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.services-final-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 34, 26, 0.90) 0%, rgba(20, 48, 38, 0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .services-final-cta-section {
+  background-color: #0E1A14;
+}
+
+[data-theme="dark"] .services-final-cta-section::before {
+  background: linear-gradient(135deg, rgba(10, 22, 16, 0.93) 0%, rgba(14, 32, 24, 0.88) 100%);
+}
+
+.services-final-cta-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.32;
+  z-index: 1;
+}
+
+.services-final-cta-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.services-final-cta-section .services-eyebrow {
+  background: rgba(37, 75, 59, 0.65) !important;
+  color: #E9DFC9 !important;
+  border: 1px solid rgba(233, 223, 201, 0.35) !important;
+}
+
+.services-final-cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF !important;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.services-final-cta-desc {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #E2ECE1 !important;
+  margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.services-final-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-cta-consult {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #18382C !important;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FFFFFF;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-cta-consult:hover {
+  background-color: var(--color-sand-beige);
+  border-color: var(--color-sand-beige);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta-projects {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF !important;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-cta-projects:hover {
+  background-color: #FFFFFF;
+  color: #18382C !important;
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .btn-cta-consult {
+  background-color: #91B59A !important;
+  border-color: #91B59A !important;
+  color: #151D18 !important;
+}
+
+[data-theme="dark"] .btn-cta-consult:hover {
+  background-color: #a5c6ad !important;
+  border-color: #a5c6ad !important;
+  color: #151D18 !important;
+}
+
+[data-theme="dark"] .btn-cta-projects:hover {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: #151D18 !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. RESPONSIVE BREAKPOINTS (Tablets & Mobile)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .services-hero-grid,
+  .service-deck-grid,
+  .service-patio-grid,
+  .service-pathways-grid {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 5rem 0;
+  }
+  
+  .services-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .services-hero-visual {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
+  .services-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-overview-row-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+  
+  .service-deck-grid,
+  .service-patio-grid,
+  .service-pathways-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .service-deck-visual-stack {
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+  }
+
+  .service-pergola-showcase {
+    padding: 3rem 2.5rem;
+    min-height: auto;
+  }
+
+  .service-covered-body {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+  }
+
+  .service-patio-gallery-stack {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .service-pathway-visual {
+    height: 380px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 4rem 0;
+  }
+
+  .services-section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-overview-grid,
+  .services-overview-row-bottom,
+  .service-comparison-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .services-hero-img {
+    height: 360px;
+  }
+
+  .service-deck-main-img {
+    height: 340px;
+  }
+
+  .service-deck-detail-floating {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 1rem;
+    border-width: 1px;
+  }
+
+  .service-covered-img-banner {
+    height: 320px;
+  }
+
+  .service-covered-chips-bar {
+    position: relative;
+    background: var(--bg-surface);
+    padding: 1rem;
+  }
+
+  .service-covered-chip {
+    background: rgba(37, 75, 59, 0.08);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+  }
+
+  .service-covered-chip i {
+    color: var(--color-forest);
+  }
+
+  .service-patio-gallery-stack {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .service-patio-gallery-main {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 320px;
+  }
+
+  .service-patio-gallery-sub {
+    height: 200px;
+  }
+
+  .service-pathway-card {
+    padding: 1.25rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .services-hero-badge {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-ctas,
+  .services-cta-group-centred,
+  .services-final-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-service-primary,
+  .btn-service-secondary,
+  .btn-cta-consult,
+  .btn-cta-projects {
+    width: 100%;
+    justify-content: center;
+  }
+}

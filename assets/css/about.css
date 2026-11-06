@@ -1,0 +1,1131 @@
+/**
+ * EVERGREEN OUTDOOR LIVING - ABOUT US PAGE STYLESHEET
+ * Premium, polished editorial styling for about.html.
+ * Includes complete layout containers, responsive grids, dark mode, and RTL adaptations.
+ */
+
+/* ==========================================================================
+   1. GLOBAL ABOUT HELPERS, CONTAINERS & TOKENS
+   ========================================================================== */
+.about-page-wrapper {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Ensure robust container max-width and horizontal centering */
+.about-container,
+.container-custom,
+.about-page-wrapper .container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-timber);
+  margin-bottom: 0.85rem;
+}
+
+[data-theme="dark"] .about-eyebrow {
+  color: #C59A73;
+}
+
+.about-section-header {
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+}
+
+.about-section-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.6vw, 2.9rem);
+  font-weight: 500;
+  line-height: 1.24;
+  color: var(--text-primary);
+  margin-bottom: 1.15rem;
+  letter-spacing: -0.015em;
+}
+
+.about-section-intro {
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  line-height: 1.78;
+  color: var(--text-muted);
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.about-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.about-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.85rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--color-forest);
+  color: #FFFFFF;
+  border: 1px solid var(--color-forest);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.about-btn-primary:hover {
+  background-color: var(--color-forest-dark);
+  border-color: var(--color-forest-dark);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.85rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--color-forest);
+  border: 1px solid var(--color-forest);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.about-btn-secondary:hover {
+  background-color: var(--color-forest);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .about-btn-primary {
+  background-color: #91B59A;
+  color: #121915;
+  border-color: #91B59A;
+}
+
+[data-theme="dark"] .about-btn-primary:hover {
+  background-color: #A8CCA9;
+  border-color: #A8CCA9;
+  color: #121915;
+}
+
+[data-theme="dark"] .about-btn-secondary {
+  color: #F1F4EE;
+  border-color: #425247;
+}
+
+[data-theme="dark"] .about-btn-secondary:hover {
+  background-color: #243229;
+  border-color: #91B59A;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   2. HERO SECTION – ARCHITECTURAL PORTRAIT HERO
+   ========================================================================== */
+.about-hero-section {
+  padding-top: calc(var(--nav-height-desktop, 88px) + clamp(1.75rem, 3vw, 2.75rem));
+  padding-bottom: clamp(3rem, 4.5vw, 4.75rem);
+  background-color: var(--color-cream);
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .about-hero-section {
+  background-color: #151D18;
+}
+
+.about-hero-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.about-hero-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 5vw, 3.85rem);
+  font-weight: 500;
+  line-height: 1.16;
+  color: var(--color-forest-dark);
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+}
+
+[data-theme="dark"] .about-hero-heading {
+  color: #F1F4EE;
+}
+
+.about-hero-desc {
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 1.25rem;
+}
+
+.about-hero-secondary {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.1rem, 1.3vw, 1.28rem);
+  color: var(--color-timber);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 2.25rem;
+}
+
+.about-hero-visual-wrapper {
+  position: relative;
+  max-width: 1240px;
+  margin: 3.5rem auto 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+}
+
+.about-hero-img {
+  width: 100%;
+  height: clamp(380px, 48vw, 620px);
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-hero-visual-wrapper:hover .about-hero-img {
+  transform: scale(1.02);
+}
+
+.about-hero-badge {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: rgba(24, 56, 44, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(233, 223, 201, 0.25);
+  color: var(--color-sand);
+  padding: 0.85rem 1.45rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-hero-badge i,
+.about-hero-badge svg {
+  color: var(--color-timber);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+[dir="rtl"] .about-hero-badge {
+  right: auto;
+  left: 2rem;
+}
+
+[data-theme="dark"] .about-hero-badge {
+  background-color: rgba(21, 29, 24, 0.92);
+  border-color: #425247;
+  color: #F1F4EE;
+}
+
+[data-theme="dark"] .about-hero-badge i,
+[data-theme="dark"] .about-hero-badge svg {
+  color: #C59A73;
+}
+
+/* ==========================================================================
+   3. SECTION 1 – OUR BRAND PHILOSOPHY (#our-approach)
+   ========================================================================== */
+.about-philosophy-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.about-philosophy-img-col {
+  position: relative;
+}
+
+.about-philosophy-img-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.about-philosophy-img {
+  width: 100%;
+  height: clamp(400px, 42vw, 560px);
+  object-fit: cover;
+  display: block;
+}
+
+.about-philosophy-tagline-card {
+  position: absolute;
+  bottom: -1.75rem;
+  left: 2rem;
+  background-color: var(--color-forest-dark);
+  color: #FFFFFF;
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-sm);
+  max-width: 320px;
+  box-shadow: var(--shadow-xl);
+  border-left: 3px solid var(--color-timber);
+}
+
+[dir="rtl"] .about-philosophy-tagline-card {
+  left: auto;
+  right: 2rem;
+  border-left: none;
+  border-right: 3px solid var(--color-timber);
+}
+
+.about-philosophy-tagline-card p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-sand);
+}
+
+[data-theme="dark"] .about-philosophy-tagline-card {
+  background-color: #243229;
+  border: 1px solid #425247;
+  border-left: 3px solid #C59A73;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+[dir="rtl"][data-theme="dark"] .about-philosophy-tagline-card {
+  border-left: 1px solid #425247;
+  border-right: 3px solid #C59A73;
+}
+
+[data-theme="dark"] .about-philosophy-tagline-card p {
+  color: #F1F4EE;
+}
+
+.about-philosophy-points {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+}
+
+.about-philosophy-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.about-philosophy-point-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(37, 75, 59, 0.08);
+  border: 1px solid rgba(37, 75, 59, 0.15);
+  color: var(--color-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+[data-theme="dark"] .about-philosophy-point-icon {
+  background-color: rgba(145, 181, 154, 0.12);
+  border-color: rgba(145, 181, 154, 0.25);
+  color: #91B59A;
+}
+
+.about-philosophy-point-icon svg,
+.about-philosophy-point-icon i {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.8;
+}
+
+.about-philosophy-point-title {
+  font-family: var(--font-heading);
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.about-philosophy-point-desc {
+  font-size: 0.925rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   4. SECTION 2 – THE WAY WE SEE OUTDOOR SPACES
+   ========================================================================== */
+.about-lifestyle-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--color-cream);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .about-lifestyle-section {
+  background-color: #121915;
+}
+
+.about-lifestyle-pano-wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.about-lifestyle-pano-img {
+  width: 100%;
+  height: clamp(340px, 36vw, 480px);
+  object-fit: cover;
+  display: block;
+}
+
+.about-lifestyle-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.about-insight-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 1.65rem;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.about-insight-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-sage);
+  box-shadow: var(--shadow-md);
+}
+
+.about-insight-number {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-timber);
+  margin-bottom: 0.85rem;
+}
+
+.about-insight-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.about-insight-desc {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   5. SECTION 3 – OUR DESIGN PRINCIPLES
+   ========================================================================== */
+.about-principles-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.85rem;
+}
+
+.about-principle-card {
+  background-color: var(--color-cream);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .about-principle-card {
+  background-color: #243229;
+}
+
+.about-principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-forest);
+}
+
+.about-principle-img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.about-principle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-principle-card:hover .about-principle-img {
+  transform: scale(1.05);
+}
+
+.about-principle-body {
+  padding: 1.85rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.about-principle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-timber);
+  margin-bottom: 0.65rem;
+}
+
+.about-principle-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.about-principle-desc {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   6. SECTION 4 – OUR CRAFTSMANSHIP APPROACH
+   ========================================================================== */
+.about-craftsmanship-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--color-sand);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .about-craftsmanship-section {
+  background-color: #18231c;
+}
+
+.about-craftsmanship-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.about-craftsmanship-img-col {
+  position: relative;
+}
+
+.about-craftsmanship-img-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+}
+
+.about-craftsmanship-img {
+  width: 100%;
+  height: clamp(380px, 40vw, 540px);
+  object-fit: cover;
+  display: block;
+}
+
+.about-craftsmanship-values-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.about-craftsmanship-val-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  transition: all var(--transition-fast);
+}
+
+.about-craftsmanship-val-card:hover {
+  border-color: var(--color-timber);
+  transform: translateY(-2px);
+}
+
+.about-craftsmanship-val-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(168, 117, 78, 0.12);
+  color: var(--color-timber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-craftsmanship-val-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ==========================================================================
+   7. SECTION 5 – FROM FIRST CONVERSATION TO A CLEAR PLAN
+   ========================================================================== */
+.about-planning-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-planning-visual {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 4rem;
+}
+
+.about-planning-img {
+  width: 100%;
+  height: clamp(320px, 32vw, 440px);
+  object-fit: cover;
+  display: block;
+}
+
+.about-timeline-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+/* Connector line on desktop */
+.about-timeline-steps::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 3rem;
+  right: 3rem;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--color-forest) 0, var(--color-forest) 6px, transparent 6px, transparent 12px);
+  z-index: 1;
+}
+
+[data-theme="dark"] .about-timeline-steps::before {
+  background: repeating-linear-gradient(90deg, #425247 0, #425247 6px, transparent 6px, transparent 12px);
+}
+
+.about-timeline-step-card {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-cream);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 1.65rem 1.85rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-normal);
+}
+
+[data-theme="dark"] .about-timeline-step-card {
+  background-color: #243229;
+}
+
+.about-timeline-step-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-forest);
+  box-shadow: var(--shadow-md);
+}
+
+.about-timeline-step-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-forest);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .about-timeline-step-badge {
+  background-color: #91B59A;
+  color: #121915;
+}
+
+.about-timeline-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+  line-height: 1.3;
+}
+
+.about-timeline-step-desc {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   8. SECTION 6 – THE DETAILS THAT SHAPE AN OUTDOOR ENVIRONMENT
+   ========================================================================== */
+.about-details-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--color-cream);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .about-details-section {
+  background-color: #121915;
+}
+
+.about-details-staggered-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.75rem;
+}
+
+.about-detail-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.about-detail-item:nth-child(1),
+.about-detail-item:nth-child(2) {
+  grid-column: span 6;
+  height: 380px;
+}
+
+.about-detail-item:nth-child(3),
+.about-detail-item:nth-child(4),
+.about-detail-item:nth-child(5) {
+  grid-column: span 4;
+  height: 320px;
+}
+
+.about-detail-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-detail-item:hover img {
+  transform: scale(1.06);
+}
+
+.about-detail-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(24, 56, 44, 0.05) 35%, rgba(24, 56, 44, 0.88) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.75rem;
+}
+
+.about-detail-overlay-content {
+  color: #FFFFFF;
+}
+
+.about-detail-index {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-sand);
+  margin-bottom: 0.35rem;
+}
+
+[data-theme="dark"] .about-detail-index {
+  color: #C59A73;
+}
+
+.about-detail-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   9. SECTION 7 – OUR COMMITMENT TO THE EXPERIENCE
+   ========================================================================== */
+.about-commitment-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-commitment-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.about-commitment-img-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+}
+
+.about-commitment-img {
+  width: 100%;
+  height: clamp(420px, 44vw, 580px);
+  object-fit: cover;
+  display: block;
+}
+
+.about-commitment-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.about-commitment-card {
+  background-color: var(--color-cream);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.85rem 1.45rem;
+  transition: all var(--transition-fast);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme="dark"] .about-commitment-card {
+  background-color: #243229;
+}
+
+.about-commitment-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-forest);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-commitment-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.about-commitment-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   10. SECTION 8 – FINAL ABOUT PAGE CTA
+   ========================================================================== */
+.about-final-cta-section {
+  position: relative;
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0;
+  background-color: var(--color-forest-dark);
+  color: #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-final-cta-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+  filter: brightness(0.7) contrast(1.1);
+  transform: scale(1.02);
+}
+
+.about-final-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-final-cta-eyebrow {
+  color: var(--color-sand);
+}
+
+[data-theme="dark"] .about-final-cta-eyebrow {
+  color: #C59A73;
+}
+
+.about-final-cta-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 1.35rem;
+}
+
+.about-final-cta-desc {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.75;
+  color: #D4DFD7;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+.about-final-cta-btn-primary {
+  background-color: var(--color-timber);
+  color: #FFFFFF;
+  border-color: var(--color-timber);
+}
+
+.about-final-cta-btn-primary:hover {
+  background-color: #8f603c;
+  border-color: #8f603c;
+  color: #FFFFFF;
+}
+
+.about-final-cta-btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+
+.about-final-cta-btn-secondary:hover {
+  background-color: #FFFFFF;
+  color: var(--color-forest-dark);
+  border-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   11. RESPONSIVE BREAKPOINTS (320px to 1920px)
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .about-philosophy-grid,
+  .about-craftsmanship-layout,
+  .about-commitment-layout {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-lifestyle-insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-timeline-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-timeline-steps::before {
+    display: none;
+  }
+
+  .about-detail-item:nth-child(1),
+  .about-detail-item:nth-child(2),
+  .about-detail-item:nth-child(3),
+  .about-detail-item:nth-child(4),
+  .about-detail-item:nth-child(5) {
+    grid-column: span 6;
+    height: 320px;
+  }
+
+  .about-detail-item:nth-child(5) {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding-top: calc(72px + 2rem);
+    padding-bottom: 4rem;
+  }
+
+  .about-philosophy-section,
+  .about-lifestyle-section,
+  .about-principles-section,
+  .about-craftsmanship-section,
+  .about-planning-section,
+  .about-details-section,
+  .about-commitment-section,
+  .about-final-cta-section {
+    padding: 4.5rem 0;
+  }
+
+  .about-philosophy-grid,
+  .about-craftsmanship-layout,
+  .about-commitment-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-craftsmanship-values-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-lifestyle-insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-timeline-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .about-commitment-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-detail-item:nth-child(1),
+  .about-detail-item:nth-child(2),
+  .about-detail-item:nth-child(3),
+  .about-detail-item:nth-child(4),
+  .about-detail-item:nth-child(5) {
+    grid-column: span 12;
+    height: 260px;
+  }
+
+  .about-hero-badge {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.78rem;
+  }
+
+  [dir="rtl"] .about-hero-badge {
+    left: 1rem;
+    right: auto;
+  }
+
+  .about-philosophy-tagline-card {
+    position: static;
+    margin-top: 1.25rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-heading {
+    font-size: clamp(1.3rem, 5.4vw, 1.6rem);
+    line-height: 1.25;
+  }
+
+  .about-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-btn-primary,
+  .about-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

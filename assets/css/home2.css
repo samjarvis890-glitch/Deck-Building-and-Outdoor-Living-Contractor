@@ -1,0 +1,943 @@
+/* ==========================================================================
+   EVERGREEN OUTDOOR LIVING - HOME 2 SPECIFIC STYLESHEET
+   Concept: Luxury Outdoor Lifestyle Editorial
+   Scoped classes with .home2- prefix for complete isolation
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SECTION 01: EDITORIAL SPLIT-SCREEN HERO
+   -------------------------------------------------------------------------- */
+.home2-hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: calc(var(--nav-height-desktop) + 3rem);
+  padding-bottom: 5.5rem;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home2-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1.15fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.home2-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.home2-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-timber);
+  margin-bottom: 1.25rem;
+}
+
+.home2-hero-eyebrow svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-timber);
+}
+
+.home2-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 4.2vw + 0.5rem, 4.15rem);
+  line-height: 1.14;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+}
+
+.home2-hero-desc {
+  font-size: clamp(1.05rem, 1.2vw + 0.2rem, 1.25rem);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 580px;
+}
+
+.home2-hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.home2-hero-footer-detail {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.home2-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-detail-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-forest);
+  line-height: 1.1;
+}
+
+.home2-detail-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+/* Hero Right Visual */
+.home2-hero-visual {
+  position: relative;
+}
+
+.home2-hero-image-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--border-color);
+}
+
+.home2-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home2-hero-visual:hover .home2-hero-image {
+  transform: scale(1.03);
+}
+
+.home2-hero-caption-card {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  max-width: 320px;
+  z-index: 3;
+}
+
+[dir="rtl"] .home2-hero-caption-card {
+  left: auto;
+  right: 2rem;
+}
+
+.home2-caption-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-timber);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.home2-caption-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02: OUTDOOR LIFESTYLE EXPERIENCES (3 Panels)
+   -------------------------------------------------------------------------- */
+.home2-experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.home2-experience-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.home2-experience-panel:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-forest);
+}
+
+.home2-experience-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.home2-experience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.home2-experience-panel:hover .home2-experience-img {
+  transform: scale(1.06);
+}
+
+.home2-experience-time-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(24, 56, 44, 0.88);
+  color: #F8F5ED;
+  backdrop-filter: blur(6px);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+}
+
+[dir="rtl"] .home2-experience-time-badge {
+  left: auto;
+  right: 1rem;
+}
+
+.home2-experience-body {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.home2-experience-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.85rem;
+  color: var(--text-primary);
+}
+
+.home2-experience-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03: PRIVATE GARDEN RETREAT (Editorial Asymmetric Layout)
+   -------------------------------------------------------------------------- */
+.home2-retreat-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.home2-retreat-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 11;
+  border: 1px solid var(--border-color);
+}
+
+.home2-retreat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.home2-retreat-frame:hover .home2-retreat-img {
+  transform: scale(1.03);
+}
+
+.home2-retreat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home2-retreat-points {
+  list-style: none;
+  padding: 0;
+  margin: 1.75rem 0 2.25rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.5rem;
+}
+
+.home2-retreat-point {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.home2-retreat-point-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background-color: rgba(130, 151, 123, 0.18);
+  color: var(--color-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home2-retreat-point-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04: OUTDOOR DINING EXPERIENCE
+   -------------------------------------------------------------------------- */
+.home2-dining-card-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-surface);
+}
+
+.home2-dining-banner-frame {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home2-dining-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s ease;
+}
+
+.home2-dining-card-wrap:hover .home2-dining-img {
+  transform: scale(1.03);
+}
+
+.home2-dining-body-split {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.home2-dining-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.home2-dining-pill {
+  padding: 1rem 1.25rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.home2-dining-pill svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-timber);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05: NATURAL MATERIALS AND DESIGN PALETTE
+   -------------------------------------------------------------------------- */
+.home2-materials-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.home2-materials-visual {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 11;
+  border: 1px solid var(--border-color);
+}
+
+.home2-materials-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.home2-materials-visual:hover .home2-materials-img {
+  transform: scale(1.03);
+}
+
+.home2-materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home2-material-card {
+  padding: 1.5rem 1.75rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: all var(--transition-fast);
+}
+
+.home2-material-card:hover {
+  border-color: var(--color-timber);
+  transform: translateX(6px);
+  box-shadow: var(--shadow-sm);
+}
+
+[dir="rtl"] .home2-material-card:hover {
+  transform: translateX(-6px);
+}
+
+.home2-material-swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: #FFFFFF;
+}
+
+.swatch-timber { background-color: var(--color-timber); }
+.swatch-stone { background-color: #70776F; }
+.swatch-greenery { background-color: var(--color-forest); }
+.swatch-finishes { background-color: #82977B; }
+
+.home2-material-info h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+  color: var(--text-primary);
+}
+
+.home2-material-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06: OUTDOOR LIVING THROUGH THE SEASONS
+   -------------------------------------------------------------------------- */
+.home2-seasons-banner {
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 3.5rem;
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+
+.home2-seasons-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.home2-seasons-banner:hover .home2-seasons-img {
+  transform: scale(1.02);
+}
+
+.home2-seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.home2-season-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.home2-season-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-forest);
+}
+
+.home2-season-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-pill);
+  background-color: rgba(37, 75, 59, 0.08);
+  color: var(--color-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+}
+
+.home2-season-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.home2-season-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.home2-season-desc {
+  font-size: 0.925rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07: OUTDOOR INSPIRATION JOURNAL (3 Articles)
+   -------------------------------------------------------------------------- */
+.home2-journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.home2-journal-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.home2-journal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-forest);
+}
+
+.home2-journal-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.home2-journal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.home2-journal-card:hover .home2-journal-img {
+  transform: scale(1.05);
+}
+
+.home2-journal-category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(24, 56, 44, 0.88);
+  color: #F8F5ED;
+  backdrop-filter: blur(4px);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+}
+
+[dir="rtl"] .home2-journal-category {
+  left: auto;
+  right: 1rem;
+}
+
+.home2-journal-body {
+  padding: 2rem 1.85rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.home2-journal-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.home2-journal-desc {
+  font-size: 0.925rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.home2-journal-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+  transition: all var(--transition-fast);
+}
+
+.home2-journal-link svg {
+  width: 15px;
+  height: 15px;
+  transition: transform var(--transition-fast);
+}
+
+.home2-journal-link:hover {
+  color: var(--color-timber);
+}
+
+.home2-journal-link:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .home2-journal-link:hover svg {
+  transform: translateX(-4px);
+}
+
+.home2-journal-cta-wrap {
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 08: FINAL CONSULTATION CTA
+   -------------------------------------------------------------------------- */
+.home2-final-cta {
+  position: relative;
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0;
+  background-color: var(--color-forest-dark);
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.home2-final-bg-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home2-final-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home2-final-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(24, 56, 44, 0.9) 0%,
+    rgba(24, 56, 44, 0.78) 50%,
+    rgba(24, 56, 44, 0.92) 100%
+  );
+  z-index: 2;
+}
+
+.home2-final-content {
+  position: relative;
+  z-index: 3;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home2-final-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-sand);
+  margin-bottom: 1.25rem;
+}
+
+.home2-final-title {
+  color: #FFFFFF;
+  margin-bottom: 1.35rem;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.home2-final-lead {
+  font-size: clamp(1.05rem, 1.2vw + 0.4rem, 1.25rem);
+  line-height: 1.75;
+  color: var(--color-cream);
+  margin: 0 auto 2.75rem auto;
+  max-width: 720px;
+}
+
+[data-theme="dark"] .home2-final-eyebrow {
+  color: #C59A73;
+}
+
+[data-theme="dark"] .home2-final-lead {
+  color: #D4DFD7;
+}
+
+.home2-final-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   DARK MODE ADAPTATIONS FOR HOME 2
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .home2-hero {
+  background-color: var(--bg-primary);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .home2-hero-caption-card,
+[data-theme="dark"] .home2-experience-panel,
+[data-theme="dark"] .home2-dining-card-wrap,
+[data-theme="dark"] .home2-material-card,
+[data-theme="dark"] .home2-season-card,
+[data-theme="dark"] .home2-journal-card {
+  background-color: #243229;
+  border-color: #425247;
+}
+
+[data-theme="dark"] .home2-hero-caption-card:hover,
+[data-theme="dark"] .home2-experience-panel:hover,
+[data-theme="dark"] .home2-season-card:hover,
+[data-theme="dark"] .home2-journal-card:hover {
+  background-color: #2b3b31;
+  border-color: #91B59A;
+}
+
+[data-theme="dark"] .home2-dining-pill {
+  background-color: #1D2921;
+  border-color: #425247;
+}
+
+[data-theme="dark"] .home2-season-icon {
+  background-color: rgba(145, 181, 154, 0.12);
+  color: #91B59A;
+}
+
+[data-theme="dark"] .home2-retreat-point-icon {
+  background-color: rgba(145, 181, 154, 0.15);
+  color: #91B59A;
+}
+
+[data-theme="dark"] .home2-journal-link {
+  color: #91B59A;
+}
+
+[data-theme="dark"] .home2-journal-link:hover {
+  color: #C59A73;
+}
+
+[data-theme="dark"] .home2-detail-num {
+  color: #91B59A;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN (320px - 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .home2-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .home2-experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home2-experiences-grid .home2-experience-panel:last-child {
+    grid-column: span 2;
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .home2-retreat-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .home2-dining-body-split {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.25rem;
+  }
+
+  .home2-materials-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .home2-seasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home2-journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home2-journal-grid .home2-journal-card:last-child {
+    grid-column: span 2;
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home2-hero {
+    padding-top: calc(var(--nav-height-mobile) + 2.5rem);
+    padding-bottom: 4rem;
+  }
+
+  .home2-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .home2-hero-desc {
+    font-size: 1rem;
+  }
+
+  .home2-hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home2-hero-cta-group .btn-brand {
+    width: 100%;
+  }
+
+  .home2-hero-caption-card {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .home2-experiences-grid,
+  .home2-seasons-grid,
+  .home2-journal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home2-experiences-grid .home2-experience-panel:last-child,
+  .home2-journal-grid .home2-journal-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .home2-retreat-points {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home2-dining-body-split {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .home2-dining-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .home2-seasons-banner {
+    height: 240px;
+    margin-bottom: 2rem;
+  }
+
+  .home2-final-cta {
+    padding: 5rem 0;
+  }
+
+  .home2-final-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home2-final-buttons .btn-brand {
+    width: 100%;
+  }
+}

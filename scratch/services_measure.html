@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor Living Services | Decks, Pergolas &amp; Patios | Evergreen Outdoor Living</title>
+  <meta name="description" content="Explore Evergreen Outdoor Living services, including custom deck construction, pergolas, covered outdoor living, patio and entertainment spaces, and deck renovation.">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:title" content="Outdoor Living Services | Evergreen Outdoor Living">
+  <meta property="og:description" content="Explore bespoke outdoor solutions designed around your home, including custom timber decks, architectural pergolas, covered living, and complete deck renovations.">
+  <meta property="og:image" content="assets/images/services/services-hero.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (Consistent with Home 1) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Local Vendor Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/tailwind/tailwind.css">
+
+  <!-- Core Theme & Layout Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Services Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/services.css">
+
+  <!-- Anti-Flash Theme & Direction Initializer -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('eol_theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+        const savedDir = localStorage.getItem('eol_dir');
+        if (savedDir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="services-page-wrapper">
+
+  <!-- ======================================================================
+       GLOBAL STICKY NAVBAR (Identical structure to Home 1, Services active)
+       ====================================================================== -->
+  <header class="site-header is-scrolled" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-dark">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-white">
+      </a>
+
+      <!-- Desktop Navigation Menu (1281px+) -->
+      <nav class="navbar-desktop-nav" aria-label="Main Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-item-wrapper">
+          <a href="index.html" class="nav-link-item" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="dropdown-caret"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="index.html" class="dropdown-link-item"><i data-lucide="home"></i> Home 1 (Main)</a></li>
+            <li><a href="home-2.html" class="dropdown-link-item"><i data-lucide="layers"></i> Home 2 (Architectural)</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="nav-item-wrapper">
+          <a href="about.html" class="nav-link-item">About</a>
+        </div>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <div class="nav-item-wrapper">
+          <a href="services.html" class="nav-link-item active">Services</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="nav-item-wrapper">
+          <a href="gallery.html" class="nav-link-item">Gallery</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="nav-item-wrapper">
+          <a href="projects.html" class="nav-link-item">Projects</a>
+        </div>
+
+        <!-- Blog -->
+        <div class="nav-item-wrapper">
+          <a href="blog.html" class="nav-link-item">Blog</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="nav-item-wrapper">
+          <a href="faq.html" class="nav-link-item">FAQ</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-item-wrapper">
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Navbar Action Controls (Right) -->
+      <div class="navbar-actions">
+        <!-- 1. LTR / RTL Direction Toggle Icon -->
+        <button type="button" class="nav-icon-btn dir-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="dir-badge-text font-bold text-xs" style="font-size: 0.75rem; font-weight: 700;">LTR</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Icon -->
+        <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+        </button>
+
+        <!-- 3. Desktop BOOK A CONSULTATION CTA Button -->
+        <a href="contact.html#consultation" class="nav-cta-btn nav-cta-desktop">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button (Visible below 1281px on Mobile & Tablet) -->
+        <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET SLIDING NAVIGATION DRAWER (Full website navigation)
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-dark" style="height: 34px;">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-white" style="height: 34px;">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (All Navigation Items Accessible) -->
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Accordion -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" data-target="drawerSubHome" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <ul class="drawer-submenu" id="drawerSubHome">
+            <li><a href="index.html" class="drawer-sublink">Home 1 (Main Homepage)</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 (Architectural Showcase)</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link active">Services</a>
+        </li>
+
+        <!-- Categories -->
+        <li class="drawer-nav-item">
+          <a href="services.html#categories" class="drawer-link">Categories</a>
+        </li>
+
+        <!-- Brands -->
+        <li class="drawer-nav-item">
+          <a href="services.html#brands" class="drawer-link">Brands</a>
+        </li>
+
+        <!-- Deals -->
+        <li class="drawer-nav-item">
+          <a href="services.html#deals" class="drawer-link">Deals</a>
+        </li>
+
+        <!-- Accessories -->
+        <li class="drawer-nav-item">
+          <a href="services.html#accessories" class="drawer-link">Accessories</a>
+        </li>
+
+        <!-- Gallery -->
+        <li class="drawer-nav-item">
+          <a href="gallery.html" class="drawer-link">Gallery</a>
+        </li>
+
+        <!-- Projects -->
+        <li class="drawer-nav-item">
+          <a href="projects.html" class="drawer-link">Projects</a>
+        </li>
+
+        <!-- Blog -->
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-link">Blog</a>
+        </li>
+
+        <!-- FAQ -->
+        <li class="drawer-nav-item">
+          <a href="faq.html" class="drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer (Controls & Consultation Button) -->
+    <div class="drawer-footer">
+      <div class="drawer-quick-controls">
+        <!-- Dark Mode Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <!-- Direction Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill dir-toggle-btn" aria-label="Toggle LTR / RTL Direction">
+          <i data-lucide="languages"></i>
+          <span class="dir-label-text">RTL Mode</span>
+        </button>
+      </div>
+
+      <!-- Client Login & Consultation CTA Inside Mobile Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <a href="contact.html#consultation" class="drawer-cta-btn">
+          <span>Book a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html#login" class="drawer-control-pill" style="padding: 0.75rem; justify-content: center; font-weight: 600;">
+          <i data-lucide="lock"></i>
+          <span>Client Login</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN SERVICES CONTENT (Exactly 8 Unique Sections)
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ------------------------------------------------------------------
+         SECTION 0: UNIQUE ARCHITECTURAL SERVICE SHOWCASE HERO
+         ------------------------------------------------------------------ -->
+    <section class="services-hero-section" aria-label="Services Introduction Hero">
+      <div class="services-container">
+        <div class="services-hero-grid">
+
+          <!-- Left: Service Introduction Panel -->
+          <div class="services-hero-content">
+            <div class="services-hero-eyebrow">
+              <i data-lucide="compass" style="width: 15px; height: 15px;"></i>
+              <span>EXPLORE OUR SERVICES</span>
+            </div>
+
+            <h1 class="services-hero-title">
+              THE RIGHT OUTDOOR SOLUTION STARTS HERE.
+            </h1>
+
+            <p class="services-hero-desc">
+              Every outdoor space has different possibilities. Whether you are imagining a new timber deck, a beautiful pergola, a sheltered outdoor area, or a refreshed existing deck, explore solutions designed around your home, your space, and the way you want to live outdoors.
+            </p>
+
+            <p class="services-hero-supporting">
+              Discover the possibilities. Find the right direction for your space.
+            </p>
+
+            <!-- Quick Service Index Jumper -->
+            <div class="services-hero-index" aria-label="Quick Service Jump Links">
+              <a href="#custom-deck-construction" class="services-index-pill">
+                <span>01</span> Decks
+              </a>
+              <a href="#pergola-construction" class="services-index-pill">
+                <span>02</span> Pergolas
+              </a>
+              <a href="#covered-outdoor-living" class="services-index-pill">
+                <span>03</span> Covered Spaces
+              </a>
+              <a href="#patio-entertainment-spaces" class="services-index-pill">
+                <span>04</span> Patios
+              </a>
+              <a href="#deck-renovation" class="services-index-pill">
+                <span>05</span> Renovation
+              </a>
+            </div>
+
+            <!-- Hero Action Buttons -->
+            <div class="services-hero-ctas">
+              <a href="#service-overview" class="btn-service-primary">
+                <span>EXPLORE OUR SERVICES</span>
+                <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+              </a>
+              <a href="contact.html#consultation" class="btn-service-secondary">
+                <span>DISCUSS YOUR PROJECT</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Architectural Image Showcase -->
+          <div class="services-hero-visual">
+            <div class="services-hero-img-wrap">
+              <img src="assets/images/services/services-hero.webp" alt="Architectural Timber Deck and Pergola Showcase" class="services-hero-img" width="1600" height="900" loading="eager">
+              <div class="services-hero-badge">
+                <div class="services-hero-badge-num">05</div>
+                <div class="services-hero-badge-text">Tailored Service Disciplines Engineered for Timeless Outdoor Living</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 1: SERVICE OVERVIEW (3 + 2 Grid Layout)
+         ------------------------------------------------------------------ -->
+    <section class="services-section services-section-alt" id="service-overview" aria-labelledby="headingServiceOverview">
+      <div class="services-container">
+
+        <!-- Centred Section Header -->
+        <div class="services-section-header">
+          <span class="services-eyebrow">
+            <i data-lucide="layout-grid" style="width: 14px; height: 14px;"></i>
+            <span>WHAT WE CAN CREATE</span>
+          </span>
+          <h2 class="services-title" id="headingServiceOverview">Outdoor Spaces, With More Possibilities.</h2>
+          <p class="services-description">
+            The right outdoor feature can help you make better use of your available space. Explore our core service areas and discover possibilities for transforming the way you enjoy your outdoor environment.
+          </p>
+        </div>
+
+        <!-- Row 1: 3 Core Cards -->
+        <div class="services-overview-grid">
+
+          <!-- Card 01: Custom Deck Construction -->
+          <article class="service-overview-card">
+            <div class="service-card-media">
+              <img src="assets/images/services/service-overview-deck.webp" alt="Custom Deck Construction Overview" class="service-card-img" width="800" height="600" loading="lazy">
+              <span class="service-card-number-badge">01 / DECKS</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">01 – Custom Deck Construction</h3>
+              <p class="service-card-desc">
+                Create a comfortable and inviting outdoor foundation with a deck designed around your home and available space.
+              </p>
+              <a href="#custom-deck-construction" class="service-card-cta">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 02: Pergola Construction -->
+          <article class="service-overview-card">
+            <div class="service-card-media">
+              <img src="assets/images/services/service-overview-pergola.webp" alt="Pergola Construction Overview" class="service-card-img" width="800" height="600" loading="lazy">
+              <span class="service-card-number-badge">02 / PERGOLAS</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">02 – Pergola Construction</h3>
+              <p class="service-card-desc">
+                Explore overhead structures that can give outdoor areas a more defined and welcoming character.
+              </p>
+              <a href="#pergola-construction" class="service-card-cta">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 03: Covered Outdoor Living -->
+          <article class="service-overview-card">
+            <div class="service-card-media">
+              <img src="assets/images/services/service-overview-covered.webp" alt="Covered Outdoor Living Overview" class="service-card-img" width="800" height="600" loading="lazy">
+              <span class="service-card-number-badge">03 / COVERED</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">03 – Covered Outdoor Living</h3>
+              <p class="service-card-desc">
+                Consider sheltered outdoor environments that provide a more defined space for relaxing and gathering.
+              </p>
+              <a href="#covered-outdoor-living" class="service-card-cta">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Row 2: 2 Cards (Centered on Desktop) -->
+        <div class="services-overview-row-bottom">
+
+          <!-- Card 04: Patio & Entertainment Spaces -->
+          <article class="service-overview-card">
+            <div class="service-card-media">
+              <img src="assets/images/services/service-overview-patio.webp" alt="Patio and Entertainment Spaces Overview" class="service-card-img" width="800" height="600" loading="lazy">
+              <span class="service-card-number-badge">04 / PATIOS</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">04 – Patio &amp; Entertainment Spaces</h3>
+              <p class="service-card-desc">
+                Explore outdoor settings that bring seating, dining, and entertainment together.
+              </p>
+              <a href="#patio-entertainment-spaces" class="service-card-cta">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 05: Deck Renovation -->
+          <article class="service-overview-card">
+            <div class="service-card-media">
+              <img src="assets/images/services/service-overview-renovation.webp" alt="Deck Renovation Overview" class="service-card-img" width="800" height="600" loading="lazy">
+              <span class="service-card-number-badge">05 / RENOVATION</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">05 – Deck Renovation</h3>
+              <p class="service-card-desc">
+                Refresh an existing deck with a considered approach to appearance, materials, and usability.
+              </p>
+              <a href="#deck-renovation" class="service-card-cta">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 2: CUSTOM DECK CONSTRUCTION (Main + Detail Stack)
+         ------------------------------------------------------------------ -->
+    <section class="services-section" id="custom-deck-construction" aria-labelledby="headingCustomDecks">
+      <div class="services-container">
+        <div class="service-deck-grid">
+
+          <!-- Left: Main Image + Floating Detail Composition -->
+          <div class="service-deck-visual-stack">
+            <div class="service-deck-main-img-wrap">
+              <img src="assets/images/services/service-deck-construction.webp" alt="Custom Deck Construction Architectural Framing" class="service-deck-main-img" width="1400" height="900" loading="lazy">
+            </div>
+            <div class="service-deck-detail-floating">
+              <img src="assets/images/services/service-deck-detail.webp" alt="Precision Hardwood Decking Joinery Detail" class="service-deck-detail-img" width="700" height="500" loading="lazy">
+              <div class="service-deck-detail-label">
+                <i data-lucide="check-circle-2" style="width: 14px; height: 14px; color: var(--color-forest);"></i>
+                <span>Concealed Joinery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Service Details & Features -->
+          <div class="service-deck-content">
+            <span class="services-eyebrow">
+              <i data-lucide="hammer" style="width: 14px; height: 14px;"></i>
+              <span>SERVICE 01 / CUSTOM DECKS</span>
+            </span>
+
+            <h2 class="services-title" id="headingCustomDecks" style="text-align: inherit; margin-bottom: 1.25rem;">
+              Create a Foundation for Outdoor Living.
+            </h2>
+
+            <p class="services-description" style="text-align: inherit; margin-bottom: 1.5rem;">
+              A well-considered deck can create a natural connection between your home and the outdoors. From a quiet place to relax to an area for spending time with guests, deck design should reflect the space available and the way you want to use it.
+            </p>
+
+            <!-- Feature Highlights List -->
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Deck layouts that suit the available area.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Natural timber appearance and material options.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Thoughtful transitions between indoor and outdoor areas.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Space for outdoor furniture and seating.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Considered edges, steps, and finishing details.</span>
+              </li>
+            </ul>
+
+            <!-- Material Spec Strip (incorporating service-material-detail.webp) -->
+            <div class="service-spec-strip">
+              <img src="assets/images/services/service-material-detail.webp" alt="Timber Material Board Sample" class="service-spec-thumb" width="800" height="600" loading="lazy">
+              <div class="service-spec-info">
+                <span class="service-spec-title">Material Specification</span>
+                <span class="service-spec-sub">Premium grade natural hardwoods and performance composite choices.</span>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div>
+              <a href="contact.html#consultation" class="btn-service-primary">
+                <span>DISCUSS YOUR DECK PROJECT</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 3: PERGOLA CONSTRUCTION (Asymmetrical Showcase)
+         ------------------------------------------------------------------ -->
+    <section class="services-section services-section-alt" id="pergola-construction" aria-labelledby="headingPergolas">
+      <div class="services-container">
+
+        <div class="service-pergola-showcase">
+          <img src="assets/images/services/service-pergola-construction.webp" alt="Architectural Cedar Pergola Construction" class="service-pergola-bg-img" width="1600" height="850" loading="lazy">
+          <div class="service-pergola-overlay"></div>
+
+          <div class="service-pergola-card-content">
+            <span class="services-eyebrow">
+              <i data-lucide="trees" style="width: 14px; height: 14px;"></i>
+              <span>SERVICE 02 / PERGOLAS</span>
+            </span>
+
+            <h2 class="services-title" id="headingPergolas" style="text-align: inherit; margin-bottom: 1.25rem;">
+              Give Your Outdoor Space a Sense of Structure.
+            </h2>
+
+            <p class="service-card-desc" style="font-size: 1.0625rem; line-height: 1.75; margin-bottom: 1.75rem;">
+              A pergola can introduce an architectural feature to an outdoor environment while helping define a dedicated place for seating, dining, or relaxing. Consider the proportions, materials, and relationship between the structure and your home.
+            </p>
+
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Attached or freestanding design possibilities.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Timber or complementary structural finishes.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Open-air architectural character.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Integration with outdoor seating areas.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Considered proportions and placement.</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html#consultation" class="btn-cta-consult" style="border-radius: var(--radius-sm); font-size: 0.875rem;">
+                <span>EXPLORE PERGOLA POSSIBILITIES</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 4: COVERED OUTDOOR LIVING (Image-Led with Feature Badge Array)
+         ------------------------------------------------------------------ -->
+    <section class="services-section" id="covered-outdoor-living" aria-labelledby="headingCoveredLiving">
+      <div class="services-container">
+
+        <!-- Centred Section Header -->
+        <div class="services-section-header">
+          <span class="services-eyebrow">
+            <i data-lucide="umbrella" style="width: 14px; height: 14px;"></i>
+            <span>SERVICE 03 / COVERED OUTDOOR AREAS</span>
+          </span>
+          <h2 class="services-title" id="headingCoveredLiving">Enjoy an Outdoor Space With a Little More Shelter.</h2>
+          <p class="services-description">
+            A covered outdoor area can create a more defined environment for relaxing, dining, and spending time outside. Explore designs that bring together roof structures, practical layouts, comfortable furnishings, and the character of your home.
+          </p>
+        </div>
+
+        <!-- Wide Image Showcase with Feature Badges Overlay -->
+        <div class="service-covered-wrap">
+          <div class="service-covered-img-banner">
+            <img src="assets/images/services/service-covered-outdoor.webp" alt="Covered Outdoor Living Pavilion Architecture" class="service-covered-img" width="1400" height="850" loading="lazy">
+            <div class="service-covered-chips-bar">
+              <span class="service-covered-chip">
+                <i data-lucide="home" style="width: 16px; height: 16px;"></i>
+                <span>Architectural Roof Lines</span>
+              </span>
+              <span class="service-covered-chip">
+                <i data-lucide="sun" style="width: 16px; height: 16px;"></i>
+                <span>All-Weather Shelter</span>
+              </span>
+              <span class="service-covered-chip">
+                <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+                <span>Integrated Lighting</span>
+              </span>
+              <span class="service-covered-chip">
+                <i data-lucide="shield" style="width: 16px; height: 16px;"></i>
+                <span>Engineered Joinery</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-covered-body">
+            <div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.85rem;">
+                Crafted for Year-Round Comfort &amp; Gatherings
+              </h3>
+              <p style="font-size: 1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                Sheltered spaces bridge the transition from indoor living to the garden breeze. Our designs respect sightlines, natural lighting, and architectural continuity.
+              </p>
+            </div>
+            <div>
+              <ul class="service-features-list" style="margin: 0;">
+                <li class="service-feature-item">
+                  <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                  <span>Defined outdoor living areas.</span>
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                  <span>Covered seating and dining arrangements.</span>
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                  <span>Integration with existing outdoor spaces.</span>
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                  <span>Considered material and finish choices.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-cta-group-centred">
+          <a href="contact.html#consultation" class="btn-service-primary">
+            <span>PLAN A COVERED SPACE</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 5: PATIO & ENTERTAINMENT SPACES (3-Image Editorial)
+         ------------------------------------------------------------------ -->
+    <section class="services-section services-section-alt" id="patio-entertainment-spaces" aria-labelledby="headingPatio">
+      <div class="services-container">
+
+        <div class="service-patio-grid">
+
+          <!-- Left: 3-Image Editorial Stack -->
+          <div class="service-patio-gallery-stack">
+            <div class="service-patio-gallery-main">
+              <img src="assets/images/services/service-patio-design.webp" alt="Bluestone Terrace Patio and Lounge" width="1000" height="700" loading="lazy">
+            </div>
+            <div class="service-patio-gallery-sub">
+              <img src="assets/images/services/service-entertainment-area.webp" alt="Outdoor Entertainment Bar and Counter" width="800" height="600" loading="lazy">
+            </div>
+            <div class="service-patio-gallery-sub">
+              <img src="assets/images/services/service-outdoor-dining.webp" alt="Alfresco Dining Table Setting" width="800" height="600" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right: Details & Features -->
+          <div class="service-patio-content">
+            <span class="services-eyebrow">
+              <i data-lucide="coffee" style="width: 14px; height: 14px;"></i>
+              <span>SERVICE 04 / PATIOS &amp; ENTERTAINMENT</span>
+            </span>
+
+            <h2 class="services-title" id="headingPatio" style="text-align: inherit; margin-bottom: 1.25rem;">
+              Make Room for More Time Together.
+            </h2>
+
+            <p class="services-description" style="text-align: inherit; margin-bottom: 1.5rem;">
+              Create an outdoor setting that feels welcoming for everyday meals, relaxed conversations, and special gatherings. A thoughtfully arranged patio and entertainment area can bring different outdoor activities together in one comfortable environment.
+            </p>
+
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Outdoor dining arrangements.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Comfortable seating areas.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Space for social gatherings.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Connected deck and patio zones.</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Outdoor furniture and layout planning.</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html#consultation" class="btn-service-primary">
+                <span>EXPLORE ENTERTAINMENT DESIGNS</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 6: DECK RENOVATION (Visual Comparison Concept Cards)
+         ------------------------------------------------------------------ -->
+    <section class="services-section" id="deck-renovation" aria-labelledby="headingRenovation">
+      <div class="services-container">
+
+        <!-- Centred Section Header -->
+        <div class="services-section-header">
+          <span class="services-eyebrow">
+            <i data-lucide="wrench" style="width: 14px; height: 14px;"></i>
+            <span>SERVICE 05 / DECK RENOVATION</span>
+          </span>
+          <h2 class="services-title" id="headingRenovation">Give an Existing Deck a Fresh Direction.</h2>
+          <p class="services-description">
+            An existing deck may offer opportunities for a new look, improved usability, or a more cohesive relationship with the surrounding outdoor space. A renovation discussion begins by understanding the current condition and what you would like to change.
+          </p>
+        </div>
+
+        <div class="service-renovation-comparison-wrap">
+          <!-- Side-by-Side Illustrative Concept Cards -->
+          <div class="service-comparison-cards">
+
+            <!-- Card 1: Existing Condition Concept -->
+            <div class="service-comparison-card">
+              <div class="service-comparison-media">
+                <img src="assets/images/services/service-renovation-existing.webp" alt="Existing Deck Condition Concept" class="service-comparison-img" width="900" height="650" loading="lazy">
+                <span class="service-comparison-tag service-tag-existing">Existing Concept</span>
+              </div>
+              <div class="service-comparison-body">
+                <h3 class="service-comparison-title">Initial Structural Assessment</h3>
+                <p class="service-comparison-desc">
+                  Review the existing deck substructure, surface wear, weathering, and perimeter railings to evaluate renovation feasibility.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2: Refreshed Design Concept -->
+            <div class="service-comparison-card">
+              <div class="service-comparison-media">
+                <img src="assets/images/services/service-renovation-refresh.webp" alt="Refreshed Deck Transformation Concept" class="service-comparison-img" width="900" height="650" loading="lazy">
+                <span class="service-comparison-tag service-tag-refreshed">Refreshed Concept</span>
+              </div>
+              <div class="service-comparison-body">
+                <h3 class="service-comparison-title">Refined Modern Direction</h3>
+                <p class="service-comparison-desc">
+                  Upgrade with modern timber boards, contemporary cable balustrades, integrated step illumination, and seamless finishes.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Feature Highlights of Renovation Approach -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2rem 2.5rem; margin-top: 1.5rem;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; text-align: center;">
+              Our Thoughtful Renovation Principles
+            </h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+              <div class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Review the existing deck and its condition.</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Explore appearance and material updates.</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Consider layout and usability improvements.</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Refresh selected details and finishes.</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="service-feature-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+                <span>Discuss suitable renovation possibilities.</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="service-comparison-notice">
+            * Illustrative design examples representing potential architectural transformations. Individual project feasibility depends on existing site and substructure conditions.
+          </p>
+
+          <div class="services-cta-group-centred">
+            <a href="contact.html#consultation" class="btn-service-primary">
+              <span>DISCUSS A DECK REFRESH</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 7: FIND THE RIGHT SERVICE FOR YOUR SPACE (Pathways)
+         ------------------------------------------------------------------ -->
+    <section class="services-section services-section-alt" id="choose-your-direction" aria-labelledby="headingPathways">
+      <div class="services-container">
+
+        <!-- Centred Section Header -->
+        <div class="services-section-header">
+          <span class="services-eyebrow">
+            <i data-lucide="git-branch" style="width: 14px; height: 14px;"></i>
+            <span>CHOOSE YOUR DIRECTION</span>
+          </span>
+          <h2 class="services-title" id="headingPathways">Start With the Space You Want to Improve.</h2>
+          <p class="services-description">
+            Not every outdoor project starts with a clear design. Sometimes you know what you want to change, but need help understanding which solution may suit your space. Use these starting points to explore your options.
+          </p>
+        </div>
+
+        <div class="service-pathways-grid">
+
+          <!-- 4 Interactive-Looking Choice Pathways -->
+          <div class="service-pathway-cards-stack">
+
+            <!-- Pathway 1 -->
+            <a href="#custom-deck-construction" class="service-pathway-card">
+              <div class="service-pathway-icon-wrap">
+                <i data-lucide="maximize" style="width: 22px; height: 22px;"></i>
+              </div>
+              <div class="service-pathway-content">
+                <h3 class="service-pathway-title">I Want More Outdoor Space</h3>
+                <p class="service-pathway-desc">
+                  Explore custom deck construction and ways to make better use of your outdoor area.
+                </p>
+                <span class="service-pathway-rec">
+                  <span>Suggested: Custom Deck Construction</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </span>
+              </div>
+            </a>
+
+            <!-- Pathway 2 -->
+            <a href="#pergola-construction" class="service-pathway-card">
+              <div class="service-pathway-icon-wrap">
+                <i data-lucide="trees" style="width: 22px; height: 22px;"></i>
+              </div>
+              <div class="service-pathway-content">
+                <h3 class="service-pathway-title">I Want a Defined Outdoor Area</h3>
+                <p class="service-pathway-desc">
+                  Explore pergolas and covered outdoor living possibilities.
+                </p>
+                <span class="service-pathway-rec">
+                  <span>Suggested: Pergola &amp; Covered Living</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </span>
+              </div>
+            </a>
+
+            <!-- Pathway 3 -->
+            <a href="#patio-entertainment-spaces" class="service-pathway-card">
+              <div class="service-pathway-icon-wrap">
+                <i data-lucide="users" style="width: 22px; height: 22px;"></i>
+              </div>
+              <div class="service-pathway-content">
+                <h3 class="service-pathway-title">I Want a Place to Gather</h3>
+                <p class="service-pathway-desc">
+                  Explore patio layouts, outdoor seating, and entertainment spaces.
+                </p>
+                <span class="service-pathway-rec">
+                  <span>Suggested: Patio &amp; Entertainment Spaces</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </span>
+              </div>
+            </a>
+
+            <!-- Pathway 4 -->
+            <a href="#deck-renovation" class="service-pathway-card">
+              <div class="service-pathway-icon-wrap">
+                <i data-lucide="refresh-cw" style="width: 22px; height: 22px;"></i>
+              </div>
+              <div class="service-pathway-content">
+                <h3 class="service-pathway-title">I Want to Improve What I Already Have</h3>
+                <p class="service-pathway-desc">
+                  Explore renovation possibilities for an existing deck.
+                </p>
+                <span class="service-pathway-rec">
+                  <span>Suggested: Deck Renovation</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Supporting Aerial Perspective Photograph -->
+          <div class="service-pathway-visual">
+            <img src="assets/images/services/service-choose-space.webp" alt="Holistic Landscape and Deck Spatial Organization" class="service-pathway-visual-img" width="1200" height="800" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 8: FINAL SERVICE ENQUIRY CTA
+         ------------------------------------------------------------------ -->
+    <section class="services-final-cta-section" id="service-enquiry-cta" aria-labelledby="headingFinalCTA">
+      <img src="assets/images/services/services-final-cta.webp" alt="Illuminated Evening Outdoor Living Retreat" class="services-final-cta-bg-img" width="1600" height="750" loading="lazy">
+
+      <div class="services-container">
+        <div class="services-final-cta-container">
+
+          <span class="services-eyebrow">
+            <i data-lucide="message-square" style="width: 14px; height: 14px;"></i>
+            <span>YOUR PROJECT STARTS WITH A CONVERSATION</span>
+          </span>
+
+          <h2 class="services-final-cta-title" id="headingFinalCTA">
+            Let's Find the Right Possibilities for Your Outdoor Space.
+          </h2>
+
+          <p class="services-final-cta-desc">
+            Have an idea for a new deck, pergola, covered outdoor area, patio, or renovation? Tell us a little about your space and what you would like to create. Start a conversation about the next steps.
+          </p>
+
+          <div class="services-final-cta-buttons">
+            <a href="contact.html#consultation" class="btn-cta-consult">
+              <span>BOOK A CONSULTATION</span>
+              <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="projects.html" class="btn-cta-projects">
+              <span>VIEW OUR PROJECTS</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       GLOBAL FOOTER (Exact same structure & controls as Home 1 & About)
+       ====================================================================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+            <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="footer-brand-logo">
+          </a>
+          <div class="footer-brand-tagline">CRAFTED OUTDOOR SPACES. MADE FOR LIVING.</div>
+          <p class="footer-brand-desc">
+            Bespoke outdoor architecture, custom deck construction and refined pergola environments built to harmonize with nature and elevate your lifestyle.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#deck-construction" class="footer-link">Custom Decks</a></li>
+            <li><a href="services.html#pergola-construction" class="footer-link">Pergolas</a></li>
+            <li><a href="services.html#covered-outdoor-living" class="footer-link">Covered Outdoor Living</a></li>
+            <li><a href="services.html#patio-spaces" class="footer-link">Patio Spaces</a></li>
+            <li><a href="services.html#outdoor-entertainment" class="footer-link">Outdoor Entertainment</a></li>
+            <li><a href="services.html#deck-renovation" class="footer-link">Deck Renovation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Explore (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html" class="footer-link">Home 2</a></li>
+            <li><a href="gallery.html#decks" class="footer-link">Deck Design Ideas</a></li>
+            <li><a href="gallery.html#pergolas" class="footer-link">Pergola Inspiration</a></li>
+            <li><a href="gallery.html#living" class="footer-link">Outdoor Living Ideas</a></li>
+            <li><a href="projects.html" class="footer-link">Project Gallery</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Customer Support (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html#consultation" class="footer-link">Book a Consultation</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Project Enquiry</a></li>
+            <li><a href="faq.html#planning" class="footer-link">Planning Your Project</a></li>
+            <li><a href="faq.html" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 6: Newsletter -->
+        <div class="footer-col-newsletter">
+          <div class="footer-newsletter-box">
+            <h4 class="footer-newsletter-title">GET OUTDOOR INSPIRATION.</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to receive seasonal design inspiration, materials guides and craftsmanship insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address for newsletter" required>
+              </div>
+              <button type="submit" class="newsletter-submit-btn">
+                <span>Subscribe</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Column 7: Follow Us -->
+        <div class="footer-col-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="10" x2="12" y2="21"/>
+                  <path d="M8 12.5a4 4 0 1 1 8 0c0 3-1.8 5-4.2 5a3.5 3.5 0 0 1-2.8-1.5"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <polygon points="10 15 15 12 10 9" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Evergreen Outdoor Living. All Rights Reserved.
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-legal-link">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+        </ul>
+
+        <button type="button" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCRIPTS (Local Vendor & Custom Vanilla JS)
+       ====================================================================== -->
+  <!-- Bootstrap Bundle JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="vendor/lucide/lucide.min.js"></script>
+  <!-- Theme & Direction Switcher -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Sticky Navbar & Mobile Drawer Controller -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Main Application Orchestrator -->
+  <script src="assets/js/main.js"></script>
+  <!-- Services Page Controller -->
+  <script src="assets/js/services.js"></script>
+
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const el = document.querySelector('.services-final-cta-section');
+  const div = document.createElement('div');
+  div.id = 'CTA_OFFSET';
+  div.textContent = JSON.stringify({
+    bodyHeight: document.body.scrollHeight,
+    ctaTop: el ? el.offsetTop : -1,
+    ctaHeight: el ? el.offsetHeight : -1
+  });
+  document.body.appendChild(div);
+});
+</script>
+</body>
+</html>

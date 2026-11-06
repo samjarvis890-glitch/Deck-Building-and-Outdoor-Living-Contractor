@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evergreen Outdoor Living | Decks, Pergolas & Outdoor Spaces</title>
+  <meta name="description" content="Explore thoughtfully designed outdoor living spaces, custom decks, pergolas and patio ideas with Evergreen Outdoor Living.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Evergreen Outdoor Living | Decks, Pergolas & Outdoor Spaces">
+  <meta property="og:description" content="Explore thoughtfully designed outdoor living spaces, custom decks, pergolas and patio ideas with Evergreen Outdoor Living.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/index/home-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Local Vendor Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/tailwind/tailwind.css">
+
+  <!-- Local Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Immediate Theme Initializer to prevent FOIT -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('eol_theme_preference');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        var savedDir = localStorage.getItem('eol_direction_preference') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL STICKY NAVBAR
+       ====================================================================== -->
+  <header class="site-header is-transparent" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-dark">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-white">
+      </a>
+
+      <!-- Desktop Navigation Menu (1281px+) -->
+      <nav class="navbar-desktop-nav" aria-label="Main Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-item-wrapper">
+          <a href="index.html" class="nav-link-item active" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="dropdown-caret"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="index.html" class="dropdown-link-item"><i data-lucide="home"></i> Home 1 (Main)</a></li>
+            <li><a href="home-2.html" class="dropdown-link-item"><i data-lucide="layers"></i> Home 2 (Architectural)</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="nav-item-wrapper">
+          <a href="about.html" class="nav-link-item">About</a>
+        </div>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <div class="nav-item-wrapper">
+          <a href="services.html" class="nav-link-item">Services</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="nav-item-wrapper">
+          <a href="gallery.html" class="nav-link-item">Gallery</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="nav-item-wrapper">
+          <a href="projects.html" class="nav-link-item">Projects</a>
+        </div>
+
+        <!-- Blog -->
+        <div class="nav-item-wrapper">
+          <a href="blog.html" class="nav-link-item">Blog</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="nav-item-wrapper">
+          <a href="faq.html" class="nav-link-item">FAQ</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-item-wrapper">
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Navbar Action Controls (Right) -->
+      <div class="navbar-actions">
+        <!-- 1. LTR / RTL Direction Toggle Icon -->
+        <button type="button" class="nav-icon-btn dir-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="dir-badge-text font-bold text-xs" style="font-size: 0.75rem; font-weight: 700;">LTR</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Icon -->
+        <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+        </button>
+
+        <!-- 3. Desktop BOOK A CONSULTATION CTA Button -->
+        <a href="contact.html#consultation" class="nav-cta-btn nav-cta-desktop">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button (Visible below 1281px on Mobile & Tablet) -->
+        <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET SLIDING DRAWER MENU (<RULE[user_global]>)
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-dark" style="height: 34px;">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-white" style="height: 34px;">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (All Navigation Items Accessible) -->
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Accordion -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle active" data-target="drawerSubHome" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <ul class="drawer-submenu" id="drawerSubHome">
+            <li><a href="index.html" class="drawer-sublink active">Home 1 (Main Homepage)</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 (Architectural Showcase)</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+
+
+        <!-- Gallery -->
+        <li class="drawer-nav-item">
+          <a href="gallery.html" class="drawer-link">Gallery</a>
+        </li>
+
+        <!-- Projects -->
+        <li class="drawer-nav-item">
+          <a href="projects.html" class="drawer-link">Projects</a>
+        </li>
+
+        <!-- Blog -->
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-link">Blog</a>
+        </li>
+
+        <!-- FAQ -->
+        <li class="drawer-nav-item">
+          <a href="faq.html" class="drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer (Controls & Consultation Button) -->
+    <div class="drawer-footer">
+      <div class="drawer-quick-controls">
+        <!-- Dark Mode Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <!-- Direction Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill dir-toggle-btn" aria-label="Toggle LTR / RTL Direction">
+          <i data-lucide="languages"></i>
+          <span class="dir-label-text">RTL Mode</span>
+        </button>
+      </div>
+
+      <!-- Client Login & Consultation CTA Inside Mobile Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <a href="contact.html#consultation" class="drawer-cta-btn">
+          <span>Book a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html#login" class="drawer-control-pill" style="padding: 0.75rem; justify-content: center; font-weight: 600;">
+          <i data-lucide="lock"></i>
+          <span>Client Login</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN HOMEPAGE CONTENT (EXACTLY 8 SECTIONS)
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ====================================================================
+         SECTION 01 – HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="heroSection" aria-label="Welcome to Evergreen Outdoor Living">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/index/home-hero.webp" alt="Contemporary luxury timber deck and architectural pergola crafted by Evergreen Outdoor Living" class="hero-bg-image">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content-container">
+        <!-- Eyebrow Tag -->
+        <div class="hero-eyebrow">
+          <i data-lucide="leaf"></i>
+          <span>Crafted Outdoor Spaces &bull; Made For Living</span>
+        </div>
+
+        <!-- Main H1 Heading (Only one H1 on the page) -->
+        <h1 class="hero-title">MAKE MORE ROOM FOR LIVING OUTDOORS.</h1>
+
+        <!-- Supporting Text -->
+        <p class="hero-lead">
+          Transform your backyard into a welcoming place to relax, gather and enjoy everyday moments. Discover thoughtfully designed decks, pergolas and outdoor living spaces made around your lifestyle.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="services.html" class="btn-brand btn-forest">
+            <span>Explore Our Services</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="projects.html" class="btn-brand btn-outline-cream">
+            <span>View Our Projects</span>
+            <i data-lucide="images"></i>
+          </a>
+        </div>
+
+        <!-- Optional Text Link -->
+        <div>
+          <a href="contact.html#consultation" class="hero-sublink">
+            <span>Start Your Project</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 02 – LIFESTYLE BENEFITS (3 Cards)
+         ==================================================================== -->
+    <section class="site-section section-bg-cream" id="lifestyleBenefits" aria-labelledby="headingBenefits">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="sun"></i>
+            <span>Living The Outdoors</span>
+          </span>
+          <h2 class="section-title" id="headingBenefits">YOUR BACKYARD. A WHOLE NEW WAY TO LIVE.</h2>
+          <p class="section-intro">
+            Outdoor spaces can become more than an extension of your home. They can create room for peaceful mornings, meaningful gatherings and moments worth enjoying.
+          </p>
+        </header>
+
+        <!-- Three Unique Benefit Cards -->
+        <div class="benefits-grid">
+          <!-- Card 01 -->
+          <article class="benefit-card">
+            <div class="benefit-card-image-wrap">
+              <img src="assets/images/index/home-relax.webp" alt="Serene timber deck retreat with comfortable loungers in morning sunlight" class="benefit-card-image" loading="lazy">
+            </div>
+            <div class="benefit-card-body">
+              <span class="benefit-card-tag">Peace &amp; Serenity</span>
+              <h3 class="benefit-card-title">A PLACE TO UNWIND</h3>
+              <p class="benefit-card-desc">
+                Create a comfortable outdoor retreat where you can slow down, enjoy fresh air and take a break from everyday routines.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="benefit-card">
+            <div class="benefit-card-image-wrap">
+              <img src="assets/images/index/home-gather.webp" alt="Outdoor deck dining area arranged for hospitality and family gatherings" class="benefit-card-image" loading="lazy">
+            </div>
+            <div class="benefit-card-body">
+              <span class="benefit-card-tag">Connection &amp; Family</span>
+              <h3 class="benefit-card-title">ROOM TO GATHER</h3>
+              <p class="benefit-card-desc">
+                Make space for family conversations, friendly get-togethers and memorable moments around the outdoors.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="benefit-card">
+            <div class="benefit-card-image-wrap">
+              <img src="assets/images/index/home-enjoy.webp" alt="Backyard patio and deck transition designed for dining and garden enjoyment" class="benefit-card-image" loading="lazy">
+            </div>
+            <div class="benefit-card-body">
+              <span class="benefit-card-tag">Lifestyle &amp; Leisure</span>
+              <h3 class="benefit-card-title">MORE TO ENJOY</h3>
+              <p class="benefit-card-desc">
+                Bring your outdoor area to life with thoughtful spaces for dining, relaxing and enjoying the surroundings.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03 – OUR OUTDOOR SOLUTIONS (3 Service Cards)
+         ==================================================================== -->
+    <section class="site-section section-bg-surface" id="outdoorSolutions" aria-labelledby="headingSolutions">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="hammer"></i>
+            <span>Tailored Architecture</span>
+          </span>
+          <h2 class="section-title" id="headingSolutions">DESIGNED AROUND THE WAY YOU LIVE.</h2>
+          <p class="section-intro">
+            Every outdoor area has its own possibilities. Explore outdoor solutions that bring together practical design, thoughtful materials and beautiful surroundings.
+          </p>
+        </header>
+
+        <!-- Three Service Cards -->
+        <div class="solutions-grid">
+          <!-- Card 01: Custom Timber Decks -->
+          <article class="solution-card">
+            <div class="solution-image-wrap">
+              <img src="assets/images/index/home-deck.webp" alt="Custom multi-tiered hardwood timber deck with built-in perimeter seating" class="solution-image" loading="lazy">
+              <span class="solution-badge">Foundation Living</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">CUSTOM TIMBER DECKS</h3>
+              <p class="solution-desc">
+                Create a welcoming foundation for outdoor living with deck spaces designed around your home, layout and lifestyle.
+              </p>
+              <div class="solution-cta">
+                <a href="services.html#deck-construction" class="btn-brand btn-forest">
+                  <span>Explore Decks</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02: Beautiful Pergolas -->
+          <article class="solution-card">
+            <div class="solution-image-wrap">
+              <img src="assets/images/index/home-pergola.webp" alt="Architectural timber pergola with modern roof beams providing natural filtered shade" class="solution-image" loading="lazy">
+              <span class="solution-badge">Shelter &amp; Structure</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">BEAUTIFUL PERGOLAS</h3>
+              <p class="solution-desc">
+                Add structure, character and a comfortable sense of shelter with thoughtfully planned pergola designs.
+              </p>
+              <div class="solution-cta">
+                <a href="services.html#pergola-construction" class="btn-brand btn-forest">
+                  <span>Explore Pergolas</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03: Outdoor Living Areas -->
+          <article class="solution-card">
+            <div class="solution-image-wrap">
+              <img src="assets/images/index/home-outdoor-living.webp" alt="Covered outdoor living pavilion featuring tongue-and-groove ceiling and lounge fireplace" class="solution-image" loading="lazy">
+              <span class="solution-badge">Complete Sanctuaries</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">OUTDOOR LIVING AREAS</h3>
+              <p class="solution-desc">
+                Bring seating, dining and outdoor entertaining together in a cohesive and inviting environment.
+              </p>
+              <div class="solution-cta">
+                <a href="services.html#covered-outdoor-living" class="btn-brand btn-forest">
+                  <span>Explore Outdoor Living</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 04 – DESIGN PHILOSOPHY (Editorial Split Layout)
+         ==================================================================== -->
+    <section class="site-section section-bg-cream" id="designPhilosophy" aria-labelledby="headingPhilosophy">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="compass"></i>
+            <span>Our Approach</span>
+          </span>
+          <h2 class="section-title" id="headingPhilosophy">EVERY DETAIL HAS A PURPOSE.</h2>
+          <p class="section-intro">
+            Great outdoor design starts with understanding how a space should feel and function. We believe in considering the setting, layout, materials and small details together.
+          </p>
+        </header>
+
+        <!-- Editorial Split Layout -->
+        <div class="philosophy-split">
+          <!-- Left: Architectural Photography with Floating Badge -->
+          <div class="philosophy-visual">
+            <div class="philosophy-image-frame">
+              <img src="assets/images/index/home-design-approach.webp" alt="Exterior architectural view illustrating the thoughtful connection between home and deck" class="philosophy-image" loading="lazy">
+            </div>
+            <div class="philosophy-badge-float">
+              <div class="philosophy-badge-number">04</div>
+              <p class="philosophy-badge-text">Core design principles harmonizing architecture, nature, and everyday living.</p>
+            </div>
+          </div>
+
+          <!-- Right: Four Numbered Themes -->
+          <div class="philosophy-content">
+            <div class="philosophy-points-list">
+              <!-- Point 01 -->
+              <div class="philosophy-point-item">
+                <span class="philosophy-point-number">01</span>
+                <div class="philosophy-point-content">
+                  <h4>UNDERSTAND THE SPACE</h4>
+                  <p>Consider the available area, surroundings and connection to the home.</p>
+                </div>
+              </div>
+
+              <!-- Point 02 -->
+              <div class="philosophy-point-item">
+                <span class="philosophy-point-number">02</span>
+                <div class="philosophy-point-content">
+                  <h4>DESIGN FOR YOUR LIFESTYLE</h4>
+                  <p>Think about how the space will be used for relaxing, dining and gathering.</p>
+                </div>
+              </div>
+
+              <!-- Point 03 -->
+              <div class="philosophy-point-item">
+                <span class="philosophy-point-number">03</span>
+                <div class="philosophy-point-content">
+                  <h4>SELECT THOUGHTFUL MATERIALS</h4>
+                  <p>Explore suitable materials, finishes and textures for the design.</p>
+                </div>
+              </div>
+
+              <!-- Point 04 -->
+              <div class="philosophy-point-item">
+                <span class="philosophy-point-number">04</span>
+                <div class="philosophy-point-content">
+                  <h4>BRING THE DETAILS TOGETHER</h4>
+                  <p>Create a cohesive outdoor environment with considered design choices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 05 – FEATURED DESIGN INSPIRATION (3 Showcase Cards)
+         ==================================================================== -->
+    <section class="site-section section-bg-surface" id="designInspiration" aria-labelledby="headingInspiration">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="camera"></i>
+            <span>Visual Exploration</span>
+          </span>
+          <h2 class="section-title" id="headingInspiration">SEE WHAT OUTDOOR SPACES CAN BECOME.</h2>
+          <p class="section-intro">
+            Explore different outdoor design directions and discover inspiration for creating a space that feels right for your home.
+          </p>
+        </header>
+
+        <!-- Three Showcase Cards -->
+        <div class="showcase-grid">
+          <!-- Showcase 01: Contemporary Backyard Deck -->
+          <article class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <img src="assets/images/index/home-featured-deck.webp" alt="Design inspiration showing clean deck lines and warm timber finishes" class="showcase-image" loading="lazy">
+              <span class="showcase-tag">Design Concept</span>
+            </div>
+            <div class="showcase-body">
+              <h3 class="showcase-title">CONTEMPORARY BACKYARD DECK</h3>
+              <p class="showcase-desc">
+                Clean deck lines, warm timber finishes and a comfortable setting for everyday outdoor enjoyment.
+              </p>
+            </div>
+          </article>
+
+          <!-- Showcase 02: Timber Pergola Retreat -->
+          <article class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <img src="assets/images/index/home-featured-pergola.webp" alt="Design inspiration featuring an outdoor pergola retreat with balanced natural light and shade" class="showcase-image" loading="lazy">
+              <span class="showcase-tag">Design Concept</span>
+            </div>
+            <div class="showcase-body">
+              <h3 class="showcase-title">TIMBER PERGOLA RETREAT</h3>
+              <p class="showcase-desc">
+                A beautifully structured outdoor setting that balances shade, natural materials and relaxation.
+              </p>
+            </div>
+          </article>
+
+          <!-- Showcase 03: Relaxed Outdoor Entertainment -->
+          <article class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <img src="assets/images/index/home-featured-retreat.webp" alt="Design inspiration presenting an open-air entertainment space with ambient lighting and seating" class="showcase-image" loading="lazy">
+              <span class="showcase-tag">Design Concept</span>
+            </div>
+            <div class="showcase-body">
+              <h3 class="showcase-title">RELAXED OUTDOOR ENTERTAINMENT</h3>
+              <p class="showcase-desc">
+                A welcoming environment that brings outdoor seating, dining and open-air living together.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Centred CTA Button -->
+        <div class="showcase-cta-wrap">
+          <a href="gallery.html" class="btn-brand btn-forest">
+            <span>View Design Gallery</span>
+            <i data-lucide="images"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 06 – MATERIALS AND CRAFTSMANSHIP (Editorial Composition)
+         ==================================================================== -->
+    <section class="site-section section-bg-cream" id="materialsCraftsmanship" aria-labelledby="headingCraftsmanship">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="ruler"></i>
+            <span>Artisan Precision</span>
+          </span>
+          <h2 class="section-title" id="headingCraftsmanship">A BEAUTIFUL FINISH STARTS WITH THE DETAILS.</h2>
+          <p class="section-intro">
+            The character of an outdoor space comes from the details. Material selection, surface finishes, construction planning and visual consistency all contribute to the overall result.
+          </p>
+        </header>
+
+        <!-- Editorial Split Layout -->
+        <div class="craftsmanship-split">
+          <!-- Left: 6 Content Pillars in a 2x3 Grid -->
+          <div class="craftsmanship-features-grid">
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="tree-pine"></i>
+              </div>
+              <h4 class="craft-feature-title">Natural Timber Textures</h4>
+              <p class="craft-feature-text">Appreciating the warmth, grain depth and organic beauty inherent in sustainable hardwoods.</p>
+            </div>
+
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="layers"></i>
+              </div>
+              <h4 class="craft-feature-title">Considered Material Selection</h4>
+              <p class="craft-feature-text">Selecting species and hardware suited to local climate exposure and long-term endurance.</p>
+            </div>
+
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="hammer"></i>
+              </div>
+              <h4 class="craft-feature-title">Clean Construction Details</h4>
+              <p class="craft-feature-text">Precision concealed fixings, seamless mitres and immaculate structural alignment.</p>
+            </div>
+
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="pencil-ruler"></i>
+              </div>
+              <h4 class="craft-feature-title">Thoughtful Finishes</h4>
+              <p class="craft-feature-text">Protective oils and tactile surface treatments that highlight authentic timber tone.</p>
+            </div>
+
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="compass"></i>
+              </div>
+              <h4 class="craft-feature-title">Practical Outdoor Layouts</h4>
+              <p class="craft-feature-text">Effortless circulation paths and intuitive transitions between indoor and garden zones.</p>
+            </div>
+
+            <div class="craft-feature-item">
+              <div class="craft-feature-icon">
+                <i data-lucide="leaf"></i>
+              </div>
+              <h4 class="craft-feature-title">Consistent Visual Design</h4>
+              <p class="craft-feature-text">Unified architectural proportions tying pergolas, deck boards, and steps into one rhythm.</p>
+            </div>
+          </div>
+
+          <!-- Right: Detailed Architectural Material Photograph -->
+          <div class="craftsmanship-visual">
+            <div class="craftsmanship-image-frame">
+              <img src="assets/images/index/home-craftsmanship.webp" alt="Close-up macro detail of premium hardwood deck board joinery and grain texture" class="craftsmanship-image" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07 – PROJECT JOURNEY (4-Step Process)
+         ==================================================================== -->
+    <section class="site-section section-bg-surface" id="projectJourney" aria-labelledby="headingJourney">
+      <div class="container">
+        <!-- Centred Section Header -->
+        <header class="section-header">
+          <span class="section-eyebrow">
+            <i data-lucide="calendar-days"></i>
+            <span>A Clear Pathway</span>
+          </span>
+          <h2 class="section-title" id="headingJourney">FROM FIRST IDEA TO OUTDOOR ENJOYMENT.</h2>
+          <p class="section-intro">
+            Starting an outdoor project can be simple. Begin with your ideas, discuss your space and explore the possibilities for your home.
+          </p>
+        </header>
+
+        <!-- Four Clear Steps Grid -->
+        <div class="journey-steps-grid">
+          <!-- Step 01 -->
+          <div class="journey-step-card">
+            <div class="journey-step-indicator">01</div>
+            <div class="journey-step-icon">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <h3 class="journey-step-title">SHARE YOUR VISION</h3>
+            <p class="journey-step-desc">
+              Tell us about your outdoor ideas, preferences and what you would like to create.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="journey-step-card">
+            <div class="journey-step-indicator">02</div>
+            <div class="journey-step-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <h3 class="journey-step-title">DISCUSS YOUR SPACE</h3>
+            <p class="journey-step-desc">
+              Consider the property layout, surroundings and possibilities for your outdoor area.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="journey-step-card">
+            <div class="journey-step-indicator">03</div>
+            <div class="journey-step-icon">
+              <i data-lucide="pencil-ruler"></i>
+            </div>
+            <h3 class="journey-step-title">PLAN THE DESIGN</h3>
+            <p class="journey-step-desc">
+              Explore suitable layouts, design directions and material choices.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="journey-step-card">
+            <div class="journey-step-indicator">04</div>
+            <div class="journey-step-icon">
+              <i data-lucide="trees"></i>
+            </div>
+            <h3 class="journey-step-title">MOVE TOWARDS YOUR NEW OUTDOOR AREA</h3>
+            <p class="journey-step-desc">
+              Discuss the next steps for taking your outdoor project forward.
+            </p>
+          </div>
+        </div>
+
+        <!-- Architectural Concept Visual Banner -->
+        <div class="journey-visual-banner" style="max-width: 960px; margin: 0 auto 3rem auto; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+          <img src="assets/images/index/home-project-journey.webp" alt="Architectural design concepts, deck blueprints, and timber finish samples on consultation table" style="width: 100%; height: 260px; object-fit: cover; object-position: center;" loading="lazy">
+        </div>
+
+        <!-- Centred CTA Button -->
+        <div class="journey-cta-wrap">
+          <a href="contact.html#consultation" class="btn-brand btn-forest">
+            <span>Let's Discuss Your Project</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 08 – FINAL CALL TO ACTION (Full-width Photographic Background)
+         ==================================================================== -->
+    <section class="final-cta-section" id="finalCta" aria-labelledby="headingFinalCta">
+      <div class="final-cta-bg-wrapper">
+        <img src="assets/images/index/home-final-cta.webp" alt="Panoramic evening architectural view of an illuminated timber deck and glowing outdoor living sanctuary" class="final-cta-bg-image" loading="lazy">
+      </div>
+      <div class="final-cta-overlay"></div>
+
+      <div class="container final-cta-content">
+        <!-- Eyebrow -->
+        <div class="final-cta-eyebrow">
+          <i data-lucide="leaf"></i>
+          <span>Begin Your Conversation</span>
+        </div>
+
+        <!-- Main Centred Heading -->
+        <h2 class="final-cta-title" id="headingFinalCta">YOUR OUTDOOR SPACE COULD BE SOMETHING SPECIAL.</h2>
+
+        <!-- Centred Supporting Text -->
+        <p class="final-cta-lead">
+          Whether you are imagining a new deck, a beautiful pergola or a complete outdoor living area, start with a conversation about what is possible for your space.
+        </p>
+
+        <!-- Two Clear CTA Buttons -->
+        <div class="final-cta-buttons">
+          <a href="contact.html#consultation" class="btn-brand btn-cream">
+            <span>Book A Consultation</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="services.html" class="btn-brand btn-outline-cream">
+            <span>Explore Our Services</span>
+            <i data-lucide="layers"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER (Deep Forest #18382C, 7-Column Layout on Desktop)
+       ====================================================================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+            <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="footer-brand-logo">
+          </a>
+          <div class="footer-brand-tagline">CRAFTED OUTDOOR SPACES. MADE FOR LIVING.</div>
+          <p class="footer-brand-desc">
+            Bespoke outdoor architecture, custom deck construction and refined pergola environments built to harmonize with nature and elevate your lifestyle.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#deck-construction" class="footer-link">Custom Decks</a></li>
+            <li><a href="services.html#pergola-construction" class="footer-link">Pergolas</a></li>
+            <li><a href="services.html#covered-outdoor-living" class="footer-link">Covered Outdoor Living</a></li>
+            <li><a href="services.html#patio-spaces" class="footer-link">Patio Spaces</a></li>
+            <li><a href="services.html#outdoor-entertainment" class="footer-link">Outdoor Entertainment</a></li>
+            <li><a href="services.html#deck-renovation" class="footer-link">Deck Renovation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Explore (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html" class="footer-link">Home 2</a></li>
+            <li><a href="gallery.html#decks" class="footer-link">Deck Design Ideas</a></li>
+            <li><a href="gallery.html#pergolas" class="footer-link">Pergola Inspiration</a></li>
+            <li><a href="gallery.html#living" class="footer-link">Outdoor Living Ideas</a></li>
+            <li><a href="projects.html" class="footer-link">Project Gallery</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Customer Support (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html#consultation" class="footer-link">Book a Consultation</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Project Enquiry</a></li>
+            <li><a href="faq.html#planning" class="footer-link">Planning Your Project</a></li>
+            <li><a href="faq.html" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 6: Newsletter -->
+        <div class="footer-col-newsletter">
+          <div class="footer-newsletter-box">
+            <h4 class="footer-newsletter-title">GET OUTDOOR INSPIRATION.</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to receive seasonal design inspiration, materials guides and craftsmanship insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address for newsletter" required>
+              </div>
+              <button type="submit" class="newsletter-submit-btn">
+                <span>Subscribe</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Column 7: Follow Us -->
+        <div class="footer-col-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="10" x2="12" y2="21"/>
+                  <path d="M8 12.5a4 4 0 1 1 8 0c0 3-1.8 5-4.2 5a3.5 3.5 0 0 1-2.8-1.5"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <polygon points="10 15 15 12 10 9" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Evergreen Outdoor Living. All Rights Reserved.
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-legal-link">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+        </ul>
+
+        <button type="button" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCRIPTS (Local Vendor & Custom Vanilla JS)
+       ====================================================================== -->
+  <!-- Bootstrap Bundle JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="vendor/lucide/lucide.min.js"></script>
+  <!-- Theme & Direction Switcher -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Sticky Navbar & Mobile Drawer Controller -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Entrance Animations & Intersection Observer -->
+  <script src="assets/js/animations.js"></script>
+  <!-- Main Application Orchestrator -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

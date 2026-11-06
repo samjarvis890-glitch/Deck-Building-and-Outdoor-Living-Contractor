@@ -1,0 +1,551 @@
+/* ==========================================================================
+   EVERGREEN OUTDOOR LIVING - GLOBAL CORE STYLESHEET
+   Crafted Outdoor Spaces. Made For Living.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Palette - Light Mode */
+  --color-forest: #254B3B;
+  --color-forest-dark: #18382C;
+  --color-deep-forest: #18382C;
+  --color-forest-hover: #1e3d30;
+  --color-sage: #82977B;
+  --color-sage-light: #d6ded3;
+  --color-cream: #F8F5ED;
+  --color-cream-subtle: #f2ede2;
+  --color-sand: #E9DFC9;
+  --color-timber: #A8754E;
+  --color-timber-hover: #8f603c;
+  --color-charcoal: #292F2A;
+  --color-muted: #70776F;
+  --color-border: #E4E1D8;
+  --color-white: #FFFFFF;
+
+  /* Global Theme Aliases & Shared Fallbacks */
+  --bg-body: #F8F5ED;
+  --color-warm-cream: #F8F5ED;
+  --color-sand-beige: #E9DFC9;
+  --color-soft-border: #E4E1D8;
+  --color-muted-text: #70776F;
+  --text-muted: #70776F;
+  --header-height: 88px;
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-xl: 0 24px 48px rgba(24, 56, 44, 0.12);
+
+  /* Theme Tokens (Default: Light Mode) */
+  --bg-primary: #F8F5ED;
+  --bg-secondary: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FAF7F0;
+  --bg-footer: #18382C;
+  --bg-header-scrolled: rgba(248, 245, 237, 0.94);
+  --bg-drawer: #F8F5ED;
+
+  --text-primary: #292F2A;
+  --text-secondary: #70776F;
+  --text-inverse: #F8F5ED;
+  --text-accent: #254B3B;
+  --text-timber: #A8754E;
+
+  --border-color: #E4E1D8;
+  --border-subtle: #EDE9DF;
+
+  --btn-primary-bg: #254B3B;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #18382C;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #254B3B;
+  --btn-secondary-border: #254B3B;
+  --btn-secondary-hover: #254B3B;
+  --btn-secondary-hover-text: #FFFFFF;
+
+  --badge-bg: rgba(37, 75, 59, 0.08);
+  --badge-text: #254B3B;
+  --badge-border: rgba(37, 75, 59, 0.15);
+
+  --shadow-sm: 0 2px 8px rgba(24, 56, 44, 0.04);
+  --shadow-md: 0 10px 25px rgba(24, 56, 44, 0.06);
+  --shadow-lg: 0 18px 40px rgba(24, 56, 44, 0.09);
+  --shadow-navbar: 0 8px 24px rgba(24, 56, 44, 0.07);
+
+  /* Typography */
+  --font-heading: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Spacing & Layout */
+  --nav-height-desktop: 88px;
+  --nav-height-tablet: 78px;
+  --nav-height-mobile: 72px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.25rem);
+  line-height: 1.12;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 3.2vw + 0.5rem, 2.75rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 1.8vw + 0.25rem, 1.8rem);
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--text-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover, a:focus-visible {
+  color: var(--color-timber);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   GLOBAL SECTION HEADING COMPONENT
+   Strictly centered heading & introduction as required by project specs
+   ========================================================================== */
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem auto;
+  position: relative;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-timber);
+  margin-bottom: 0.875rem;
+}
+
+.section-eyebrow svg,
+.section-eyebrow i {
+  width: 15px;
+  height: 15px;
+  stroke: var(--color-timber);
+}
+
+.section-title {
+  margin-bottom: 1.15rem;
+  color: var(--text-primary);
+}
+
+.section-intro {
+  font-size: 1.075rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   BUTTONS & BADGES
+   ========================================================================== */
+
+.btn-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-brand svg,
+.btn-brand i {
+  width: 17px;
+  height: 17px;
+  transition: transform var(--transition-fast);
+}
+
+.btn-forest {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+}
+
+.btn-forest:hover {
+  background-color: var(--btn-primary-hover);
+  border-color: var(--btn-primary-hover);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(37, 75, 59, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-forest:hover svg,
+.btn-forest:hover i {
+  transform: translateX(4px);
+}
+
+.btn-outline-forest {
+  background-color: transparent;
+  color: var(--btn-secondary-text);
+  border-color: var(--btn-secondary-border);
+}
+
+.btn-outline-forest:hover {
+  background-color: var(--btn-secondary-hover);
+  color: var(--btn-secondary-hover-text);
+  border-color: var(--btn-secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 75, 59, 0.15);
+}
+
+.btn-outline-forest:hover svg,
+.btn-outline-forest:hover i {
+  transform: translateX(4px);
+}
+
+.btn-cream {
+  background-color: var(--color-cream);
+  color: var(--color-forest-dark);
+  border-color: var(--color-cream);
+}
+
+.btn-cream:hover {
+  background-color: #FFFFFF;
+  color: var(--color-forest-dark);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cream:hover svg,
+.btn-cream:hover i {
+  transform: translateX(4px);
+}
+
+.btn-outline-cream {
+  background-color: transparent;
+  color: var(--color-cream);
+  border-color: rgba(248, 245, 237, 0.4);
+}
+
+.btn-outline-cream:hover {
+  background-color: var(--color-cream);
+  color: var(--color-forest-dark);
+  border-color: var(--color-cream);
+  transform: translateY(-2px);
+}
+
+.btn-outline-cream:hover svg,
+.btn-outline-cream:hover i {
+  transform: translateX(4px);
+}
+
+[data-theme="dark"] .btn-cream {
+  background-color: #91B59A;
+  color: #151D18;
+  border-color: #91B59A;
+}
+
+[data-theme="dark"] .btn-cream:hover {
+  background-color: #a5c6ad;
+  color: #151D18;
+  border-color: #a5c6ad;
+}
+
+[data-theme="dark"] .btn-outline-cream {
+  color: #F1F4EE;
+  border-color: rgba(241, 244, 238, 0.45);
+}
+
+[data-theme="dark"] .btn-outline-cream:hover {
+  background-color: #91B59A;
+  color: #151D18;
+  border-color: #91B59A;
+}
+
+.btn-link-animated {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-accent);
+  padding: 0.25rem 0;
+  border-bottom: 1.5px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.btn-link-animated svg,
+.btn-link-animated i {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.btn-link-animated:hover {
+  color: var(--color-timber);
+  border-bottom-color: var(--color-timber);
+}
+
+.btn-link-animated:hover svg,
+.btn-link-animated:hover i {
+  transform: translateX(4px);
+}
+
+/* Badge */
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+}
+
+/* ==========================================================================
+   GLOBAL LAYOUT CONTAINERS & NEAT & CLEAN PADDING SYSTEM
+   ========================================================================== */
+
+/* Universal Responsive Container with Proportional Side Gutters */
+.container,
+.container-custom,
+.site-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3.5vw, 2.25rem);
+  padding-right: clamp(1.25rem, 3.5vw, 2.25rem);
+  box-sizing: border-box;
+}
+
+/* Fluid, Harmonious Section Vertical Padding Across All Pages */
+.site-section,
+.about-philosophy-section,
+.about-lifestyle-section,
+.about-principles-section,
+.about-craftsmanship-section,
+.about-planning-section,
+.about-details-section,
+.about-commitment-section,
+.services-section,
+.gallery-section,
+.projects-section,
+.blog-section,
+.faq-section,
+.contact-section,
+.home2-section {
+  padding: clamp(3.25rem, 5.5vw, 5.5rem) 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Fluid, Balanced Closing CTA Banners Across All Pages (Replaces Excessive 8rem) */
+.final-cta-section,
+.services-final-cta-section,
+.gallery-final-cta-section,
+.projects-final-cta-section,
+.about-final-cta-section,
+.blog-final-cta,
+.faq-final-cta,
+.contact-final-cta,
+.home2-final {
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0 !important;
+  box-sizing: border-box;
+}
+
+/* Balanced Hero Section Spacing under Sticky Header */
+.about-hero-section,
+.services-hero-section,
+.projects-hero-section,
+.blog-hero,
+.faq-hero,
+.contact-hero,
+.home2-hero {
+  padding-top: calc(var(--nav-height-desktop, 88px) + clamp(1.75rem, 3vw, 2.75rem));
+  padding-bottom: clamp(3rem, 4.5vw, 4.75rem);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .about-hero-section,
+  .services-hero-section,
+  .projects-hero-section,
+  .blog-hero,
+  .faq-hero,
+  .contact-hero,
+  .home2-hero {
+    padding-top: calc(var(--nav-height-mobile, 72px) + clamp(1.25rem, 2.5vw, 2rem));
+    padding-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  }
+}
+
+/* Harmonious Section Headers Spacing */
+.section-header,
+.section-header-centered,
+.faq-header-centered,
+.contact-header-centered {
+  margin-bottom: clamp(2rem, 3.5vw, 3rem);
+}
+
+.section-bg-cream {
+  background-color: var(--bg-primary);
+}
+
+.section-bg-surface {
+  background-color: var(--bg-surface);
+}
+
+/* Lucide Icon alignment helper */
+.lucide,
+[data-lucide] {
+  vertical-align: middle;
+  display: inline-block;
+  stroke-width: 1.75;
+}
+
+/* ==========================================================================
+   RTL ADAPTATIONS (Global Base)
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .section-header {
+  text-align: center; /* keep required section headers centered in RTL */
+}
+
+[dir="rtl"] .btn-forest:hover svg,
+[dir="rtl"] .btn-forest:hover i,
+[dir="rtl"] .btn-outline-forest:hover svg,
+[dir="rtl"] .btn-outline-forest:hover i,
+[dir="rtl"] .btn-cream:hover svg,
+[dir="rtl"] .btn-cream:hover i,
+[dir="rtl"] .btn-outline-cream:hover svg,
+[dir="rtl"] .btn-outline-cream:hover i,
+[dir="rtl"] .btn-link-animated:hover svg,
+[dir="rtl"] .btn-link-animated:hover i {
+  transform: translateX(-4px);
+}
+
+/* Prevent horizontal overflow */
+body, main, header, footer, section {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+/* Reduced Motion Compliance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

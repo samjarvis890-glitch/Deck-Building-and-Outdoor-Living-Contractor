@@ -1,0 +1,278 @@
+/* ==========================================================================
+   EVERGREEN OUTDOOR LIVING - COMPREHENSIVE RESPONSIVE STYLESHEET
+   Tested Viewports: 320, 360, 375, 390, 414, 430, 576, 768, 820, 834, 1024, 1200, 1280, 1366, 1440, 1600, 1920
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Desktop / Ultra-wide (1440px - 1920px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .hero-content-container {
+    max-width: 1040px;
+  }
+
+  .nav-container,
+  .footer-container {
+    max-width: 1540px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Standard Desktop & Laptop (1200px - 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .navbar-desktop-nav {
+    display: none !important;
+  }
+
+  .nav-cta-btn.nav-cta-desktop {
+    display: none !important;
+  }
+
+  .nav-hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  .philosophy-split,
+  .craftsmanship-split {
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Landscape & Portrait (768px - 1024px, specifically 820px, 834px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Grids transition to comfortable 2-columns or balanced layouts */
+  .benefits-grid,
+  .solutions-grid,
+  .showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  /* When there are 3 cards, third card gracefully spans 2 cols or aligns centered */
+  .benefits-grid .benefit-card:last-child,
+  .solutions-grid .solution-card:last-child,
+  .showcase-grid .showcase-card:last-child {
+    grid-column: span 2;
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .philosophy-split {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .philosophy-badge-float {
+    bottom: -1rem;
+    right: 1rem;
+  }
+
+  [dir="rtl"] .philosophy-badge-float {
+    right: auto;
+    left: 1rem;
+  }
+
+  .craftsmanship-split {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  /* Journey steps on tablets: 2x2 grid */
+  .journey-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .journey-steps-grid::before {
+    display: none; /* Hide desktop connecting line when wrapped */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Viewports (Below 768px: 576px, 430px, 414px, 390px, 375px, 360px, 320px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  /* Containers & Spacing */
+  .container,
+  .nav-container,
+  .footer-container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--nav-height-mobile) + 2.5rem);
+    padding-bottom: 4rem;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+    line-height: 1.2;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .hero-cta-group .btn-brand {
+    width: 100%;
+  }
+
+  /* Section Headers */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-intro {
+    font-size: 0.975rem;
+  }
+
+  /* Single Column Cards */
+  .benefits-grid,
+  .solutions-grid,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .benefits-grid .benefit-card:last-child,
+  .solutions-grid .solution-card:last-child,
+  .showcase-grid .showcase-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* Philosophy */
+  .philosophy-badge-float {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .philosophy-point-item {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .philosophy-point-number {
+    font-size: 1.35rem;
+  }
+
+  /* Craftsmanship */
+  .craftsmanship-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Journey Steps */
+  .journey-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .journey-step-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .journey-step-indicator {
+    width: 52px;
+    height: 52px;
+    font-size: 1.15rem;
+    margin-bottom: 1.15rem;
+  }
+
+  /* Final CTA */
+  .final-cta-section {
+    padding: clamp(3.25rem, 5vw, 4.5rem) 0;
+  }
+
+  /* Universal neat card padding across all pages on mobile */
+  .benefit-card-body,
+  .solution-body,
+  .showcase-body,
+  .about-principle-body,
+  .service-card-body,
+  .projects-concept-body,
+  .projects-detail-body,
+  .gallery-pergola-body,
+  .gallery-covered-sub-body,
+  .blog-article-body,
+  .faq-support-card,
+  .contact-check-card,
+  .contact-info-card,
+  .contact-form-intro,
+  .contact-form-card {
+    padding: clamp(1.25rem, 4vw, 1.65rem) !important;
+  }
+
+  .final-cta-title {
+    font-size: 2rem;
+  }
+
+  .final-cta-lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .final-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .final-cta-buttons .btn-brand {
+    width: 100%;
+  }
+
+  /* Drawer Sizing */
+  .mobile-drawer {
+    max-width: 100%; /* Full screen drawer on mobile */
+  }
+
+  /* Card alignment helpers */
+  .solution-cta,
+  .btn-brand {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Smallest Mobile Screens (320px - 375px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .brand-logo-img {
+    height: 36px;
+  }
+
+  .nav-icon-btn,
+  .nav-hamburger-btn {
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Evergreen Outdoor Living | Project Enquiries &amp; Consultation</title>
+  <meta name="description" content="Get in touch with Evergreen Outdoor Living to discuss deck construction, pergolas, patios, covered outdoor spaces, and your outdoor living project ideas.">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:title" content="Contact Evergreen Outdoor Living | Project Enquiries &amp; Consultation">
+  <meta property="og:description" content="Get in touch with Evergreen Outdoor Living to discuss deck construction, pergolas, patios, covered outdoor spaces, and your outdoor living project ideas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/contact/contact-hero.webp">
+
+  <!-- Favicon (Consistent with Home 1) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Local Vendor Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/tailwind/tailwind.css">
+
+  <!-- Core Theme & Layout Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Contact Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+  <!-- Immediate Theme & Direction Initializer to prevent FOIT -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('eol_theme_preference');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        var savedDir = localStorage.getItem('eol_direction_preference') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL STICKY NAVBAR (Exact Shared Navbar from index.html)
+       ====================================================================== -->
+  <header class="site-header is-transparent" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-dark">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-white">
+      </a>
+
+      <!-- Desktop Navigation Menu (1281px+) -->
+      <nav class="navbar-desktop-nav" aria-label="Main Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-item-wrapper">
+          <a href="index.html" class="nav-link-item" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="dropdown-caret"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="index.html" class="dropdown-link-item"><i data-lucide="home"></i> Home 1 (Main)</a></li>
+            <li><a href="home-2.html" class="dropdown-link-item"><i data-lucide="layers"></i> Home 2 (Architectural)</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="nav-item-wrapper">
+          <a href="about.html" class="nav-link-item">About</a>
+        </div>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <div class="nav-item-wrapper">
+          <a href="services.html" class="nav-link-item">Services</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="nav-item-wrapper">
+          <a href="gallery.html" class="nav-link-item">Gallery</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="nav-item-wrapper">
+          <a href="projects.html" class="nav-link-item">Projects</a>
+        </div>
+
+        <!-- Blog -->
+        <div class="nav-item-wrapper">
+          <a href="blog.html" class="nav-link-item">Blog</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="nav-item-wrapper">
+          <a href="faq.html" class="nav-link-item">FAQ</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-item-wrapper">
+          <a href="contact.html" class="nav-link-item active" aria-current="page">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Navbar Action Controls (Right) -->
+      <div class="navbar-actions">
+        <!-- 1. LTR / RTL Direction Toggle Icon -->
+        <button type="button" class="nav-icon-btn dir-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="dir-badge-text font-bold text-xs" style="font-size: 0.75rem; font-weight: 700;">LTR</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Icon -->
+        <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+        </button>
+
+        <!-- 3. Desktop BOOK A CONSULTATION CTA Button -->
+        <a href="contact.html#consultation" class="nav-cta-btn nav-cta-desktop">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button (Visible below 1281px on Mobile & Tablet) -->
+        <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET SLIDING DRAWER MENU (<RULE[user_global]>)
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-dark" style="height: 34px;">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-white" style="height: 34px;">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (All Navigation Items Accessible) -->
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Accordion -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" data-target="drawerSubHome" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <ul class="drawer-submenu" id="drawerSubHome">
+            <li><a href="index.html" class="drawer-sublink">Home 1 (Main Homepage)</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 (Architectural Showcase)</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+
+
+        <!-- Gallery -->
+        <li class="drawer-nav-item">
+          <a href="gallery.html" class="drawer-link">Gallery</a>
+        </li>
+
+        <!-- Projects -->
+        <li class="drawer-nav-item">
+          <a href="projects.html" class="drawer-link">Projects</a>
+        </li>
+
+        <!-- Blog -->
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-link">Blog</a>
+        </li>
+
+        <!-- FAQ -->
+        <li class="drawer-nav-item">
+          <a href="faq.html" class="drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link active" aria-current="page">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer (Controls & Consultation Button) -->
+    <div class="drawer-footer">
+      <div class="drawer-quick-controls">
+        <!-- Dark Mode Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <!-- Direction Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill dir-toggle-btn" aria-label="Toggle LTR / RTL Direction">
+          <i data-lucide="languages"></i>
+          <span class="dir-label-text">RTL Mode</span>
+        </button>
+      </div>
+
+      <!-- Client Login & Consultation CTA Inside Mobile Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <a href="contact.html#consultation" class="drawer-cta-btn">
+          <span>Book a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html#login" class="drawer-control-pill" style="padding: 0.75rem; justify-content: center; font-weight: 600;">
+          <i data-lucide="lock"></i>
+          <span>Client Login</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 8 SECTIONS
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ====================================================================
+         SECTION 1 – CONTACT HERO
+         Project Enquiry Hero Layout
+         ==================================================================== -->
+    <section class="contact-hero" id="contactHero" aria-label="Contact and Project Enquiries">
+      <div class="container contact-hero-container">
+        <div class="contact-hero-grid">
+
+          <!-- Left Text Content -->
+          <div class="contact-hero-content">
+            <div class="contact-hero-badge">
+              <i data-lucide="message-square"></i>
+              <span>LET'S START A CONVERSATION</span>
+            </div>
+
+            <h1 class="contact-hero-h1">
+              TELL US WHAT YOU'RE DREAMING OF OUTDOORS.
+            </h1>
+
+            <p class="contact-hero-lead">
+              Whether you are imagining a beautiful timber deck, a welcoming pergola, a covered outdoor retreat, or a complete outdoor living space, we would love to hear about your ideas.
+              <br><br>
+              Share a little about your space and what you have in mind. Let's explore the possibilities together.
+            </p>
+
+            <div class="contact-hero-cta-group">
+              <a href="#consultation" class="contact-btn-primary">
+                <span>START YOUR ENQUIRY</span>
+                <i data-lucide="arrow-down"></i>
+              </a>
+              <a href="services.html" class="contact-btn-secondary">
+                <span>EXPLORE OUR SERVICES</span>
+                <i data-lucide="compass"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Framed Visual Composition -->
+          <div class="contact-hero-visual-frame">
+            <div class="contact-hero-image-wrap">
+              <img src="assets/images/contact/contact-hero.webp" 
+                   alt="Welcoming outdoor dining table and lounge seating area on timber deck under pergola" 
+                   class="contact-hero-img"
+                   width="1600"
+                   height="1000"
+                   fetchpriority="high">
+            </div>
+
+            <!-- Project Enquiry Label Badge -->
+            <div class="contact-hero-label-badge">
+              <i data-lucide="clipboard-list" style="width: 22px; height: 22px; flex-shrink: 0;"></i>
+              <div>
+                <div class="contact-hero-badge-title">Project Enquiry &amp; Consultation</div>
+                <div class="contact-hero-badge-sub">Bespoke Decks, Pergolas &amp; Outdoor Living</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 – CONTACT INFORMATION
+         3 Balanced Cards with Honest Non-Fabricated Information
+         ==================================================================== -->
+    <section class="contact-section contact-info" id="contactInfo" aria-label="Contact Information Options">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="help-circle"></i>
+            <span>WE'RE HERE TO HELP</span>
+          </div>
+          <h2 class="contact-title">A GOOD OUTDOOR SPACE STARTS WITH A CONVERSATION.</h2>
+          <p class="contact-desc">
+            Every outdoor project begins with an idea. Choose how you would like to get in touch and tell us a little about what you are planning.
+          </p>
+        </div>
+
+        <div class="contact-info-grid">
+
+          <!-- Card 01: Project Enquiries -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon-wrap">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <h3 class="contact-info-title">PROJECT ENQUIRIES</h3>
+            <p class="contact-info-desc">
+              Have an idea for a new deck, pergola, patio, or outdoor living area? Share your requirements through our project enquiry form.
+            </p>
+            <a href="#consultation" class="contact-info-btn">
+              <span>SEND AN ENQUIRY</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 02: Consultation -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon-wrap">
+              <i data-lucide="calendar-days"></i>
+            </div>
+            <h3 class="contact-info-title">DISCUSS YOUR IDEAS</h3>
+            <p class="contact-info-desc">
+              Start a conversation about your outdoor space, design preferences, and the possibilities you would like to explore.
+            </p>
+            <a href="#consultation" class="contact-info-btn">
+              <span>REQUEST A CONSULTATION</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 03: General Questions -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon-wrap">
+              <i data-lucide="help-circle"></i>
+            </div>
+            <h3 class="contact-info-title">GENERAL QUESTIONS</h3>
+            <p class="contact-info-desc">
+              Looking for information before getting started? Explore common questions or send us your enquiry.
+            </p>
+            <a href="faq.html" class="contact-info-btn">
+              <span>VIEW FAQ</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 – UNIQUE PROJECT ENQUIRY FORM
+         Distinctive 3-Step Interactive Outdoor Form
+         ==================================================================== -->
+    <section class="contact-section contact-enquiry" id="consultation" aria-label="Outdoor Project Enquiry Form">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="pen-tool"></i>
+            <span>LET'S TALK ABOUT YOUR SPACE</span>
+          </div>
+          <h2 class="contact-title">A FEW DETAILS WILL HELP US UNDERSTAND YOUR VISION.</h2>
+          <p class="contact-desc">
+            Tell us about your outdoor space, the project you have in mind, and the features that matter most to you. Start with the details you know. You do not need a complete design to make an enquiry.
+          </p>
+        </div>
+
+        <div class="contact-form-layout">
+
+          <!-- Left Side: Form Introduction Panel -->
+          <div class="contact-form-intro">
+            <div>
+              <div class="contact-intro-eyebrow">
+                <i data-lucide="sparkles"></i>
+                <span>YOUR PROJECT STARTS HERE</span>
+              </div>
+              <h3 class="contact-intro-h3">LET'S MAKE ROOM FOR SOMETHING BEAUTIFUL.</h3>
+              <p class="contact-intro-lead">
+                Every bespoke deck, architectural pergola, and outdoor retreat begins with an open conversation. Take a few moments to outline what matters to you.
+              </p>
+
+              <div class="contact-intro-steps">
+                <div class="contact-intro-step-item">
+                  <span class="contact-intro-step-num">1</span>
+                  <div class="contact-intro-step-text">
+                    <strong>Tell us about your space.</strong> Share your contact details and general location.
+                  </div>
+                </div>
+                <div class="contact-intro-step-item">
+                  <span class="contact-intro-step-num">2</span>
+                  <div class="contact-intro-step-text">
+                    <strong>Share your project ideas.</strong> Select features, goals, materials, and timeframes.
+                  </div>
+                </div>
+                <div class="contact-intro-step-item">
+                  <span class="contact-intro-step-num">3</span>
+                  <div class="contact-intro-step-text">
+                    <strong>Review your enquiry.</strong> Verify your entered details before confirmation.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Supporting Visual -->
+            <div class="contact-intro-media">
+              <img src="assets/images/contact/contact-form-side.webp" 
+                   alt="Architectural cedar battens and sunlit foliage detail" 
+                   class="contact-intro-img"
+                   loading="lazy"
+                   width="800"
+                   height="1000">
+            </div>
+          </div>
+
+          <!-- Right Side: Multi-Step Form Card -->
+          <div class="contact-form-card">
+
+            <!-- Progress Header -->
+            <div class="contact-progress">
+              <div class="contact-progress-header">
+                <span class="contact-progress-label" id="contactProgressLabel">STEP 01 OF 03 – YOUR DETAILS</span>
+                <span class="contact-progress-step-text" id="contactProgressStepText">Contact &amp; Location</span>
+              </div>
+              <div class="contact-progress-bar">
+                <div class="contact-progress-fill" id="contactProgressFill"></div>
+              </div>
+            </div>
+
+            <form id="consultationForm" novalidate>
+
+              <!-- ================= STEP 1: YOUR DETAILS ================= -->
+              <div class="contact-form-step active" id="contactStep1">
+                <div class="contact-form-group">
+                  <label for="enquiryFullName" class="contact-label">
+                    Full Name <span class="contact-required">*</span>
+                  </label>
+                  <input type="text" 
+                         id="enquiryFullName" 
+                         class="contact-input" 
+                         placeholder="Your full name" 
+                         required>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryEmail" class="contact-label">
+                    Email Address <span class="contact-required">*</span>
+                  </label>
+                  <input type="email" 
+                         id="enquiryEmail" 
+                         class="contact-input" 
+                         placeholder="Your email address" 
+                         required>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryPhone" class="contact-label">
+                    Phone Number (Optional)
+                  </label>
+                  <input type="tel" 
+                         id="enquiryPhone" 
+                         class="contact-input" 
+                         placeholder="Your contact number">
+                </div>
+
+                <div class="contact-form-group">
+                  <span class="contact-label">Preferred Contact Method</span>
+                  <div class="contact-radio-group">
+                    <label class="contact-radio-label">
+                      <input type="radio" name="preferredContact" value="Email" checked>
+                      <span>Email</span>
+                    </label>
+                    <label class="contact-radio-label">
+                      <input type="radio" name="preferredContact" value="Phone">
+                      <span>Phone</span>
+                    </label>
+                    <label class="contact-radio-label">
+                      <input type="radio" name="preferredContact" value="No preference">
+                      <span>No preference</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryLocation" class="contact-label">
+                    General Location (Optional)
+                  </label>
+                  <input type="text" 
+                         id="enquiryLocation" 
+                         class="contact-input" 
+                         placeholder="City, town, or area">
+                </div>
+
+                <div class="contact-form-actions">
+                  <div></div>
+                  <button type="button" class="contact-btn-primary" id="btnToStep2">
+                    <span>CONTINUE TO PROJECT DETAILS</span>
+                    <i data-lucide="arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- ================= STEP 2: YOUR PROJECT ================= -->
+              <div class="contact-form-step" id="contactStep2">
+                
+                <div class="contact-form-group">
+                  <span class="contact-label">What would you like to create? (Select all that apply)</span>
+                  <div class="contact-project-types-grid">
+                    
+                    <div class="contact-project-option" data-project-type="Custom Deck">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Custom Deck</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Pergola">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Pergola</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Covered Outdoor Living">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Covered Outdoor Living</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Patio &amp; Entertainment Area">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Patio &amp; Entertainment Area</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Deck Renovation">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Deck Renovation</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Complete Outdoor Living Space">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Complete Outdoor Space</span>
+                    </div>
+
+                    <div class="contact-project-option" data-project-type="Not Sure Yet">
+                      <input type="checkbox" class="contact-project-checkbox">
+                      <span class="contact-project-name">Not Sure Yet</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquirySpaceDesc" class="contact-label">
+                    Tell us about your outdoor space
+                  </label>
+                  <textarea id="enquirySpaceDesc" 
+                            class="contact-textarea" 
+                            placeholder="Describe your current space and what you would like to change or create..."></textarea>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryMainGoal" class="contact-label">What is your main goal?</label>
+                  <select id="enquiryMainGoal" class="contact-select">
+                    <option value="Relaxing and unwinding">Relaxing and unwinding</option>
+                    <option value="Outdoor dining">Outdoor dining</option>
+                    <option value="Entertaining family and friends">Entertaining family and friends</option>
+                    <option value="Connecting the home with the garden">Connecting the home with the garden</option>
+                    <option value="Improving an existing outdoor area">Improving an existing outdoor area</option>
+                    <option value="Exploring ideas">Exploring ideas</option>
+                  </select>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryMaterial" class="contact-label">Do you have a preferred material?</label>
+                  <select id="enquiryMaterial" class="contact-select">
+                    <option value="Natural Timber">Natural Timber</option>
+                    <option value="Composite Decking">Composite Decking</option>
+                    <option value="Natural Stone">Natural Stone</option>
+                    <option value="A combination of materials">A combination of materials</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryTimeframe" class="contact-label">When are you thinking about starting?</label>
+                  <select id="enquiryTimeframe" class="contact-select">
+                    <option value="As soon as possible">As soon as possible</option>
+                    <option value="Within 1–3 months">Within 1–3 months</option>
+                    <option value="Within 3–6 months">Within 3–6 months</option>
+                    <option value="More than 6 months">More than 6 months</option>
+                    <option value="Just exploring ideas">Just exploring ideas</option>
+                  </select>
+                </div>
+
+                <div class="contact-form-actions">
+                  <button type="button" class="contact-btn-back" id="btnBackTo1">
+                    <i data-lucide="arrow-left"></i>
+                    <span>BACK</span>
+                  </button>
+                  <button type="button" class="contact-btn-primary" id="btnToStep3">
+                    <span>CONTINUE TO REVIEW</span>
+                    <i data-lucide="arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- ================= STEP 3: REVIEW AND SEND ================= -->
+              <div class="contact-form-step" id="contactStep3">
+
+                <div class="contact-review-summary">
+                  <h4 class="contact-review-title">Review Your Enquiry Information</h4>
+                  <div class="contact-review-list">
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Full Name:</span>
+                      <span class="contact-review-val" id="revName">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Email:</span>
+                      <span class="contact-review-val" id="revEmail">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Phone:</span>
+                      <span class="contact-review-val" id="revPhone">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Contact Method:</span>
+                      <span class="contact-review-val" id="revMethod">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Location:</span>
+                      <span class="contact-review-val" id="revLocation">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Project Types:</span>
+                      <span class="contact-review-val" id="revProjects">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Main Goal:</span>
+                      <span class="contact-review-val" id="revGoal">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Preferred Finish:</span>
+                      <span class="contact-review-val" id="revMaterial">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Timeline:</span>
+                      <span class="contact-review-val" id="revTimeframe">—</span>
+                    </div>
+                    <div class="contact-review-row">
+                      <span class="contact-review-key">Your Space:</span>
+                      <span class="contact-review-val" id="revSpace">—</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="enquiryAdditionalMsg" class="contact-label">Additional Message</label>
+                  <textarea id="enquiryAdditionalMsg" 
+                            class="contact-textarea" 
+                            placeholder="Is there anything else you would like us to know?"></textarea>
+                </div>
+
+                <div class="contact-form-group">
+                  <label class="contact-consent-label">
+                    <input type="checkbox" id="enquiryConsent" required>
+                    <span>I agree that the information I provide may be used to respond to my enquiry. <span class="contact-required">*</span></span>
+                  </label>
+                  <p class="contact-privacy-note">
+                    Your information should only be used for handling the enquiry. No information is transmitted or stored by this static demo form.
+                  </p>
+                </div>
+
+                <div class="contact-form-actions">
+                  <button type="button" class="contact-btn-back" id="btnBackTo2">
+                    <i data-lucide="arrow-left"></i>
+                    <span>BACK TO PROJECT DETAILS</span>
+                  </button>
+                  <button type="submit" class="contact-btn-primary" id="btnSubmitEnquiry">
+                    <span>SEND PROJECT ENQUIRY</span>
+                    <i data-lucide="send"></i>
+                  </button>
+                </div>
+              </div>
+
+            </form>
+
+            <!-- Honest Static Demonstration Message Box (No Fake Backend) -->
+            <div class="contact-form-feedback" id="contactFormFeedback" role="status" aria-live="polite">
+              <div class="contact-feedback-icon">
+                <i data-lucide="check-circle"></i>
+              </div>
+              <h3 class="contact-feedback-title">YOUR ENQUIRY FORM IS READY.</h3>
+              <p class="contact-feedback-msg">
+                Thank you for preparing your project details. This website is currently a static demo, so your enquiry has not been transmitted. Please connect a verified email service or backend to enable live submissions.
+              </p>
+              <div class="contact-feedback-btns">
+                <button type="button" class="contact-btn-primary" id="btnEditEnquiry">
+                  <span>EDIT MY ENQUIRY</span>
+                  <i data-lucide="edit"></i>
+                </button>
+                <button type="button" class="contact-btn-secondary" id="btnResetForm">
+                  <span>START NEW ENQUIRY</span>
+                  <i data-lucide="rotate-ccw"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 – HOW THE ENQUIRY PROCESS WORKS
+         Horizontal 4-Step Process Timeline
+         ==================================================================== -->
+    <section class="contact-section contact-process" id="contactProcess" aria-label="How the Enquiry Process Works">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="git-commit"></i>
+            <span>THE CONSULTATION JOURNEY</span>
+          </div>
+          <h2 class="contact-title">A SIMPLE WAY TO GET STARTED.</h2>
+          <p class="contact-desc">
+            You do not need every detail worked out before making an enquiry. Start with your idea and take the next step at a comfortable pace.
+          </p>
+        </div>
+
+        <div class="contact-process-grid">
+
+          <!-- Step 01 -->
+          <div class="contact-process-step">
+            <div class="contact-process-num-wrap">01</div>
+            <h3 class="contact-process-title">SHARE YOUR IDEA</h3>
+            <p class="contact-process-desc">
+              Tell us what you are considering, whether it is a deck, pergola, patio, or a complete outdoor living space.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="contact-process-step">
+            <div class="contact-process-num-wrap">02</div>
+            <h3 class="contact-process-title">TELL US ABOUT YOUR SPACE</h3>
+            <p class="contact-process-desc">
+              Share general location information, photographs, approximate measurements, and any details that may help explain your space.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="contact-process-step">
+            <div class="contact-process-num-wrap">03</div>
+            <h3 class="contact-process-title">DISCUSS THE POSSIBILITIES</h3>
+            <p class="contact-process-desc">
+              Explore the project requirements, design direction, material considerations, and possible next steps.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="contact-process-step">
+            <div class="contact-process-num-wrap">04</div>
+            <h3 class="contact-process-title">PLAN YOUR NEXT STEP</h3>
+            <p class="contact-process-desc">
+              Understand what additional information, assessments, or professional advice may be needed for your specific project.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 – LOCATION AND INTERACTIVE MAP
+         Verified Location Card + Responsive Map Container with Fallback
+         ==================================================================== -->
+    <section class="contact-section contact-map" id="contactMap" aria-label="Business Location and Map">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="map-pin"></i>
+            <span>FIND THE LOCATION</span>
+          </div>
+          <h2 class="contact-title">LET'S PUT YOUR NEXT OUTDOOR IDEA ON THE MAP.</h2>
+          <p class="contact-desc">
+            Explore the location details and use the map to view the configured business location or service-area reference.
+          </p>
+        </div>
+
+        <div class="contact-map-layout">
+
+          <!-- Left Side: Location Information Card -->
+          <div class="contact-location-card">
+            <h3>OUR LOCATION</h3>
+            <div class="contact-location-details">
+              
+              <div class="contact-loc-item">
+                <i data-lucide="map-pin" class="contact-loc-icon"></i>
+                <div>
+                  <div class="contact-loc-info-title">Business Address</div>
+                  <div class="contact-loc-info-val" id="contactLocAddress">
+                    Business location details will be updated soon upon confirmation.
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-loc-item">
+                <i data-lucide="navigation" class="contact-loc-icon"></i>
+                <div>
+                  <div class="contact-loc-info-title">Service Area</div>
+                  <div class="contact-loc-info-val" id="contactLocServiceArea">
+                    Service areas available upon project enquiry.
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-loc-item">
+                <i data-lucide="info" class="contact-loc-icon"></i>
+                <div>
+                  <div class="contact-loc-info-title">Consultation Notice</div>
+                  <div class="contact-loc-info-val">
+                    On-site consultations are scheduled following initial enquiry review to discuss your specific site conditions.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Buttons (Disabled or Configured only with verified links) -->
+            <div class="contact-map-actions">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="contact-btn-primary" id="contactGmapsBtn">
+                <span>VIEW ON GOOGLE MAPS</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="contact-btn-secondary" id="contactDirectionsBtn">
+                <span>OPEN DIRECTIONS</span>
+                <i data-lucide="compass"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Interactive Map Frame with Graceful Fallback Placeholder -->
+          <div class="contact-map-frame">
+            <!-- Iframe (rendered if verified URL is present in contact.js) -->
+            <iframe id="contactMapIframe" 
+                    class="contact-map-iframe" 
+                    title="Evergreen Outdoor Living Location Map" 
+                    loading="lazy"></iframe>
+
+            <!-- Graceful Fallback Placeholder (displayed when no verified Google Maps URL is configured) -->
+            <div class="contact-map-placeholder" id="contactMapPlaceholder">
+              <img src="assets/images/contact/contact-map-support.webp" 
+                   alt="Architectural terrace and landscape site overview" 
+                   class="contact-map-placeholder-bg">
+              <div class="contact-map-placeholder-content">
+                <i data-lucide="map-pin" class="contact-map-pin-icon"></i>
+                <h4 class="contact-map-placeholder-title">Location Map Coming Soon</h4>
+                <p class="contact-map-placeholder-desc">
+                  Interactive map will be activated once verified business address coordinates are confirmed in <code>assets/js/contact.js</code>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 – PROJECT INFORMATION CHECKLIST
+         2-Column Layout with Visual Check Items & Supporting Image
+         ==================================================================== -->
+    <section class="contact-section contact-checklist" id="contactChecklist" aria-label="Project Information Checklist">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="check-square"></i>
+            <span>PROJECT PREPARATION</span>
+          </div>
+          <h2 class="contact-title">A LITTLE PREPARATION CAN MAKE A BIG DIFFERENCE.</h2>
+          <p class="contact-desc">
+            If you are planning an outdoor project, a few details can help you explain your ideas more clearly.
+          </p>
+        </div>
+
+        <div class="contact-checklist-grid">
+
+          <!-- Left Checklist Items -->
+          <div class="contact-checklist-items">
+
+            <!-- Item 1 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="camera"></i></span>
+              <div class="contact-check-content">
+                <h4>Photographs of Your Space</h4>
+                <p>Share clear pictures of the existing backyard, access paths, or outdoor area.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="ruler"></i></span>
+              <div class="contact-check-content">
+                <h4>Approximate Measurements</h4>
+                <p>Include rough dimensions of length and width to establish spatial scale.</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="lightbulb"></i></span>
+              <div class="contact-check-content">
+                <h4>Your Main Idea</h4>
+                <p>Explain whether you are considering a deck, pergola, patio, or complete living area.</p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="layers"></i></span>
+              <div class="contact-check-content">
+                <h4>Preferred Materials</h4>
+                <p>Mention any timber species, composite decking, natural stone, or finish preferences.</p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="coffee"></i></span>
+              <div class="contact-check-content">
+                <h4>How You Plan to Use the Space</h4>
+                <p>Everyday family relaxation, outdoor dining, weekend entertaining, or garden access.</p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="contact-check-card">
+              <span class="contact-check-icon"><i data-lucide="help-circle"></i></span>
+              <div class="contact-check-content">
+                <h4>Questions You Would Like to Ask</h4>
+                <p>List any specific site considerations, shade questions, or details you want to explore.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Supporting Visual -->
+          <div class="contact-checklist-media">
+            <img src="assets/images/contact/contact-checklist.webp" 
+                 alt="Architectural project planning flat lay with drafting plans, timber swatches, and measuring tape" 
+                 class="contact-checklist-img"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 – FREQUENTLY ASKED CONTACT QUESTIONS
+         Accordion with 4 Core Preparation Questions
+         ==================================================================== -->
+    <section class="contact-section contact-faq" id="contactFaq" aria-label="Frequently Asked Contact Questions">
+      <div class="container">
+
+        <div class="contact-header-centered">
+          <div class="contact-eyebrow">
+            <i data-lucide="help-circle"></i>
+            <span>COMMON ENQUIRIES</span>
+          </div>
+          <h2 class="contact-title">BEFORE YOU GET IN TOUCH.</h2>
+          <p class="contact-desc">
+            Here are a few useful answers to help you prepare for your enquiry.
+          </p>
+        </div>
+
+        <div class="contact-faq-wrapper">
+          <div class="contact-faq-list">
+
+            <!-- Question 1 -->
+            <div class="contact-faq-item">
+              <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="contactAns1">
+                <span class="contact-faq-question">Do I need a complete design before contacting you?</span>
+                <span class="contact-faq-toggle"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="contact-faq-panel" id="contactAns1">
+                <div class="contact-faq-answer">
+                  No. You can start with a general idea, photographs, approximate measurements, or a description of what you would like to create.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="contact-faq-item">
+              <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="contactAns2">
+                <span class="contact-faq-question">Can I enquire about more than one outdoor feature?</span>
+                <span class="contact-faq-toggle"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="contact-faq-panel" id="contactAns2">
+                <div class="contact-faq-answer">
+                  Yes. You can include multiple interests, such as a deck with a pergola or a patio connected to an outdoor entertaining area.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="contact-faq-item">
+              <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="contactAns3">
+                <span class="contact-faq-question">What should I include in my enquiry?</span>
+                <span class="contact-faq-toggle"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="contact-faq-panel" id="contactAns3">
+                <div class="contact-faq-answer">
+                  A brief description of your idea, general location, photographs, approximate measurements, and preferred materials can be useful starting points.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="contact-faq-item">
+              <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="contactAns4">
+                <span class="contact-faq-question">How can I ask another question?</span>
+                <span class="contact-faq-toggle"><i data-lucide="chevron-down"></i></span>
+              </button>
+              <div class="contact-faq-panel" id="contactAns4">
+                <div class="contact-faq-answer">
+                  Use the enquiry form above or visit our dedicated FAQ page for more information about outdoor projects, materials, planning, and maintenance.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom View All FAQs Link -->
+          <div style="text-align: center; margin-top: 2.5rem;">
+            <a href="faq.html" class="contact-btn-secondary">
+              <span>VIEW ALL FAQs</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 8 – FINAL CONTACT CTA
+         High-Contrast Closing Architectural Banner
+         ==================================================================== -->
+    <section class="contact-final-cta" id="contactFinalCta" aria-label="Start Your Outdoor Project Enquiry">
+      <!-- Background Image & Overlay -->
+      <div class="contact-final-cta-bg">
+        <img src="assets/images/contact/contact-final-cta.webp" 
+             alt="Wide evening outdoor living pavilion with deck and starry night reflections" 
+             class="contact-final-cta-img"
+             loading="lazy"
+             width="1600"
+             height="800">
+      </div>
+      <div class="contact-final-cta-overlay"></div>
+
+      <div class="container">
+        <div class="contact-final-cta-content">
+          <h2 class="contact-final-cta-title">YOUR OUTDOOR SPACE STARTS WITH AN IDEA.</h2>
+          <p class="contact-final-cta-desc">
+            You have explored the possibilities. Now take the first step towards discussing the outdoor space you would love to create.
+          </p>
+          <div class="contact-final-cta-btns">
+            <a href="#consultation" class="contact-final-cta-btn-light">
+              <span>START YOUR PROJECT ENQUIRY</span>
+              <i data-lucide="arrow-up"></i>
+            </a>
+            <a href="services.html" class="contact-final-cta-btn-outline">
+              <span>EXPLORE OUR SERVICES</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       SHARED FOOTER (Deep Forest #18382C, 7-Column Layout on Desktop)
+       ====================================================================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+            <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="footer-brand-logo">
+          </a>
+          <div class="footer-brand-tagline">CRAFTED OUTDOOR SPACES. MADE FOR LIVING.</div>
+          <p class="footer-brand-desc">
+            Bespoke outdoor architecture, custom deck construction and refined pergola environments built to harmonize with nature and elevate your lifestyle.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#deck-construction" class="footer-link">Custom Decks</a></li>
+            <li><a href="services.html#pergola-construction" class="footer-link">Pergolas</a></li>
+            <li><a href="services.html#covered-outdoor-living" class="footer-link">Covered Outdoor Living</a></li>
+            <li><a href="services.html#patio-spaces" class="footer-link">Patio Spaces</a></li>
+            <li><a href="services.html#outdoor-entertainment" class="footer-link">Outdoor Entertainment</a></li>
+            <li><a href="services.html#deck-renovation" class="footer-link">Deck Renovation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Explore (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html" class="footer-link">Home 2</a></li>
+            <li><a href="gallery.html#decks" class="footer-link">Deck Design Ideas</a></li>
+            <li><a href="gallery.html#pergolas" class="footer-link">Pergola Inspiration</a></li>
+            <li><a href="gallery.html#living" class="footer-link">Outdoor Living Ideas</a></li>
+            <li><a href="projects.html" class="footer-link">Project Gallery</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Customer Support (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html#consultation" class="footer-link">Book a Consultation</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Project Enquiry</a></li>
+            <li><a href="faq.html#planning" class="footer-link">Planning Your Project</a></li>
+            <li><a href="faq.html" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 6: Newsletter -->
+        <div class="footer-col-newsletter">
+          <div class="footer-newsletter-box">
+            <h4 class="footer-newsletter-title">GET OUTDOOR INSPIRATION.</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to receive seasonal design inspiration, materials guides and craftsmanship insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address for newsletter" required>
+              </div>
+              <button type="submit" class="newsletter-submit-btn">
+                <span>Subscribe</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Column 7: Follow Us -->
+        <div class="footer-col-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="10" x2="12" y2="21"/>
+                  <path d="M8 12.5a4 4 0 1 1 8 0c0 3-1.8 5-4.2 5a3.5 3.5 0 0 1-2.8-1.5"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <polygon points="10 15 15 12 10 9" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Evergreen Outdoor Living. All Rights Reserved.
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-legal-link">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+        </ul>
+
+        <button type="button" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCRIPTS (Local Vendor & Custom Vanilla JS)
+       ====================================================================== -->
+  <!-- Bootstrap Bundle JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="vendor/lucide/lucide.min.js"></script>
+  <!-- Theme & Direction Switcher -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Sticky Navbar & Mobile Drawer Controller -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Entrance Animations & Intersection Observer -->
+  <script src="assets/js/animations.js"></script>
+  <!-- Main Application Orchestrator -->
+  <script src="assets/js/main.js"></script>
+  <!-- Contact Page Interactive Controller -->
+  <script src="assets/js/contact.js"></script>
+
+</body>
+</html>

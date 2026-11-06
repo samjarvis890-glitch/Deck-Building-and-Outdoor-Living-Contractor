@@ -1,0 +1,453 @@
+/* ==========================================================================
+   EVERGREEN OUTDOOR LIVING - THEME STYLESHEET (DARK MODE & LIGHT MODE)
+   Dark Mode Palette:
+   Main background: #151D18 | Secondary bg: #1D2921 | Card bg: #243229
+   Primary green: #91B59A   | Main text: #F1F4EE    | Muted text: #B5C0B5
+   Border: #425247          | Accent: #C59A73
+   ========================================================================== */
+
+:root[data-theme="dark"],
+html[data-theme="dark"],
+[data-theme="dark"] {
+  /* Core Background Tokens */
+  --bg-primary: #151D18;
+  --bg-body: #151D18;
+  --bg-secondary: #1D2921;
+  --bg-surface: #1D2921;
+  --bg-card: #243229;
+  --bg-card-hover: #2b3b31;
+  --bg-footer: #0E1A14;
+  --bg-header-scrolled: rgba(21, 29, 24, 0.96);
+  --bg-drawer: #151D18;
+
+  /* Color Palette Remapping for Dark Mode */
+  --color-cream: #151D18;
+  --color-cream-subtle: #1D2921;
+  --color-warm-cream: #151D18;
+  --color-sand: #314236;
+  --color-sand-beige: #243229;
+  --color-charcoal: #F1F4EE;
+  --color-muted: #B5C0B5;
+  --color-muted-text: #B5C0B5;
+  --text-muted: #B5C0B5;
+  --color-border: #425247;
+  --color-soft-border: #425247;
+
+  /* Text Contrast Tokens */
+  --text-primary: #F1F4EE;
+  --text-secondary: #B5C0B5;
+  --text-inverse: #151D18;
+  --text-accent: #91B59A;
+  --text-timber: #C59A73;
+
+  /* Borders */
+  --border-color: #425247;
+  --border-subtle: #2d3b32;
+
+  /* Buttons */
+  --btn-primary-bg: #91B59A;
+  --btn-primary-text: #151D18;
+  --btn-primary-hover: #a5c6ad;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #91B59A;
+  --btn-secondary-border: #91B59A;
+  --btn-secondary-hover: #91B59A;
+  --btn-secondary-hover-text: #151D18;
+
+  /* Badges & Pills */
+  --badge-bg: rgba(145, 181, 154, 0.12);
+  --badge-text: #91B59A;
+  --badge-border: rgba(145, 181, 154, 0.25);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.55);
+  --shadow-navbar: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================================
+   DARK MODE HTML & BODY BASE
+   ========================================================================== */
+html[data-theme="dark"],
+body[data-theme="dark"],
+[data-theme="dark"] body {
+  background-color: #151D18 !important;
+  color: #F1F4EE;
+}
+
+/* ==========================================================================
+   GLOBAL NAVBAR & DRAWER DARK MODE ENHANCEMENTS (ALL PAGES)
+   Fixes navigation contrast on hover and active states
+   ========================================================================== */
+
+/* Scrolled & Fixed Navbar in Dark Mode */
+[data-theme="dark"] .site-header.is-scrolled {
+  background-color: rgba(21, 29, 24, 0.96) !important;
+  border-bottom: 1px solid #425247 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Desktop Nav Links */
+[data-theme="dark"] .nav-link-item {
+  color: #F1F4EE;
+}
+
+[data-theme="dark"] .nav-link-item:hover {
+  color: #FFFFFF !important;
+  background-color: rgba(145, 181, 154, 0.18) !important;
+}
+
+[data-theme="dark"] .nav-link-item.active {
+  color: #91B59A !important;
+  background-color: rgba(145, 181, 154, 0.14) !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .nav-link-item.active::after {
+  background-color: #91B59A !important;
+}
+
+[data-theme="dark"] .nav-link-item.active:hover {
+  color: #FFFFFF !important;
+  background-color: rgba(145, 181, 154, 0.22) !important;
+}
+
+/* Dropdown Menu (Desktop) */
+[data-theme="dark"] .nav-dropdown-menu {
+  background-color: #1D2921 !important;
+  border: 1px solid #425247 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .dropdown-link-item {
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .dropdown-link-item svg,
+[data-theme="dark"] .dropdown-link-item i {
+  color: #91B59A !important;
+}
+
+[data-theme="dark"] .dropdown-link-item:hover {
+  background-color: rgba(145, 181, 154, 0.16) !important;
+  color: #FFFFFF !important;
+}
+
+/* Navbar Action Icon Buttons (Theme & RTL Toggles) */
+[data-theme="dark"] .nav-icon-btn {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .nav-icon-btn:hover {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+  border-color: #91B59A !important;
+}
+
+[data-theme="dark"] .nav-icon-btn:hover svg,
+[data-theme="dark"] .nav-icon-btn:hover i,
+[data-theme="dark"] .nav-icon-btn:hover .dir-badge-text {
+  color: #151D18 !important;
+  stroke: #151D18 !important;
+}
+
+/* Hamburger Toggle Button */
+[data-theme="dark"] .nav-hamburger-btn {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .nav-hamburger-btn:hover {
+  background-color: rgba(145, 181, 154, 0.2) !important;
+  border-color: #91B59A !important;
+  color: #FFFFFF !important;
+}
+
+/* Mobile & Tablet Drawer Menu in Dark Mode */
+[data-theme="dark"] .mobile-drawer {
+  background-color: #151D18 !important;
+  border-left: 1px solid #425247 !important;
+}
+
+[dir="rtl"][data-theme="dark"] .mobile-drawer {
+  border-left: none !important;
+  border-right: 1px solid #425247 !important;
+}
+
+[data-theme="dark"] .drawer-header {
+  border-bottom: 1px solid #425247 !important;
+}
+
+[data-theme="dark"] .drawer-close-btn {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .drawer-close-btn:hover {
+  background-color: #91B59A !important;
+  border-color: #91B59A !important;
+  color: #151D18 !important;
+}
+
+[data-theme="dark"] .drawer-nav-item {
+  border-bottom: 1px solid #2d3b32 !important;
+}
+
+[data-theme="dark"] .drawer-link {
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .drawer-link:hover {
+  color: #FFFFFF !important;
+  background-color: rgba(145, 181, 154, 0.16) !important;
+}
+
+[data-theme="dark"] .drawer-link.active {
+  color: #91B59A !important;
+  background-color: rgba(145, 181, 154, 0.14) !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .drawer-sublink {
+  color: #B5C0B5 !important;
+}
+
+[data-theme="dark"] .drawer-sublink:hover,
+[data-theme="dark"] .drawer-sublink.active {
+  color: #91B59A !important;
+  background-color: rgba(145, 181, 154, 0.14) !important;
+}
+
+[data-theme="dark"] .drawer-footer {
+  border-top: 1px solid #425247 !important;
+  background-color: #1D2921 !important;
+}
+
+[data-theme="dark"] .drawer-control-pill {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .drawer-control-pill:hover {
+  background-color: rgba(145, 181, 154, 0.2) !important;
+  border-color: #91B59A !important;
+  color: #91B59A !important;
+}
+
+[data-theme="dark"] .drawer-cta-btn {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+}
+
+[data-theme="dark"] .drawer-cta-btn:hover {
+  background-color: #a5c6ad !important;
+  color: #151D18 !important;
+}
+
+/* ==========================================================================
+   GLOBAL SECTION & CARD DARK MODE ENHANCEMENTS (ALL PAGES)
+   ========================================================================== */
+
+/* Section Backgrounds */
+[data-theme="dark"] .section-bg-cream {
+  background-color: #151D18 !important;
+}
+
+[data-theme="dark"] .section-bg-surface {
+  background-color: #1D2921 !important;
+}
+
+/* Card Elements Across Pages */
+[data-theme="dark"] .card-elevated,
+[data-theme="dark"] .benefit-card,
+[data-theme="dark"] .solution-card,
+[data-theme="dark"] .showcase-card,
+[data-theme="dark"] .journey-step-card,
+[data-theme="dark"] .craft-feature-item {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+}
+
+[data-theme="dark"] .card-elevated:hover,
+[data-theme="dark"] .benefit-card:hover,
+[data-theme="dark"] .solution-card:hover,
+[data-theme="dark"] .showcase-card:hover,
+[data-theme="dark"] .journey-step-card:hover {
+  background-color: #2b3b31 !important;
+  border-color: #91B59A !important;
+}
+
+[data-theme="dark"] .philosophy-point-item {
+  border-color: #425247 !important;
+}
+
+[data-theme="dark"] .philosophy-point-item:hover {
+  background-color: rgba(145, 181, 154, 0.08) !important;
+  border-color: #91B59A !important;
+}
+
+[data-theme="dark"] .craft-feature-item:hover {
+  border-color: #C59A73 !important;
+}
+
+[data-theme="dark"] .journey-step-indicator {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+  border-color: #243229 !important;
+}
+
+/* Dark mode inputs across contact, faq, blog */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: #1D2921 !important;
+  color: #F1F4EE !important;
+  border-color: #425247 !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #82977B !important;
+}
+
+/* Dark mode footer */
+[data-theme="dark"] .site-footer {
+  background-color: #0E1A14 !important;
+  border-top-color: #2d3b32 !important;
+}
+
+/* Page Wrappers explicit dark background guarantee */
+[data-theme="dark"] .services-page-wrapper,
+[data-theme="dark"] .about-page-wrapper,
+[data-theme="dark"] .projects-page-wrapper,
+[data-theme="dark"] .gallery-page-wrapper {
+  background-color: #151D18 !important;
+  color: #F1F4EE !important;
+}
+
+/* Subtle transitions for theme toggle */
+body,
+.site-header,
+.site-footer,
+.benefit-card,
+.solution-card,
+.showcase-card,
+.mobile-drawer,
+.nav-dropdown-menu {
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+/* ==========================================================================
+   GLOBAL HIGH-CONTRAST DARK MODE VISIBILITY ENHANCEMENTS
+   Fixes dark text on dark backgrounds for cards, badges, and buttons
+   ========================================================================== */
+
+/* About Page Philosophy Tagline Card */
+[data-theme="dark"] .about-philosophy-tagline-card {
+  background-color: #243229 !important;
+  border: 1px solid #425247 !important;
+  border-left: 3px solid #C59A73 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45) !important;
+}
+
+[dir="rtl"][data-theme="dark"] .about-philosophy-tagline-card {
+  border-left: 1px solid #425247 !important;
+  border-right: 3px solid #C59A73 !important;
+}
+
+[data-theme="dark"] .about-philosophy-tagline-card p {
+  color: #F1F4EE !important;
+}
+
+/* About Page Badges and Indexes */
+[data-theme="dark"] .about-hero-badge {
+  background-color: rgba(21, 29, 24, 0.92) !important;
+  border-color: #425247 !important;
+  color: #F1F4EE !important;
+}
+
+[data-theme="dark"] .about-hero-badge i,
+[data-theme="dark"] .about-hero-badge svg {
+  color: #C59A73 !important;
+}
+
+[data-theme="dark"] .about-detail-index,
+[data-theme="dark"] .about-final-cta-eyebrow {
+  color: #C59A73 !important;
+}
+
+/* Homepage 1 Philosophy Badge */
+[data-theme="dark"] .philosophy-badge-float {
+  background-color: #243229 !important;
+  border-color: #425247 !important;
+}
+
+[data-theme="dark"] .philosophy-badge-number {
+  color: #C59A73 !important;
+}
+
+/* Home 2 Final CTA Elements */
+[data-theme="dark"] .home2-final-eyebrow {
+  color: #C59A73 !important;
+}
+
+[data-theme="dark"] .home2-final-lead {
+  color: #D4DFD7 !important;
+}
+
+/* Cream Buttons in Dark Mode */
+[data-theme="dark"] .btn-cream {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+  border-color: #91B59A !important;
+}
+
+[data-theme="dark"] .btn-cream:hover {
+  background-color: #a5c6ad !important;
+  color: #151D18 !important;
+  border-color: #a5c6ad !important;
+}
+
+[data-theme="dark"] .btn-outline-cream {
+  color: #F1F4EE !important;
+  border-color: rgba(241, 244, 238, 0.45) !important;
+}
+
+[data-theme="dark"] .btn-outline-cream:hover {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+  border-color: #91B59A !important;
+}
+
+/* Light CTA Buttons on Blog, Contact, FAQ */
+[data-theme="dark"] .blog-final-cta-btn-light,
+[data-theme="dark"] .contact-final-cta-btn-light,
+[data-theme="dark"] .faq-final-cta-btn-light {
+  background-color: #91B59A !important;
+  color: #151D18 !important;
+  border-color: #91B59A !important;
+}
+
+[data-theme="dark"] .blog-final-cta-btn-light:hover,
+[data-theme="dark"] .contact-final-cta-btn-light:hover,
+[data-theme="dark"] .faq-final-cta-btn-light:hover {
+  background-color: #a5c6ad !important;
+  color: #151D18 !important;
+  border-color: #a5c6ad !important;
+}
+
+/* Gallery & Services Sand-beige Accents in Dark Mode */
+[data-theme="dark"] .gallery-hero-label,
+[data-theme="dark"] .gallery-item-tag,
+[data-theme="dark"] .gallery-lightbox-counter,
+[data-theme="dark"] .service-covered-chip i {
+  color: #C59A73 !important;
+}

@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor Living Blog | Deck, Pergola &amp; Design Ideas | Evergreen Outdoor Living</title>
+  <meta name="description" content="Explore outdoor living ideas, deck planning advice, pergola inspiration, material guides and practical tips for creating beautiful outdoor spaces with Evergreen Outdoor Living.">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:title" content="Outdoor Living Blog | Deck, Pergola &amp; Design Ideas | Evergreen Outdoor Living">
+  <meta property="og:description" content="Explore outdoor living ideas, deck planning advice, pergola inspiration, material guides and practical tips for creating beautiful outdoor spaces with Evergreen Outdoor Living.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/blog/blog-hero.webp">
+
+  <!-- Favicon (Consistent across all pages) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Local Vendor Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/tailwind/tailwind.css">
+
+  <!-- Core Theme & Layout Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Blog Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/blog.css">
+
+  <!-- Immediate Theme & Direction Initializer to prevent FOIT -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('eol_theme_preference');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        var savedDir = localStorage.getItem('eol_direction_preference') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL STICKY NAVBAR (Exact Shared Navbar from index.html)
+       ====================================================================== -->
+  <header class="site-header is-transparent" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-dark">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living Logo" class="brand-logo-img brand-logo-white">
+      </a>
+
+      <!-- Desktop Navigation Menu (1281px+) -->
+      <nav class="navbar-desktop-nav" aria-label="Main Navigation">
+        <!-- Home Dropdown -->
+        <div class="nav-item-wrapper">
+          <a href="index.html" class="nav-link-item" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="dropdown-caret"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="index.html" class="dropdown-link-item"><i data-lucide="home"></i> Home 1 (Main)</a></li>
+            <li><a href="home-2.html" class="dropdown-link-item"><i data-lucide="layers"></i> Home 2 (Architectural)</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="nav-item-wrapper">
+          <a href="about.html" class="nav-link-item">About</a>
+        </div>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <div class="nav-item-wrapper">
+          <a href="services.html" class="nav-link-item">Services</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="nav-item-wrapper">
+          <a href="gallery.html" class="nav-link-item">Gallery</a>
+        </div>
+
+        <!-- Projects -->
+        <div class="nav-item-wrapper">
+          <a href="projects.html" class="nav-link-item">Projects</a>
+        </div>
+
+        <!-- Blog -->
+        <div class="nav-item-wrapper">
+          <a href="blog.html" class="nav-link-item active">Blog</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="nav-item-wrapper">
+          <a href="faq.html" class="nav-link-item">FAQ</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav-item-wrapper">
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Navbar Action Controls (Right) -->
+      <div class="navbar-actions">
+        <!-- 1. LTR / RTL Direction Toggle Icon -->
+        <button type="button" class="nav-icon-btn dir-toggle-btn" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="dir-badge-text font-bold text-xs" style="font-size: 0.75rem; font-weight: 700;">LTR</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Icon -->
+        <button type="button" class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+        </button>
+
+        <!-- 3. Desktop BOOK A CONSULTATION CTA Button -->
+        <a href="contact.html#consultation" class="nav-cta-btn nav-cta-desktop">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button (Visible below 1281px on Mobile & Tablet) -->
+        <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET SLIDING DRAWER MENU (<RULE[user_global]>)
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+        <img src="assets/images/brand/logo.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-dark" style="height: 34px;">
+        <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="brand-logo-img brand-logo-white" style="height: 34px;">
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (All Navigation Items Accessible) -->
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Accordion -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" data-target="drawerSubHome" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <ul class="drawer-submenu" id="drawerSubHome">
+            <li><a href="index.html" class="drawer-sublink">Home 1 (Main Homepage)</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 (Architectural Showcase)</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link - NO DROPDOWN) -->
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+
+
+        <!-- Gallery -->
+        <li class="drawer-nav-item">
+          <a href="gallery.html" class="drawer-link">Gallery</a>
+        </li>
+
+        <!-- Projects -->
+        <li class="drawer-nav-item">
+          <a href="projects.html" class="drawer-link">Projects</a>
+        </li>
+
+        <!-- Blog -->
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-link active">Blog</a>
+        </li>
+
+        <!-- FAQ -->
+        <li class="drawer-nav-item">
+          <a href="faq.html" class="drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer (Controls & Consultation Button) -->
+    <div class="drawer-footer">
+      <div class="drawer-quick-controls">
+        <!-- Dark Mode Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <span class="theme-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
+          <span class="theme-label-text">Dark Mode</span>
+        </button>
+
+        <!-- Direction Toggle Button with Label -->
+        <button type="button" class="drawer-control-pill dir-toggle-btn" aria-label="Toggle LTR / RTL Direction">
+          <i data-lucide="languages"></i>
+          <span class="dir-label-text">RTL Mode</span>
+        </button>
+      </div>
+
+      <!-- Client Login & Consultation CTA Inside Mobile Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <a href="contact.html#consultation" class="drawer-cta-btn">
+          <span>Book a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="contact.html#login" class="drawer-control-pill" style="padding: 0.75rem; justify-content: center; font-weight: 600;">
+          <i data-lucide="lock"></i>
+          <span>Client Login</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 9 SECTIONS
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ====================================================================
+         SECTION 1 – JOURNAL HERO
+         Unique Editorial Magazine-Cover Composition
+         ==================================================================== -->
+    <section class="blog-hero" id="journalHero" aria-label="The Evergreen Journal">
+      <div class="container blog-hero-container">
+        <div class="blog-hero-grid">
+
+          <!-- Left Editorial Copy -->
+          <div class="blog-hero-content">
+            <div class="blog-hero-meta-badge">
+              <i data-lucide="newspaper"></i>
+              <span>THE EVERGREEN JOURNAL</span>
+            </div>
+
+            <h1 class="blog-hero-h1">
+              IDEAS, INSIGHTS &amp; INSPIRATION FOR LIFE OUTDOORS.
+            </h1>
+
+            <p class="blog-hero-lead">
+              Explore thoughtful outdoor design ideas, practical planning advice, material inspiration, and helpful insights to make more of the space beyond your home.
+            </p>
+
+            <div class="blog-hero-cta-group">
+              <a href="#featuredArticle" class="blog-btn-primary">
+                <span>EXPLORE THE JOURNAL</span>
+                <i data-lucide="arrow-down"></i>
+              </a>
+              <a href="#browseTopics" class="blog-btn-secondary">
+                <span>DISCOVER OUTDOOR IDEAS</span>
+                <i data-lucide="compass"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Asymmetrical Magazine Visual Frame -->
+          <div class="blog-hero-visual-frame">
+            <div class="blog-hero-image-wrap">
+              <img src="assets/images/blog/blog-hero.webp" 
+                   alt="Modern outdoor architectural timber deck and cantilever pergola in gentle morning light" 
+                   class="blog-hero-img"
+                   width="1600"
+                   height="1000"
+                   fetchpriority="high">
+            </div>
+
+            <!-- Journal Label Detail -->
+            <div class="blog-hero-magazine-badge">
+              <i data-lucide="book-open" style="width: 22px; height: 22px; flex-shrink: 0;"></i>
+              <div>
+                <div class="blog-hero-badge-title">The Outdoor Living Journal</div>
+                <div class="blog-hero-badge-sub">Volume 04 &bull; Architecture &amp; Craftsmanship</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 – FEATURED ARTICLE
+         Editor's Pick Asymmetrical Magazine Feature
+         ==================================================================== -->
+    <section class="blog-section blog-featured" id="featuredArticle" aria-label="Editor's Pick Featured Article">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="sparkles"></i>
+            <span>EDITOR'S PICK</span>
+          </div>
+          <h2 class="blog-title">A LITTLE MORE ROOM TO ENJOY THE OUTDOORS.</h2>
+          <p class="blog-desc">
+            A deeper look at the design principles that transform backyards into seamless, comfortable outdoor living rooms.
+          </p>
+        </div>
+
+        <article class="blog-featured-card">
+          <!-- Featured Media (Approx 55% width) -->
+          <div class="blog-featured-media">
+            <span class="blog-featured-badge">OUTDOOR LIVING</span>
+            <img src="assets/images/blog/blog-featured-article.webp" 
+                 alt="Indoor outdoor living extension with timber deck and expansive sliding glass doors" 
+                 class="blog-featured-img"
+                 loading="lazy"
+                 width="1200"
+                 height="800">
+          </div>
+
+          <!-- Featured Editorial Content -->
+          <div class="blog-featured-content">
+            <div class="blog-meta-row">
+              <span class="blog-meta-item">
+                <i data-lucide="clock"></i>
+                <span>6 MIN READ</span>
+              </span>
+              <span class="blog-meta-sep">&bull;</span>
+              <span class="blog-meta-item">
+                <i data-lucide="calendar"></i>
+                <span>Editorial Issue &bull; Vol. 04</span>
+              </span>
+            </div>
+
+            <h3 class="blog-featured-title">
+              How to Create an Outdoor Living Space That Feels Like an Extension of Home
+            </h3>
+
+            <p class="blog-featured-desc">
+              A well-planned outdoor space can become a natural extension of everyday living. Explore how layout, materials, seating, shade, and the connection to your garden can help create a comfortable and welcoming environment.
+            </p>
+
+            <button type="button" 
+                    class="blog-card-link-btn" 
+                    data-article-id="featured"
+                    aria-label="Read complete featured article">
+              <span>READ ARTICLE</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 – LATEST ARTICLES
+         Filterable 6-Card Magazine Grid with Integrated Search & Modal Detail
+         ==================================================================== -->
+    <section class="blog-section blog-articles" id="latestArticles" aria-label="Latest Articles">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="book-text"></i>
+            <span>THE LATEST ESSAYS</span>
+          </div>
+          <h2 class="blog-title">FRESH IDEAS FOR YOUR OUTDOOR SPACE.</h2>
+          <p class="blog-desc">
+            Discover practical advice, design inspiration, and useful ideas to help you plan an outdoor space that suits your home and lifestyle.
+          </p>
+        </div>
+
+        <!-- Coordinated Controls: Live Search & Category Filter Pills -->
+        <div class="blog-controls-wrapper">
+          <!-- Article Search Field -->
+          <div class="blog-search-box">
+            <i data-lucide="search" class="blog-search-icon"></i>
+            <input type="text" 
+                   id="blogSearchInput" 
+                   class="blog-search-input" 
+                   placeholder="Search outdoor living articles..." 
+                   aria-label="Search outdoor living articles">
+            <button type="button" 
+                    id="blogSearchClear" 
+                    class="blog-search-clear" 
+                    aria-label="Clear article search">
+              <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="blog-filter-pills" role="tablist" aria-label="Filter Articles by Category">
+            <button type="button" class="blog-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              All Articles
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="deck-planning" role="tab" aria-selected="false">
+              Deck Planning
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="pergola-ideas" role="tab" aria-selected="false">
+              Pergola Ideas
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="small-spaces" role="tab" aria-selected="false">
+              Small Spaces
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="material-guide" role="tab" aria-selected="false">
+              Material Guide
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="outdoor-entertaining" role="tab" aria-selected="false">
+              Outdoor Entertaining
+            </button>
+            <button type="button" class="blog-filter-btn" data-filter="design-inspiration" role="tab" aria-selected="false">
+              Design Inspiration
+            </button>
+          </div>
+        </div>
+
+        <!-- 6 Unique Latest Article Cards -->
+        <div class="blog-articles-grid" id="articleCardsContainer">
+
+          <!-- Article 01 -->
+          <article class="blog-article-card" 
+                   data-category="deck-planning"
+                   data-title="7 Things to Consider Before Building a Timber Deck"
+                   data-desc="Explore important planning considerations, including available space, layout, access, material choices, and how the deck will connect with your home.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">DECK PLANNING</span>
+              <img src="assets/images/blog/blog-article-deck-planning.webp" 
+                   alt="Building a timber deck planning considerations and structure" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>5 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                7 Things to Consider Before Building a Timber Deck
+              </h3>
+              <p class="blog-article-desc">
+                Explore important planning considerations, including available space, layout, access, material choices, and how the deck will connect with your home.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="deck-planning"
+                        aria-label="Read article: 7 Things to Consider Before Building a Timber Deck">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 02 -->
+          <article class="blog-article-card" 
+                   data-category="pergola-ideas"
+                   data-title="Choosing the Right Pergola Style for Your Garden"
+                   data-desc="Understand how pergola proportions, structure, shade, and surrounding landscaping can influence the overall feel of your outdoor space.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">PERGOLA IDEAS</span>
+              <img src="assets/images/blog/blog-article-pergola-style.webp" 
+                   alt="Choosing the right pergola style with dappled sunlight on timber structure" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>4 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                Choosing the Right Pergola Style for Your Garden
+              </h3>
+              <p class="blog-article-desc">
+                Understand how pergola proportions, structure, shade, and surrounding landscaping can influence the overall feel of your outdoor space.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="pergola-style"
+                        aria-label="Read article: Choosing the Right Pergola Style for Your Garden">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 03 -->
+          <article class="blog-article-card" 
+                   data-category="small-spaces"
+                   data-title="How to Make a Small Backyard Feel More Spacious"
+                   data-desc="Discover practical ways to use layout, furniture placement, levels, and visual connections to make a smaller outdoor area feel more open.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">SMALL SPACES</span>
+              <img src="assets/images/blog/blog-article-small-backyard.webp" 
+                   alt="Small backyard space design with built-in bench and vertical garden" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>6 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                How to Make a Small Backyard Feel More Spacious
+              </h3>
+              <p class="blog-article-desc">
+                Discover practical ways to use layout, furniture placement, levels, and visual connections to make a smaller outdoor area feel more open.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="small-spaces"
+                        aria-label="Read article: How to Make a Small Backyard Feel More Spacious">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 04 -->
+          <article class="blog-article-card" 
+                   data-category="material-guide"
+                   data-title="Timber or Composite Decking: What Should You Consider?"
+                   data-desc="Explore the general differences between timber and composite decking, including appearance, maintenance, durability considerations, and design preferences.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">MATERIAL GUIDE</span>
+              <img src="assets/images/blog/blog-article-deck-materials.webp" 
+                   alt="Timber vs composite decking material comparison swatches" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>7 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                Timber or Composite Decking: What Should You Consider?
+              </h3>
+              <p class="blog-article-desc">
+                Explore the general differences between timber and composite decking, including appearance, maintenance, durability considerations, and design preferences.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="deck-materials"
+                        aria-label="Read article: Timber or Composite Decking: What Should You Consider?">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 05 -->
+          <article class="blog-article-card" 
+                   data-category="outdoor-entertaining"
+                   data-title="Creating a Comfortable Outdoor Dining Area"
+                   data-desc="Learn how to think about seating, circulation, shade, lighting, and the relationship between your dining area and the rest of your garden.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">OUTDOOR ENTERTAINING</span>
+              <img src="assets/images/blog/blog-article-outdoor-dining.webp" 
+                   alt="Comfortable outdoor dining table setting on timber terrace at dusk" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>5 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                Creating a Comfortable Outdoor Dining Area
+              </h3>
+              <p class="blog-article-desc">
+                Learn how to think about seating, circulation, shade, lighting, and the relationship between your dining area and the rest of your garden.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="outdoor-dining"
+                        aria-label="Read article: Creating a Comfortable Outdoor Dining Area">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 06 -->
+          <article class="blog-article-card" 
+                   data-category="design-inspiration"
+                   data-title="Simple Ways to Bring Natural Style Into Outdoor Design"
+                   data-desc="Explore the role of timber, stone, greenery, natural textures, and restrained colour palettes in creating a cohesive outdoor environment.">
+            <div class="blog-article-thumb-wrap">
+              <span class="blog-article-cat-tag">DESIGN INSPIRATION</span>
+              <img src="assets/images/blog/blog-article-natural-style.webp" 
+                   alt="Natural style outdoor living with stones, timber, and native garden planting" 
+                   class="blog-article-thumb"
+                   loading="lazy"
+                   width="800"
+                   height="600">
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-article-meta">
+                <i data-lucide="clock" style="width: 13px; height: 13px; color: var(--color-timber);"></i>
+                <span>4 MIN READ</span>
+              </div>
+              <h3 class="blog-article-title">
+                Simple Ways to Bring Natural Style Into Outdoor Design
+              </h3>
+              <p class="blog-article-desc">
+                Explore the role of timber, stone, greenery, natural textures, and restrained colour palettes in creating a cohesive outdoor environment.
+              </p>
+              <div class="blog-article-footer">
+                <button type="button" 
+                        class="blog-card-link-btn" 
+                        data-article-id="natural-style"
+                        aria-label="Read article: Simple Ways to Bring Natural Style Into Outdoor Design">
+                  <span>READ ARTICLE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty Results State (Shown when no articles match search/filter) -->
+        <div class="blog-empty-state" id="blogEmptyState" role="status">
+          <i data-lucide="search-x" class="blog-empty-icon"></i>
+          <h3 class="blog-empty-title">No Articles Found</h3>
+          <p class="blog-empty-desc">
+            We couldn't find any articles matching your search criteria. Try a different keyword or reset the category filters.
+          </p>
+          <button type="button" class="blog-btn-primary" id="blogResetFiltersBtn">
+            <span>RESET ALL FILTERS</span>
+            <i data-lucide="rotate-ccw"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 – BROWSE BY TOPIC
+         6 Editorial Topic Tiles with Dynamic Filter Connection & All Topics Reset
+         ==================================================================== -->
+    <section class="blog-section blog-topics" id="browseTopics" aria-label="Browse By Topic">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="layers"></i>
+            <span>CURATED TOPICS</span>
+          </div>
+          <h2 class="blog-title">FIND THE IDEAS THAT INTEREST YOU.</h2>
+          <p class="blog-desc">
+            Explore the topics that matter most when planning, improving, or enjoying an outdoor living space.
+          </p>
+        </div>
+
+        <div class="blog-topics-grid">
+
+          <!-- Topic 01: Deck Design -->
+          <div class="blog-topic-card" data-topic-filter="deck-planning" tabindex="0" role="button" aria-label="Browse Deck Design Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">01</span>
+              <img src="assets/images/blog/blog-topic-deck-design.webp" 
+                   alt="Deck Design layouts, timber finishes, levels, and connections" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Deck Design</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Ideas about deck layouts, timber finishes, levels, and connections to the home.
+              </p>
+            </div>
+          </div>
+
+          <!-- Topic 02: Pergola Inspiration -->
+          <div class="blog-topic-card" data-topic-filter="pergola-ideas" tabindex="0" role="button" aria-label="Browse Pergola Inspiration Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">02</span>
+              <img src="assets/images/blog/blog-topic-pergola.webp" 
+                   alt="Pergola styles, shade, structural details, and garden integration" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Pergola Inspiration</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Explore pergola styles, shade, structural details, and garden integration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Topic 03: Outdoor Living -->
+          <div class="blog-topic-card" data-topic-filter="outdoor-entertaining" tabindex="0" role="button" aria-label="Browse Outdoor Living Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">03</span>
+              <img src="assets/images/blog/blog-topic-outdoor-living.webp" 
+                   alt="Welcoming outdoor living rooms and lifestyle amenities" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Outdoor Living</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Discover ways to create welcoming spaces for everyday outdoor enjoyment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Topic 04: Materials & Finishes -->
+          <div class="blog-topic-card" data-topic-filter="material-guide" tabindex="0" role="button" aria-label="Browse Materials & Finishes Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">04</span>
+              <img src="assets/images/blog/blog-topic-materials.webp" 
+                   alt="Materials and finishes, timber, stone, surfaces, and choices" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Materials &amp; Finishes</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Learn about timber, stone, surfaces, and outdoor material choices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Topic 05: Garden & Landscaping -->
+          <div class="blog-topic-card" data-topic-filter="design-inspiration" tabindex="0" role="button" aria-label="Browse Garden & Landscaping Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">05</span>
+              <img src="assets/images/blog/blog-topic-garden.webp" 
+                   alt="Connecting decks, patios, pergolas, and garden greenery" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Garden &amp; Landscaping</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Explore ideas for connecting decks, patios, pergolas, and greenery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Topic 06: Planning & Maintenance -->
+          <div class="blog-topic-card" data-topic-filter="small-spaces" tabindex="0" role="button" aria-label="Browse Planning & Maintenance Articles">
+            <div class="blog-topic-media">
+              <span class="blog-topic-num">06</span>
+              <img src="assets/images/blog/blog-topic-planning.webp" 
+                   alt="Project preparation, maintenance considerations, and long-term care" 
+                   class="blog-topic-img"
+                   loading="lazy"
+                   width="600"
+                   height="450">
+            </div>
+            <div class="blog-topic-body">
+              <h3 class="blog-topic-title">
+                <span>Planning &amp; Maintenance</span>
+                <i data-lucide="arrow-up-right"></i>
+              </h3>
+              <p class="blog-topic-desc">
+                Understand project preparation, maintenance considerations, and long-term care.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- All Topics Reset Option -->
+        <div style="text-align: center; margin-top: 2.75rem;">
+          <button type="button" class="blog-btn-secondary" id="blogAllTopicsResetBtn">
+            <i data-lucide="list-filter"></i>
+            <span>VIEW ALL TOPICS &amp; ARTICLES</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 – PRACTICAL OUTDOOR GUIDES
+         3 Large Horizontal Panels with Numbered Planning Checklists
+         ==================================================================== -->
+    <section class="blog-section blog-guides" id="practicalGuides" aria-label="Practical Outdoor Guides">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="clipboard-check"></i>
+            <span>STEP-BY-STEP CHECKLISTS</span>
+          </div>
+          <h2 class="blog-title">HELPFUL GUIDES FOR BETTER OUTDOOR PLANNING.</h2>
+          <p class="blog-desc">
+            Before choosing materials or beginning construction, a little planning can help you make more informed decisions about your outdoor space.
+          </p>
+        </div>
+
+        <div class="blog-guides-stack">
+
+          <!-- Guide 01: Planning Your Deck -->
+          <article class="blog-guide-card">
+            <div class="blog-guide-body">
+              <div class="blog-guide-index">
+                <i data-lucide="ruler"></i>
+                <span>GUIDE 01 &bull; TIMBER ARCHITECTURE</span>
+              </div>
+              <h3 class="blog-guide-title">Planning Your Deck</h3>
+              <ul class="blog-guide-checklist">
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Measure and understand the available space and boundary clearances.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider effortless access and threshold transitions from the home.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Think about furniture layouts and unencumbered circulation zones.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Explore suitable material options based on exposure and climate.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider how the deck connects to the garden with steps and terracing.</span>
+                </li>
+              </ul>
+              <div>
+                <button type="button" class="blog-btn-primary" data-article-id="guide-deck">
+                  <span>EXPLORE THE GUIDE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="blog-guide-media">
+              <img src="assets/images/blog/blog-guide-deck-planning.webp" 
+                   alt="Deck planning checklist schematic and layout guide" 
+                   class="blog-guide-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+          </article>
+
+          <!-- Guide 02: Planning a Pergola -->
+          <article class="blog-guide-card">
+            <div class="blog-guide-body">
+              <div class="blog-guide-index">
+                <i data-lucide="sun"></i>
+                <span>GUIDE 02 &bull; SHADE STRUCTURES</span>
+              </div>
+              <h3 class="blog-guide-title">Planning a Pergola</h3>
+              <ul class="blog-guide-checklist">
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Decide the intended purpose: dining shelter, architectural accent, or plant canopy.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider the position and orientation relative to seasonal sun paths.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Think about shade requirements and daylight penetration into adjacent rooms.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Explore structural and material options including timber species and beam profiles.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider how the structure integrates with the surrounding landscape.</span>
+                </li>
+              </ul>
+              <div>
+                <button type="button" class="blog-btn-primary" data-article-id="guide-pergola">
+                  <span>EXPLORE THE GUIDE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="blog-guide-media">
+              <img src="assets/images/blog/blog-guide-pergola-planning.webp" 
+                   alt="Pergola planning checklist diagram with solar angles" 
+                   class="blog-guide-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+          </article>
+
+          <!-- Guide 03: Planning an Outdoor Entertaining Area -->
+          <article class="blog-guide-card">
+            <div class="blog-guide-body">
+              <div class="blog-guide-index">
+                <i data-lucide="coffee"></i>
+                <span>GUIDE 03 &bull; ALFRESCO LIFESTYLE</span>
+              </div>
+              <h3 class="blog-guide-title">Planning an Outdoor Entertaining Area</h3>
+              <ul class="blog-guide-checklist">
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Understand the typical and peak number of people using the space.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Plan flexible seating, lounge clusters, and dining table arrangements.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider circulation paths from indoor food prep to barbecue counters.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Think about seasonal weather protection against prevailing winds and rain.</span>
+                </li>
+                <li class="blog-guide-check-item">
+                  <span class="blog-guide-check-icon"><i data-lucide="check"></i></span>
+                  <span>Consider layered lighting circuits to create comfortable evening atmosphere.</span>
+                </li>
+              </ul>
+              <div>
+                <button type="button" class="blog-btn-primary" data-article-id="guide-entertaining">
+                  <span>EXPLORE THE GUIDE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="blog-guide-media">
+              <img src="assets/images/blog/blog-guide-entertaining.webp" 
+                   alt="Outdoor entertaining area planning with outdoor kitchen and dining flow" 
+                   class="blog-guide-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Compliance Disclaimer Notice -->
+        <div class="blog-guide-disclaimer">
+          <strong>Important Planning Note:</strong> These general checklists offer initial planning considerations for design inspiration. They do not replace professional on-site engineering assessments, certified structural drawings, local municipal building approvals, or statutory regulatory requirements.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 – MATERIAL KNOWLEDGE
+         3 Educational Comparison Panels
+         ==================================================================== -->
+    <section class="blog-section blog-materials" id="materialKnowledge" aria-label="Material Knowledge">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="layers"></i>
+            <span>MATERIAL HONESTY</span>
+          </div>
+          <h2 class="blog-title">UNDERSTANDING THE MATERIALS BEHIND THE DESIGN.</h2>
+          <p class="blog-desc">
+            Materials influence how an outdoor space looks, feels, and performs over time. Explore some of the key considerations when selecting finishes for decks, pergolas, and outdoor living areas.
+          </p>
+        </div>
+
+        <div class="blog-materials-grid">
+
+          <!-- Material 01: Natural Timber -->
+          <article class="blog-material-card">
+            <div class="blog-material-media">
+              <img src="assets/images/blog/blog-material-natural-timber.webp" 
+                   alt="Natural timber close up grain and warm organic texture" 
+                   class="blog-material-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-material-body">
+              <div class="blog-material-header">
+                <h3 class="blog-material-name">Natural Timber</h3>
+                <span class="blog-material-tag">ORGANIC HARDWOOD</span>
+              </div>
+              <p class="blog-material-content">
+                Natural timber offers distinctive grain patterns, warm tones, and a characterful appearance. Material selection should consider the intended use, exposure, maintenance requirements, and suitability for the project.
+              </p>
+              <div class="blog-material-specs">
+                <span class="blog-spec-pill">Tactile Warmth</span>
+                <span class="blog-spec-pill">Unique Grain</span>
+                <span class="blog-spec-pill">Periodic Oiling</span>
+                <span class="blog-spec-pill">Repairable</span>
+              </div>
+              <button type="button" class="blog-card-link-btn" data-article-id="deck-materials">
+                <span>READ MATERIAL GUIDE</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Material 02: Composite Decking -->
+          <article class="blog-material-card">
+            <div class="blog-material-media">
+              <img src="assets/images/blog/blog-material-composite.webp" 
+                   alt="Modern composite decking engineered surface with concealed clips" 
+                   class="blog-material-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-material-body">
+              <div class="blog-material-header">
+                <h3 class="blog-material-name">Composite Decking</h3>
+                <span class="blog-material-tag">ENGINEERED SURFACE</span>
+              </div>
+              <p class="blog-material-content">
+                Composite decking is an alternative decking material with a manufactured finish. When comparing options, consider product specifications, appearance, installation requirements, cleaning, and the manufacturer's maintenance guidance.
+              </p>
+              <div class="blog-material-specs">
+                <span class="blog-spec-pill">Low Maintenance</span>
+                <span class="blog-spec-pill">Splinter Free</span>
+                <span class="blog-spec-pill">Hidden Fasteners</span>
+                <span class="blog-spec-pill">Color Stability</span>
+              </div>
+              <button type="button" class="blog-card-link-btn" data-article-id="deck-materials">
+                <span>READ MATERIAL GUIDE</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Material 03: Natural Stone -->
+          <article class="blog-material-card">
+            <div class="blog-material-media">
+              <img src="assets/images/blog/blog-material-natural-stone.webp" 
+                   alt="Natural bluestone pavers with honed surface texture" 
+                   class="blog-material-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-material-body">
+              <div class="blog-material-header">
+                <h3 class="blog-material-name">Natural Stone</h3>
+                <span class="blog-material-tag">MASONRY &amp; PAVING</span>
+              </div>
+              <p class="blog-material-content">
+                Natural stone can add texture and visual contrast to outdoor environments. Consider the intended application, surface finish, slip resistance, maintenance, and suitability for local weather conditions.
+              </p>
+              <div class="blog-material-specs">
+                <span class="blog-spec-pill">Thermal Mass</span>
+                <span class="blog-spec-pill">Slip Resistance</span>
+                <span class="blog-spec-pill">Weather Enduring</span>
+                <span class="blog-spec-pill">Timeless Patina</span>
+              </div>
+              <button type="button" class="blog-card-link-btn" data-article-id="natural-style">
+                <span>READ MATERIAL GUIDE</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 – OUTDOOR DESIGN IDEAS
+         4 Magazine-Style Alternating Stories
+         ==================================================================== -->
+    <section class="blog-section blog-ideas" id="designIdeas" aria-label="Outdoor Design Ideas">
+      <div class="container">
+
+        <div class="blog-header-centered">
+          <div class="blog-eyebrow">
+            <i data-lucide="lightbulb"></i>
+            <span>DESIGN DETAILS</span>
+          </div>
+          <h2 class="blog-title">SMALL DETAILS. BEAUTIFUL POSSIBILITIES.</h2>
+          <p class="blog-desc">
+            Sometimes the character of an outdoor space comes from the details. Explore ideas that bring comfort, balance, and personality to a garden environment.
+          </p>
+        </div>
+
+        <div class="blog-ideas-grid">
+
+          <!-- Idea 01: Layered Outdoor Lighting -->
+          <article class="blog-idea-card">
+            <div class="blog-idea-media">
+              <span class="blog-idea-cat">ATMOSPHERE &amp; LIGHT</span>
+              <img src="assets/images/blog/blog-idea-outdoor-lighting.webp" 
+                   alt="Layered outdoor lighting with step riser LEDs and warm pergola illumination" 
+                   class="blog-idea-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-idea-body">
+              <h3 class="blog-idea-title">Layered Outdoor Lighting</h3>
+              <p class="blog-idea-desc">
+                Explore how different lighting positions can help create a comfortable evening atmosphere.
+              </p>
+              <div>
+                <button type="button" class="blog-card-link-btn" data-article-id="outdoor-dining">
+                  <span>DISCOVER LIGHTING IDEAS</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Idea 02: Comfortable Garden Seating -->
+          <article class="blog-idea-card">
+            <div class="blog-idea-media">
+              <span class="blog-idea-cat">FURNITURE &amp; LAYOUT</span>
+              <img src="assets/images/blog/blog-idea-garden-seating.webp" 
+                   alt="Comfortable garden seating nook nestled in shade" 
+                   class="blog-idea-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-idea-body">
+              <h3 class="blog-idea-title">Comfortable Garden Seating</h3>
+              <p class="blog-idea-desc">
+                Explore furniture arrangement, seating orientation, and creating inviting places to pause.
+              </p>
+              <div>
+                <button type="button" class="blog-card-link-btn" data-article-id="small-spaces">
+                  <span>DISCOVER SEATING IDEAS</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Idea 03: Greenery Around Timber Structures -->
+          <article class="blog-idea-card">
+            <div class="blog-idea-media">
+              <span class="blog-idea-cat">PLANTING &amp; STRUCTURE</span>
+              <img src="assets/images/blog/blog-idea-greenery.webp" 
+                   alt="Greenery and climbing plants around cedar pergola structures" 
+                   class="blog-idea-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-idea-body">
+              <h3 class="blog-idea-title">Greenery Around Timber Structures</h3>
+              <p class="blog-idea-desc">
+                Discover ways to combine garden planting with timber decks and pergolas.
+              </p>
+              <div>
+                <button type="button" class="blog-card-link-btn" data-article-id="natural-style">
+                  <span>DISCOVER BOTANICAL IDEAS</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Idea 04: Finishing Touches for Outdoor Dining -->
+          <article class="blog-idea-card">
+            <div class="blog-idea-media">
+              <span class="blog-idea-cat">TABLEWARE &amp; TEXTURE</span>
+              <img src="assets/images/blog/blog-idea-outdoor-finishing.webp" 
+                   alt="Finishing touches for outdoor dining tables with stoneware and linens" 
+                   class="blog-idea-img"
+                   loading="lazy"
+                   width="700"
+                   height="500">
+            </div>
+            <div class="blog-idea-body">
+              <h3 class="blog-idea-title">Finishing Touches for Outdoor Dining</h3>
+              <p class="blog-idea-desc">
+                Explore table settings, outdoor accessories, and natural textures for dining spaces.
+              </p>
+              <div>
+                <button type="button" class="blog-card-link-btn" data-article-id="outdoor-dining">
+                  <span>DISCOVER DINING ACCENTS</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 8 – JOURNAL SUBSCRIPTION
+         Warm Cream Background with Client-Side Validation Honesty
+         ==================================================================== -->
+    <section class="blog-section blog-newsletter" id="journalSubscription" aria-label="Journal Subscription">
+      <div class="container">
+
+        <div class="blog-newsletter-card">
+          <!-- Left Editorial Content & Form -->
+          <div class="blog-newsletter-content">
+            <div class="blog-eyebrow">
+              <i data-lucide="mail"></i>
+              <span>THE EVERGREEN JOURNAL DISPATCH</span>
+            </div>
+            <h2 class="blog-newsletter-title">A LITTLE OUTDOOR INSPIRATION, NOW AND THEN.</h2>
+            <p class="blog-newsletter-desc">
+              Stay connected with fresh outdoor design ideas, helpful planning insights, and inspiration for making more of your outdoor space.
+            </p>
+
+            <form class="blog-newsletter-form" id="blogNewsletterForm" novalidate>
+              <div class="blog-newsletter-row">
+                <input type="email" 
+                       id="blogNewsletterEmail" 
+                       class="blog-newsletter-input" 
+                       placeholder="Enter your email address" 
+                       aria-label="Email address for journal dispatch" 
+                       required>
+                <button type="submit" class="blog-newsletter-btn">
+                  <span>SUBSCRIBE</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+              <div id="blogNewsletterFeedback" class="blog-newsletter-feedback" role="alert" aria-live="polite"></div>
+              <p class="blog-newsletter-privacy">
+                We respect your privacy. No spam. You can unsubscribe at any time. (Static demonstration notice: Subscriptions are validated on the client side only).
+              </p>
+            </form>
+          </div>
+
+          <!-- Right Distinctive Magazine Photography -->
+          <div class="blog-newsletter-media">
+            <img src="assets/images/blog/blog-newsletter.webp" 
+                 alt="Open architectural design magazine and warm cup of coffee on sunlit timber deck" 
+                 class="blog-newsletter-img"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 9 – FINAL CTA
+         Closing Architectural Banner
+         ==================================================================== -->
+    <section class="blog-final-cta" id="finalCta" aria-label="Start Your Outdoor Living Project">
+      <!-- Background Image & Contrast Overlay -->
+      <div class="blog-final-cta-bg">
+        <img src="assets/images/blog/blog-final-cta.webp" 
+             alt="Luxury timber deck, covered outdoor living pavilion, and twilight garden reflections" 
+             class="blog-final-cta-img"
+             loading="lazy"
+             width="1600"
+             height="800">
+      </div>
+      <div class="blog-final-cta-overlay"></div>
+
+      <div class="container">
+        <div class="blog-final-cta-content">
+          <h2 class="blog-final-cta-title">HAVE AN IDEA FOR YOUR OUTDOOR SPACE?</h2>
+          <p class="blog-final-cta-desc">
+            Reading about outdoor design is a great place to start. When you are ready to explore the possibilities for your own home, let's talk about the space you have in mind.
+          </p>
+          <div class="blog-final-cta-btns">
+            <a href="contact.html#consultation" class="blog-final-cta-btn-light">
+              <span>BOOK A CONSULTATION</span>
+              <i data-lucide="calendar"></i>
+            </a>
+            <a href="services.html" class="blog-final-cta-btn-outline">
+              <span>EXPLORE OUR SERVICES</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       ACCESSIBLE ARTICLE DETAIL MODAL
+       Provides high-quality in-page reading experience for all articles
+       ====================================================================== -->
+  <div class="blog-modal-backdrop" id="blogArticleModal" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+    <div class="blog-modal-dialog">
+      <!-- Modal Close Button -->
+      <button type="button" class="blog-modal-close-btn" id="blogModalCloseBtn" aria-label="Close article view">
+        <i data-lucide="x"></i>
+      </button>
+
+      <!-- Featured Image -->
+      <div class="blog-modal-hero-media">
+        <img src="assets/images/blog/blog-featured-article.webp" 
+             alt="Article hero photography" 
+             id="blogModalImg" 
+             class="blog-modal-hero-img">
+      </div>
+
+      <!-- Article Reading Content -->
+      <div class="blog-modal-article-body">
+        <div class="blog-modal-header">
+          <span class="blog-modal-cat-badge" id="blogModalCat">OUTDOOR LIVING</span>
+          <h2 class="blog-modal-title" id="blogModalTitle">Article Title Placeholder</h2>
+          <div class="blog-modal-meta">
+            <span class="blog-meta-item">
+              <i data-lucide="clock"></i>
+              <span id="blogModalReadTime">6 MIN READ</span>
+            </span>
+            <span class="blog-meta-sep">&bull;</span>
+            <span class="blog-meta-item">
+              <i data-lucide="calendar"></i>
+              <span id="blogModalDate">Editorial Issue</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Rendered HTML Content -->
+        <div class="blog-modal-content-text" id="blogModalContent"></div>
+
+        <!-- Structured Key Takeaways Box -->
+        <div class="blog-modal-takeaways">
+          <h4><i data-lucide="sparkles"></i><span>Key Architectural Takeaways</span></h4>
+          <ul id="blogModalTakeawaysList"></ul>
+        </div>
+
+        <!-- Modal Bottom Close CTA -->
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="button" class="blog-btn-secondary" onclick="document.getElementById('blogModalCloseBtn').click();">
+            <span>CLOSE ARTICLE</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================================
+       SHARED FOOTER (Deep Forest #18382C, 7-Column Layout on Desktop)
+       ====================================================================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="navbar-brand-link" aria-label="Evergreen Outdoor Living Home">
+            <img src="assets/images/brand/logo-white.svg" alt="Evergreen Outdoor Living" class="footer-brand-logo">
+          </a>
+          <div class="footer-brand-tagline">CRAFTED OUTDOOR SPACES. MADE FOR LIVING.</div>
+          <p class="footer-brand-desc">
+            Bespoke outdoor architecture, custom deck construction and refined pergola environments built to harmonize with nature and elevate your lifestyle.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#deck-construction" class="footer-link">Custom Decks</a></li>
+            <li><a href="services.html#pergola-construction" class="footer-link">Pergolas</a></li>
+            <li><a href="services.html#covered-outdoor-living" class="footer-link">Covered Outdoor Living</a></li>
+            <li><a href="services.html#patio-spaces" class="footer-link">Patio Spaces</a></li>
+            <li><a href="services.html#outdoor-entertainment" class="footer-link">Outdoor Entertainment</a></li>
+            <li><a href="services.html#deck-renovation" class="footer-link">Deck Renovation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Explore (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html" class="footer-link">Home 2</a></li>
+            <li><a href="gallery.html#decks" class="footer-link">Deck Design Ideas</a></li>
+            <li><a href="gallery.html#pergolas" class="footer-link">Pergola Inspiration</a></li>
+            <li><a href="gallery.html#living" class="footer-link">Outdoor Living Ideas</a></li>
+            <li><a href="projects.html" class="footer-link">Project Gallery</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Customer Support (Exactly 6) -->
+        <div class="footer-col-links">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html#consultation" class="footer-link">Book a Consultation</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Project Enquiry</a></li>
+            <li><a href="faq.html#planning" class="footer-link">Planning Your Project</a></li>
+            <li><a href="faq.html" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 6: Newsletter -->
+        <div class="footer-col-newsletter">
+          <div class="footer-newsletter-box">
+            <h4 class="footer-newsletter-title">GET OUTDOOR INSPIRATION.</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to receive seasonal design inspiration, materials guides and craftsmanship insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address for newsletter" required>
+              </div>
+              <button type="submit" class="newsletter-submit-btn">
+                <span>Subscribe</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <div class="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Column 7: Follow Us -->
+        <div class="footer-col-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="10" x2="12" y2="21"/>
+                  <path d="M8 12.5a4 4 0 1 1 8 0c0 3-1.8 5-4.2 5a3.5 3.5 0 0 1-2.8-1.5"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                  <polygon points="10 15 15 12 10 9" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Evergreen Outdoor Living. All Rights Reserved.
+        </div>
+
+        <ul class="footer-legal-links">
+          <li><a href="privacy.html" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-legal-link">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html" class="footer-legal-link">Cookie Policy</a></li>
+        </ul>
+
+        <button type="button" class="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCRIPTS (Local Vendor & Custom Vanilla JS)
+       ====================================================================== -->
+  <!-- Bootstrap Bundle JS -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons Library -->
+  <script src="vendor/lucide/lucide.min.js"></script>
+  <!-- Theme & Direction Switcher -->
+  <script src="assets/js/theme.js"></script>
+  <!-- Sticky Navbar & Mobile Drawer Controller -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Entrance Animations & Intersection Observer -->
+  <script src="assets/js/animations.js"></script>
+  <!-- Main Application Orchestrator -->
+  <script src="assets/js/main.js"></script>
+  <!-- Blog & Journal Interactive Controller -->
+  <script src="assets/js/blog.js"></script>
+
+</body>
+</html>

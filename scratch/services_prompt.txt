@@ -1,0 +1,1105 @@
+<USER_REQUEST>
+# ANTIGRAVITY MASTER PROMPT – EVERGREEN OUTDOOR LIVING | SERVICES PAGE
+
+Create a complete, premium, modern, fully responsive **Services page** for the existing website **EVERGREEN OUTDOOR LIVING**.
+
+**IMPORTANT: Work ONLY on `services.html` and its page-specific CSS, JavaScript, and image assets. Do not redesign or modify `index.html`, `home2.html`, `about.html`, or any other existing page.**
+
+The Services page must have a completely different visual identity from the previous pages.
+
+Do not repeat:
+- Home 1 hero design or section layouts.
+- Home 2 hero design or section layouts.
+- About page hero design or section layouts.
+- Previous page headings and descriptions.
+- Previous page images or generated image scenes.
+- Previous card compositions or storytelling.
+
+The Services page must focus on explaining the actual outdoor-living services, their features, design possibilities, suitability, and how visitors can enquire about them.
+
+---
+
+## 1. BRAND AND PAGE DETAILS
+
+**Brand name:** EVERGREEN OUTDOOR LIVING
+
+**Tagline:** CRAFTED OUTDOOR SPACES. MADE FOR LIVING.
+
+**Business:** Deck Building & Outdoor Living Contractor
+
+**Page:** Services (`services.html`)
+
+**Design concept:** Outdoor Living Solutions – Designed Around Your Space.
+
+The page should feel:
+- Premium and professional.
+- Architecture-focused.
+- Trustworthy and informative.
+- Natural and sophisticated.
+- Modern and visually engaging.
+- Easy to explore and understand.
+
+Use clear service descriptions that help visitors identify which outdoor solution suits their needs.
+
+Do not invent prices, warranties, project completion times, licences, certifications, guarantees, customer statistics, or service locations.
+
+## 2. TECHNOLOGY REQUIREMENTS
+
+Use only:
+- HTML5
+- CSS3
+- Bootstrap 5
+- Tailwind CSS
+- Vanilla JavaScript
+
+Do not use:
+- React
+- Vue
+- Angular
+- Next.js
+- TypeScript
+- PHP
+- Laravel
+- Backend
+- Database
+
+Use the existing project structure and shared assets.
+
+The website must run through VS Code Live Server.
+
+Use locally stored CSS and JavaScript dependencies for offline compatibility. Do not use remote image URLs or external image APIs.
+
+## 3. BRAND COLOUR PALETTE
+
+Use exactly the same palette as `index.html`.
+
+- Forest Green: `#254B3B`
+- Deep Forest: `#18382C`
+- Natural Sage: `#82977B`
+- Warm Cream: `#F8F5ED`
+- Sand Beige: `#E9DFC9`
+- Timber Brown: `#A8754E`
+- Charcoal: `#292F2A`
+- Muted Text: `#70776F`
+- Soft Border: `#E4E1D8`
+- Pure White: `#FFFFFF`
+
+Typography:
+- Headings: Playfair Display or DM Serif Display.
+- Body: Inter or Manrope.
+
+Use premium typography, spacious layouts, refined borders, subtle shadows, and natural colours.
+
+Avoid flashy gradients, neon colours, excessive animations, and crowded layouts.
+
+---
+
+## 4. SAME NAVBAR AS INDEX.HTML – STRICT REQUIREMENT
+
+**The Services page navbar must be EXACTLY the same as the existing navbar in `index.html`.**
+
+Before coding:
+1. Inspect `index.html`.
+2. Inspect its navbar HTML.
+3. Inspect navbar CSS and responsive behaviour.
+4. Inspect navigation JavaScript.
+5. Inspect dropdown functionality.
+6. Inspect dark mode and LTR/RTL controls.
+7. Reuse the existing shared navbar.
+
+Do not create a different navbar design.
+
+Maintain exactly the same:
+- Brand logo.
+- Logo dimensions.
+- Navigation order.
+- Navigation labels.
+- Home dropdown.
+- Services dropdown.
+- Dropdown design.
+- CTA button.
+- Icons.
+- Spacing.
+- Typography.
+- Sticky behaviour.
+- Scroll shadow.
+- Active page styling.
+- Mobile menu functionality.
+
+### Navigation items
+
+**HOME dropdown**
+- Home 1 → `index.html`
+- Home 2 → `home2.html`
+
+**ABOUT**
+- `about.html`
+
+**SERVICES dropdown**
+- Custom Deck Construction
+- Pergola Construction
+- Covered Outdoor Living
+- Patio & Entertainment Spaces
+- Deck Renovation
+
+**GALLERY**
+- `gallery.html`
+
+**PROJECTS**
+- `projects.html`
+
+**BLOG**
+- `blog.html`
+
+**FAQ**
+- `faq.html`
+
+**CONTACT**
+- `contact.html`
+
+Controls:
+- LTR / RTL toggle.
+- Dark Mode / Light Mode icon.
+- BOOK A CONSULTATION → `contact.html#consultation`.
+
+**Control order:** LTR/RTL toggle immediately before Dark Mode icon. Dark Mode icon immediately after LTR/RTL toggle. Consultation CTA after both controls.
+
+Use the existing logo:
+- `assets/images/brand/logo.svg`
+- `assets/images/brand/logo-white.svg`
+
+Do not create a different logo.
+
+### Mobile and tablet navbar
+
+At 320px–1024px:
+- Logo on the left.
+- Hamburger on the right.
+- All navigation links inside the hamburger.
+- Home dropdown inside the menu.
+- Services dropdown inside the menu.
+- LTR/RTL toggle inside the menu.
+- Dark Mode toggle inside the menu.
+- Consultation CTA inside the menu.
+- No hidden navigation items.
+- Close the menu after selecting a page.
+- Keyboard and touch accessibility.
+- No horizontal overflow.
+
+---
+
+## 5. SERVICES PAGE – UNIQUE HERO SECTION
+
+**Eyebrow:**
+
+EXPLORE OUR SERVICES
+
+**Main heading:**
+
+THE RIGHT OUTDOOR SOLUTION STARTS HERE.
+
+**Description:**
+
+Every outdoor space has different possibilities. Whether you are imagining a new timber deck, a beautiful pergola, a sheltered outdoor area, or a refreshed existing deck, explore solutions designed around your home, your space, and the way you want to live outdoors.
+
+**Supporting line:**
+
+Discover the possibilities. Find the right direction for your space.
+
+**Buttons:**
+- EXPLORE OUR SERVICES
+- DISCUSS YOUR PROJECT
+
+Links:
+- Explore Our Services → `#service-overview`
+- Discuss Your Project → `contact.html#consultation`
+
+Hero image:
+
+`assets/images/services/services-hero.webp`
+
+### Hero design direction
+
+Create a unique **architectural service showcase hero**:
+- Large architectural image occupying one side.
+- Compact service introduction panel.
+- Distinctive vertical or horizontal service index labels.
+- Small eyebrow text.
+- Large elegant heading.
+- Centred or carefully balanced introductory copy.
+- Two clear CTA buttons.
+- Warm cream background.
+- Premium architectural presentation.
+
+Do not use:
+- Home 1's image-led hero design.
+- Home 2's editorial split-screen hero.
+- About's centred portrait-style hero.
+- Their text, composition, images, or layouts.
+
+The Services hero must have a unique visual identity.
+
+---
+
+## 6. SERVICES PAGE – EXACTLY 8 UNIQUE SECTIONS
+
+Create exactly eight sections including the hero and final CTA.
+
+Every section must have:
+- A unique heading.
+- Unique description.
+- A different visual layout.
+- Its own image or images.
+- A clear purpose.
+- Proper CTA where relevant.
+
+### SECTION 1 – SERVICE OVERVIEW
+
+Section ID: `service-overview`
+
+**Eyebrow:** WHAT WE CAN CREATE
+
+**Heading:** Outdoor Spaces, With More Possibilities.
+
+**Description:**
+
+The right outdoor feature can help you make better use of your available space. Explore our core service areas and discover possibilities for transforming the way you enjoy your outdoor environment.
+
+Create five service overview cards:
+
+**01 – Custom Deck Construction**
+
+Create a comfortable and inviting outdoor foundation with a deck designed around your home and available space.
+
+Image:
+`service-overview-deck.webp`
+
+**02 – Pergola Construction**
+
+Explore overhead structures that can give outdoor areas a more defined and welcoming character.
+
+Image:
+`service-overview-pergola.webp`
+
+**03 – Covered Outdoor Living**
+
+Consider sheltered outdoor environments that provide a more defined space for relaxing and gathering.
+
+Image:
+`service-overview-covered.webp`
+
+**04 – Patio & Entertainment Spaces**
+
+Explore outdoor settings that bring seating, dining, and entertainment together.
+
+Image:
+`service-overview-patio.webp`
+
+**05 – Deck Renovation**
+
+Refresh an existing deck with a considered approach to appearance, materials, and usability.
+
+Image:
+`service-overview-renovation.webp`
+
+Design:
+- Five distinctive service cards.
+- Unique images for every service.
+- Service number or category label.
+- Clear service title.
+- Short description.
+- Learn More link to the corresponding detailed section below.
+- Equal card heights.
+- Consistent image proportions.
+- Responsive grid: 3 + 2 on suitable desktop widths, 2 columns on tablet where space permits, 1 column on mobile.
+
+### SECTION 2 – CUSTOM DECK CONSTRUCTION
+
+Section ID: `custom-deck-construction`
+
+**Eyebrow:** SERVICE 01 / CUSTOM DECKS
+
+**Heading:** Create a Foundation for Outdoor Living.
+
+**Description:**
+
+A well-considered deck can create a natural connection between your home and the outdoors. From a quiet place to relax to an area for spending time with guests, deck design should reflect the space available and the way you want to use it.
+
+**Feature highlights:**
+
+- Deck layouts that suit the available area.
+- Natural timber appearance and material options.
+- Thoughtful transitions between indoor and outdoor areas.
+- Space for outdoor furniture and seating.
+- Considered edges, steps, and finishing details.
+
+**Image:**
+
+`service-deck-construction.webp`
+
+**Supporting mini-image:**
+
+`service-deck-detail.webp`
+
+**CTA:** DISCUSS YOUR DECK PROJECT
+
+Link: `contact.html#consultation`
+
+Design:
+- Unique wide architectural image.
+- Main image and supporting close-up detail.
+- Technical-style detail labels.
+- Elegant service number.
+- Balanced image and content composition.
+- Do not copy the About craftsmanship section layout.
+
+### SECTION 3 – PERGOLA CONSTRUCTION
+
+Section ID: `pergola-construction`
+
+**Eyebrow:** SERVICE 02 / PERGOLAS
+
+**Heading:** Give Your Outdoor Space a Sense of Structure.
+
+**Description:**
+
+A pergola can introduce an architectural feature to an outdoor environment while helping define a dedicated place for seating, dining, or relaxing. Consider the proportions, materials, and relationship between the structure and your home.
+
+**Feature highlights:**
+
+- Attached or freestanding design possibilities.
+- Timber or complementary structural finishes.
+- Open-air architectural character.
+- Integration with outdoor seating areas.
+- Considered proportions and placement.
+
+**Image:**
+
+`service-pergola-construction.webp`
+
+**CTA:** EXPLORE PERGOLA POSSIBILITIES
+
+Link: `contact.html#consultation`
+
+Design:
+- Large full-width architectural pergola photograph.
+- Overlay or adjacent structured service information.
+- Clear visual emphasis on the pergola structure.
+- Use an asymmetrical layout that differs from Section 2.
+- Do not reuse Home 1, Home 2, or About images.
+
+### SECTION 4 – COVERED OUTDOOR LIVING
+
+Section ID: `covered-outdoor-living`
+
+**Eyebrow:** SERVICE 03 / COVERED OUTDOOR AREAS
+
+**Heading:** Enjoy an Outdoor Space With a Little More Shelter.
+
+**Description:**
+
+A covered outdoor area can create a more defined environment for relaxing, dining, and spending time outside. Explore designs that bring together roof structures, practical layouts, comfortable furnishings, and the character of your home.
+
+**Feature highlights:**
+
+- Defined outdoor living areas.
+- Covered seating and dining arrangements.
+- Architectural roof and support structures.
+- Integration with existing outdoor spaces.
+- Considered material and finish choices.
+
+**Image:**
+
+`service-covered-outdoor.webp`
+
+Design:
+- Premium wide photograph.
+- Image-led composition with a compact content panel.
+- Three or four visual feature labels.
+- Strong architectural emphasis.
+- Do not copy Section 3's composition.
+
+### SECTION 5 – PATIO & ENTERTAINMENT SPACES
+
+Section ID: `patio-entertainment-spaces`
+
+**Eyebrow:** SERVICE 04 / PATIOS & ENTERTAINMENT
+
+**Heading:** Make Room for More Time Together.
+
+**Description:**
+
+Create an outdoor setting that feels welcoming for everyday meals, relaxed conversations, and special gatherings. A thoughtfully arranged patio and entertainment area can bring different outdoor activities together in one comfortable environment.
+
+**Feature highlights:**
+
+- Outdoor dining arrangements.
+- Comfortable seating areas.
+- Space for social gatherings.
+- Connected deck and patio zones.
+- Outdoor furniture and layout planning.
+
+Images:
+- `service-patio-design.webp`
+- `service-entertainment-area.webp`
+- `service-outdoor-dining.webp`
+
+Design:
+- Three-image editorial composition.
+- One large main photograph and two smaller supporting photographs.
+- Distinct content labels.
+- Balanced image grid.
+- Do not copy Home 2's dining or inspiration sections.
+
+### SECTION 6 – DECK RENOVATION
+
+Section ID: `deck-renovation`
+
+**Eyebrow:** SERVICE 05 / DECK RENOVATION
+
+**Heading:** Give an Existing Deck a Fresh Direction.
+
+**Description:**
+
+An existing deck may offer opportunities for a new look, improved usability, or a more cohesive relationship with the surrounding outdoor space. A renovation discussion begins by understanding the current condition and what you would like to change.
+
+**Feature highlights:**
+
+- Review the existing deck and its condition.
+- Explore appearance and material updates.
+- Consider layout and usability improvements.
+- Refresh selected details and finishes.
+- Discuss suitable renovation possibilities.
+
+**Images:**
+- `service-renovation-existing.webp`
+- `service-renovation-refresh.webp`
+
+Design:
+- Before-and-after inspired visual comparison.
+- Use two genuinely different images showing a plausible renovation concept.
+- Label clearly as illustrative design examples, not real customer projects.
+- No fabricated customer results or claims.
+- Unique horizontal comparison composition.
+- Strong CTA: DISCUSS A DECK REFRESH.
+
+Link: `contact.html#consultation`
+
+### SECTION 7 – FIND THE RIGHT SERVICE FOR YOUR SPACE
+
+**Eyebrow:** CHOOSE YOUR DIRECTION
+
+**Heading:** Start With the Space You Want to Improve.
+
+**Description:**
+
+Not every outdoor project starts with a clear design. Sometimes you know what you want to change, but need help understanding which solution may suit your space. Use these starting points to explore your options.
+
+Create four visitor-focused pathways:
+
+**I Want More Outdoor Space**
+
+Explore custom deck construction and ways to make better use of your outdoor area.
+
+Suggested service: Custom Deck Construction.
+
+**I Want a Defined Outdoor Area**
+
+Explore pergolas and covered outdoor living possibilities.
+
+Suggested services: Pergola Construction and Covered Outdoor Living.
+
+**I Want a Place to Gather**
+
+Explore patio layouts, outdoor seating, and entertainment spaces.
+
+Suggested service: Patio & Entertainment Spaces.
+
+**I Want to Improve What I Already Have**
+
+Explore renovation possibilities for an existing deck.
+
+Suggested service: Deck Renovation.
+
+Image:
+`service-choose-space.webp`
+
+Design:
+- Interactive-looking choice layout with four visitor pathways.
+- Each pathway has a concise description and relevant service link.
+- One large unique supporting photograph.
+- Use refined iconography.
+- Do not use a pricing calculator or pretend to provide an automatic quote.
+- Do not repeat previous page card layouts.
+
+### SECTION 8 – FINAL SERVICE ENQUIRY CTA
+
+**Eyebrow:** YOUR PROJECT STARTS WITH A CONVERSATION
+
+**Heading:** Let's Find the Right Possibilities for Your Outdoor Space.
+
+**Description:**
+
+Have an idea for a new deck, pergola, covered outdoor area, patio, or renovation? Tell us a little about your space and what you would like to create. Start a conversation about the next steps.
+
+Buttons:
+- BOOK A CONSULTATION
+- VIEW OUR PROJECTS
+
+Links:
+- Book a Consultation → `contact.html#consultation`
+- View Our Projects → `projects.html`
+
+Image:
+`services-final-cta.webp`
+
+Design:
+- Premium full-width architectural outdoor-living image.
+- Deep forest-green or warm cream treatment.
+- Centred heading.
+- Centred description.
+- Centred CTA group.
+- Elegant final visual presentation.
+- Ensure excellent contrast and readable text.
+
+---
+
+## 7. STRICT IMAGE REQUIREMENTS – 18 UNIQUE NEW IMAGES
+
+Generate **18 completely new and unique images** specifically for the Services page.
+
+Before generating or assigning images:
+
+1. Inspect `assets/images/index/`.
+2. Inspect `assets/images/home2/`.
+3. Inspect `assets/images/about/`.
+4. Inspect all existing image folders.
+5. Do not reuse any previous page image.
+6. Do not repeat an image on the Services page.
+7. Do not reuse the same generated scene with a different crop.
+8. Each image must have a different subject, camera angle, setting, and composition.
+
+### Image style
+
+Use professional photorealistic architectural photography:
+- Realistic timber deck structures.
+- Contemporary pergolas.
+- Covered outdoor spaces.
+- Patio environments.
+- Outdoor entertainment areas.
+- Realistic deck renovation concepts.
+- Natural landscaping.
+- Premium outdoor furniture.
+- Accurate construction proportions.
+- Natural daylight.
+- High-resolution textures.
+
+Avoid:
+- Watermarks.
+- Embedded text.
+- Fake logos.
+- Distorted structures.
+- Unrealistic furniture.
+- Cartoon illustrations.
+- Duplicate images.
+- Repeated scenes.
+- Generic unrelated stock photography.
+
+Use WebP format.
+
+Save every image locally inside:
+
+`assets/images/services/`
+
+### Exact image filenames
+
+| No. | Filename | Purpose |
+|---|---|---|
+| 1 | `services-hero.webp` | Unique Services hero |
+| 2 | `service-overview-deck.webp` | Deck service overview |
+| 3 | `service-overview-pergola.webp` | Pergola overview |
+| 4 | `service-overview-covered.webp` | Covered outdoor living overview |
+| 5 | `service-overview-patio.webp` | Patio overview |
+| 6 | `service-overview-renovation.webp` | Deck renovation overview |
+| 7 | `service-deck-construction.webp` | Custom deck feature |
+| 8 | `service-deck-detail.webp` | Decking close-up |
+| 9 | `service-pergola-construction.webp` | Pergola construction |
+| 10 | `service-covered-outdoor.webp` | Covered outdoor area |
+| 11 | `service-patio-design.webp` | Patio design |
+| 12 | `service-entertainment-area.webp` | Outdoor entertainment |
+| 13 | `service-outdoor-dining.webp` | Outdoor dining |
+| 14 | `service-renovation-existing.webp` | Existing deck concept |
+| 15 | `service-renovation-refresh.webp` | Refreshed deck concept |
+| 16 | `service-choose-space.webp` | Choosing a suitable outdoor solution |
+| 17 | `services-final-cta.webp` | Final service enquiry image |
+| 18 | `service-material-detail.webp` | Additional service material/detail visual |
+
+**Important:** All 18 images must be genuinely different. Use `service-material-detail.webp` as an additional detail image within the relevant service content if useful. Do not add a ninth main section just to display it.
+
+Use exact filenames and ensure every local image path works.
+
+Use meaningful alt text for every image.
+
+If image generation is unavailable, prepare a clear image-generation checklist and retain the correct local paths. Never silently use remote image URLs.
+
+---
+
+## 8. SERVICE LINKS AND NAVIGATION
+
+Make all service navigation links useful.
+
+Where appropriate, use these section anchors:
+
+- Custom Deck Construction → `services.html#custom-deck-construction`
+- Pergola Construction → `services.html#pergola-construction`
+- Covered Outdoor Living → `services.html#covered-outdoor-living`
+- Patio & Entertainment Spaces → `services.html#patio-entertainment-spaces`
+- Deck Renovation → `services.html#deck-renovation`
+
+All consultation buttons must link to:
+
+`contact.html#consultation`
+
+All project gallery links must point to:
+
+`projects.html` or `gallery.html`
+
+Do not create broken or fake links.
+
+---
+
+## 9. SAME FOOTER AS INDEX.HTML – STRICT REQUIREMENT
+
+**The Services page footer must be EXACTLY the same as the footer in `index.html`.**
+
+Inspect and reuse:
+- Footer HTML.
+- Footer CSS.
+- Footer logo.
+- Footer background.
+- Footer typography.
+- Four link groups.
+- Social links.
+- Newsletter area.
+- Copyright bar.
+- Responsive layout.
+- Dark mode.
+- RTL support.
+
+Do not create a different footer.
+
+The four footer link groups must each have exactly six items.
+
+**QUICK LINKS**
+1. Home
+2. About
+3. Services
+4. Gallery
+5. Projects
+6. Contact
+
+**OUR SERVICES**
+1. Custom Decks
+2. Pergolas
+3. Covered Outdoor Living
+4. Patio Spaces
+5. Outdoor Entertainment
+6. Deck Renovation
+
+**EXPLORE**
+1. Home 2
+2. Deck Design Ideas
+3. Pergola Inspiration
+4. Outdoor Living Ideas
+5. Project Gallery
+6. Blog
+
+**CUSTOMER SUPPORT**
+1. Book a Consultation
+2. Project Enquiry
+3. Planning Your Project
+4. Frequently Asked Questions
+5. Contact Us
+6. Privacy Policy
+
+Additional footer areas:
+- Same brand logo and description.
+- Same social media links.
+- Same newsletter input and subscribe button.
+- Same copyright © 2026 Evergreen Outdoor Living.
+- Same Privacy Policy.
+- Same Terms & Conditions.
+- Same Cookie Policy.
+- Same Back to Top control.
+
+Do not invent contact details or social media URLs.
+
+Do not show a fake successful newsletter submission. Without a backend or email service, provide a clearly frontend-only interaction.
+
+The footer must be pixel-consistent with Home 1 at desktop, tablet, and mobile sizes.
+
+---
+
+## 10. SAME FAVICON AS INDEX.HTML
+
+Use the existing favicon:
+
+`assets/images/brand/favicon.svg`
+
+Do not create a new favicon.
+
+Include the favicon reference inside the `<head>` of `services.html`.
+
+The browser tab icon must match Home 1 exactly.
+
+---
+
+## 11. DARK MODE – SAME FUNCTIONALITY AS INDEX.HTML
+
+Reuse the existing dark mode system from `index.html`.
+
+Do not create a separate theme system.
+
+Requirements:
+- Same theme toggle.
+- Same localStorage key.
+- Same theme persistence across all pages.
+- No flash of incorrect theme.
+- All eight sections support dark mode.
+
+Dark mode palette:
+- Main Background: `#151D18`
+- Secondary Background: `#1D2921`
+- Card Background: `#243229`
+- Primary Green: `#91B59A`
+- Main Text: `#F1F4EE`
+- Muted Text: `#B5C0B5`
+- Border: `#425247`
+- Accent: `#C59A73`
+
+Check:
+- Headings.
+- Paragraphs.
+- Cards.
+- Images and overlays.
+- Borders.
+- Buttons.
+- Service labels.
+- Icons.
+- Focus and hover states.
+
+Do not simply turn every background black.
+
+---
+
+## 12. LTR / RTL – SAME FUNCTIONALITY AS INDEX.HTML
+
+Reuse the existing LTR/RTL implementation.
+
+Requirements:
+- Default direction: LTR.
+- Toggle updates the HTML `dir` attribute.
+- Same localStorage key as Home 1.
+- Persist direction across all pages.
+- Reverse image/text layouts when appropriate.
+- Mirror navigation and dropdown alignment.
+- Adjust service card alignment.
+- Adjust feature labels and icons.
+- Keep CTA buttons correctly aligned.
+- Maintain readable typography.
+- No broken or overlapping layouts in RTL.
+
+---
+
+## 13. ICON REQUIREMENTS
+
+Use the same consistent outline icon system as Home 1.
+
+Suggested icons:
+- Hammer.
+- Layers.
+- Ruler.
+- House.
+- Tree Pine.
+- Trees.
+- Leaf.
+- Compass.
+- Pencil Ruler.
+- Fence.
+- Columns.
+- Armchair.
+- Sun.
+- Moon.
+- Arrow Right.
+- Menu.
+- X.
+- Instagram.
+- Facebook.
+- YouTube.
+
+Rules:
+- No emoji UI icons.
+- No random mixture of filled and outline icons.
+- Consistent stroke width.
+- Consistent sizing.
+- Proper alignment.
+- Visible in light and dark modes.
+- Accessible labels for icon-only controls.
+
+Use icons only where they add value.
+
+---
+
+## 14. RESPONSIVE DESIGN REQUIREMENTS
+
+Test all viewport widths:
+
+320px, 360px, 375px, 390px, 414px, 430px, 576px, 768px, 820px, 834px, 1024px, 1200px, 1280px, 1366px, 1440px, 1600px and 1920px.
+
+### Desktop
+- Spacious premium layout.
+- Balanced image and text proportions.
+- Professional service presentation.
+- Consistent container widths.
+- Clear visual hierarchy.
+- No oversized text.
+- No awkward empty spaces.
+
+### Tablet
+Pay special attention to:
+- 768px.
+- 820px.
+- 834px.
+- 1024px.
+
+Requirements:
+- Avoid squeezed service cards.
+- Use two-column grids only when there is enough space.
+- Stack layouts when necessary.
+- Maintain image quality and visibility.
+- Keep typography readable.
+- Ensure dropdowns and mobile navigation work correctly.
+
+### Mobile
+- One-column layout where appropriate.
+- Centred headings.
+- Centred section introduction paragraphs.
+- Centred CTA groups.
+- Comfortable spacing.
+- Readable typography.
+- Touch-friendly buttons.
+- Proportionate images.
+- No horizontal scrolling.
+- No overlapping content.
+- No clipped service cards.
+- No missing icons.
+
+### Card alignment
+- Equal heights in each row.
+- Same image aspect ratio within a card group.
+- Consistent internal padding.
+- Aligned card headings.
+- Consistent description spacing.
+- CTA links aligned at the bottom where applicable.
+- Use flex-column and `margin-top: auto` when needed.
+- Stack cards rather than squeezing them.
+
+---
+
+## 15. GLOBAL ALIGNMENT RULES
+
+Apply to all eight sections:
+
+- All main section headings must be centred.
+- All section introduction paragraphs must be centred.
+- All section CTA groups must be centred.
+- Service content within individual split layouts can be left-aligned inside its content column.
+- Maintain consistent image proportions within each card group.
+- Keep equal card heights.
+- Maintain balanced vertical spacing.
+- Do not repeat the same layout in every section.
+- Avoid excessive text.
+- Keep the service information easy to scan.
+
+The Services page should feel like a professional service catalogue combined with an architectural showcase.
+
+---
+
+## 16. SEO REQUIREMENTS
+
+Use unique SEO metadata.
+
+**Page title:**
+
+Outdoor Living Services | Decks, Pergolas & Patios | Evergreen Outdoor Living
+
+**Meta description:**
+
+Explore Evergreen Outdoor Living services, including custom deck construction, pergolas, covered outdoor living, patio and entertainment spaces, and deck renovation.
+
+Include:
+- Viewport meta tag.
+- Favicon reference.
+- Unique Open Graph title.
+- Unique Open Graph description.
+- Open Graph image using local Services hero image.
+- Semantic HTML5.
+- One H1 only.
+- Logical H2 and H3 hierarchy.
+- Descriptive alt text for images.
+- Correct section IDs.
+
+Do not add fake prices, warranties, certifications, reviews, company statistics, or unsupported service claims.
+
+---
+
+## 17. EXPECTED FILE STRUCTURE
+
+Create or update only Services page-specific files where possible.
+
+```text
+project/
+│
+├── index.html
+├── home2.html
+├── about.html
+├── services.html
+├── gallery.html
+├── projects.html
+├── blog.html
+├── faq.html
+├── contact.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── services.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   └── services.js
+│   │
+│   └── images/
+│       ├── brand/
+│       │   ├── logo.svg
+│       │   ├── logo-white.svg
+│       │   └── favicon.svg
+│       │
+│       └── services/
+│           ├── services-hero.webp
+│           ├── service-overview-deck.webp
+│           ├── service-overview-pergola.webp
+│           ├── service-overview-covered.webp
+│           ├── service-overview-patio.webp
+│           ├── service-overview-renovation.webp
+│           ├── service-deck-construction.webp
+│           ├── service-deck-detail.webp
+│           ├── service-pergola-construction.webp
+│           ├── service-covered-outdoor.webp
+│           ├── service-patio-design.webp
+│           ├── service-entertainment-area.webp
+│           ├── service-outdoor-dining.webp
+│           ├── service-renovation-existing.webp
+│           ├── service-renovation-refresh.webp
+│           ├── service-choose-space.webp
+│           ├── services-final-cta.webp
+│           └── service-material-detail.webp
+```
+
+Reuse existing shared global files and components.
+
+Use:
+- `services.css` for Services-specific styling.
+- `services.js` for Services-specific interactions only.
+- Existing `main.js` for shared navbar, theme, and RTL functionality.
+
+Avoid duplicating shared JavaScript or overwriting global CSS.
+
+Use unique class names to prevent conflicts.
+
+Suggested class names:
+- `.services-hero`
+- `.services-overview`
+- `.service-overview-card`
+- `.service-deck`
+- `.service-pergola`
+- `.service-covered`
+- `.service-patio`
+- `.service-renovation`
+- `.service-choice`
+- `.service-choice-card`
+- `.services-final-cta`
+
+---
+
+## 18. FINAL TESTING CHECKLIST
+
+Before finishing, verify:
+
+- [ ] Only `services.html` and required Services-specific assets were changed.
+- [ ] Home 1 remains unchanged.
+- [ ] Home 2 remains unchanged.
+- [ ] About page remains unchanged.
+- [ ] Exactly eight sections are present.
+- [ ] Services hero is completely different from all previous pages.
+- [ ] All service headings and descriptions are unique.
+- [ ] All 18 Services images are unique.
+- [ ] No previous page images are reused.
+- [ ] All local image paths work.
+- [ ] No remote image URLs.
+- [ ] Navbar matches Home 1 exactly.
+- [ ] Footer matches Home 1 exactly.
+- [ ] Logo matches Home 1 exactly.
+- [ ] Favicon matches Home 1 exactly.
+- [ ] Home dropdown works.
+- [ ] Services dropdown works.
+- [ ] Service section anchors work.
+- [ ] Mobile hamburger menu works.
+- [ ] All navigation controls are available on mobile.
+- [ ] Dark mode works and persists.
+- [ ] LTR/RTL works and persists.
+- [ ] All sections support dark mode.
+- [ ] All sections support RTL.
+- [ ] Consultation links work.
+- [ ] Project links work.
+- [ ] All section headings are centred.
+- [ ] Section introduction paragraphs are centred.
+- [ ] CTA groups are centred.
+- [ ] Card heights and image proportions are consistent.
+- [ ] Tablet layout works at 768px, 820px, 834px and 1024px.
+- [ ] Mobile layout works from 320px upwards.
+- [ ] No horizontal scrolling.
+- [ ] No overlapping text or images.
+- [ ] No clipped footer.
+- [ ] No broken images.
+- [ ] No JavaScript console errors.
+- [ ] SEO metadata is present.
+- [ ] Keyboard accessibility is checked.
+
+---
+
+## FINAL INSTRUCTION
+
+Build a complete, professional, premium Services page for EVERGREEN OUTDOOR LIVING.
+
+The page must clearly present these five core services:
+
+1. Custom Deck Construction.
+2. Pergola Construction.
+3. Covered Outdoor Living.
+4. Patio & Entertainment Spaces.
+5. Deck Renovation.
+
+Create exactly eight unique sections, including the hero and final CTA.
+
+Use 18 completely new and unique images. Never repeat any images, hero design, section layouts, or content from Home 1, Home 2, or About.
+
+**The navbar, footer, logo, favicon, dark mode, LTR/RTL, and shared navigation functionality must remain exactly consistent with `index.html`.**
+
+Inspect the existing project before making changes. Reuse shared components, preserve every other page, and test the Services page at all specified responsive widths.
+
+Deliver a fully working `services.html` page that runs correctly using VS Code Live Server.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-05T03:31:27+05:30.
+</ADDITIONAL_METADATA>
